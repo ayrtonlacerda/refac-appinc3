@@ -1,0 +1,164 @@
+[
+  {
+    "key": "img_plus_input1",
+    "type": "img_plus_input",
+    "label": "Qual a área da sala de repouso? Complete com as medidas em metros nos itens a seguir",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "p2repouso",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+        },
+        {
+          "key": "Area",
+          "label": "Area (AB) - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro (2A+2B) - ",
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+        }
+      ]
+    }
+  },
+  {
+    "key": "img_plus_input2",
+    "type": "img_plus_input",
+    "label": "Foi instalada a divisória entre a sala de repouso e a creche II?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "img_plus_input3",
+    "type": "img_plus_input",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "img_plus_input4",
+    "type": "img_plus_input",
+    "label": "Possui rodameio?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "text3",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "text4",
+    "type": "text",
+    "label": "Qual a altura de parede que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "img_plus_input5",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Revestimento (em metros):",
+        },
+      ]
+    }
+  },
+  {
+    "key": "qualificacao",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

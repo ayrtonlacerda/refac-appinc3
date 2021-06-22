@@ -1,0 +1,340 @@
+[
+  {
+    "key": "servvest01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servvestiario2",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "1,05"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "2,85"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "1,2"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "2,85"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+          "default_value": "2,6"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servvest02",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servestiario2",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "p03",
+          "label": "Quantidade instalada P05?",
+          "default_value": "1"
+        },
+        {
+          "key": "pm04a",
+          "label": "Quantidade instalada PM04A?",
+          "default_value": "4"
+        },
+        {
+          "key": "ef13",
+          "label": "Quantidade instalada EF 13?",
+          "default_value": "2"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servest03",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1",
+    "additional_type": null
+  },
+  {
+    "key": "servvest07",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "servvest08",
+    "type": "img_plus_input",
+    "label": "A cerâmica 20 cm x 20 cm foi aplicada na parede toda?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servvest09",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servvest04",
+    "type": "img_plus_input",
+    "label": "As divisórias de granito entre os vasos sanitários e entre os chuveiros foram instaladas?",
+    "placeholder": "",
+    "description": "Selecionar alguma opção",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": "servestiario3",
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim, com as seguintes dimensões em  metros:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "AlturaA",
+          "label": "Altura da divisória A: ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraA",
+          "label": "Largura da divisória A: ",
+          "default_value": "0,87"
+        },
+        {
+          "key": "QuantidadeA",
+          "label": "Quantidade de divisórias A: ",
+          "default_value": "4"
+        },
+        {
+          "key": "AlturaB",
+          "label": "Altura da divisória B ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraB",
+          "label": "Largura da divisória B: ",
+          "default_value": "0,063"
+        },
+        {
+          "key": "QuantidadeB",
+          "label": "Quantidade de divisórias B: ",
+          "default_value": "1"
+        },
+        {
+          "key": "AlturaC",
+          "label": "Altura da divisória C: ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraC",
+          "label": "Largura da divisória C: ",
+          "default_value": "0,93"
+        },
+        {
+          "key": "QuantidadeC",
+          "label": "Quantidade de divisórias C: ",
+          "default_value": "1"
+        },
+        {
+          "key": "AlturaD",
+          "label": "Altura da divisória D: ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraD",
+          "label": "Largura da divisória D:",
+          "default_value": "0,31"
+        },
+        {
+          "key": "QuantidadeD",
+          "label": "Quantidade de divisórias D: ",
+          "default_value": "1"
+        },
+        {
+          "key": "AlturaE",
+          "label": "Altura da divisória E: ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraE",
+          "label": "Largura da divisória E: ",
+          "default_value": "0,13"
+        },
+        {
+          "key": "QuantidadeE",
+          "label": "Quantidade de divisórias E: ",
+          "default_value": "1"
+        },
+        {
+          "key": "AlturaF",
+          "label": "Altura da divisória F: ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraF",
+          "label": "Largura da divisória F:",
+          "default_value": "0,15"
+        },
+        {
+          "key": "QuantidadeF",
+          "label": "Quantidade de divisórias F: ",
+          "default_value": "1"
+        },
+        {
+          "key": "AlturaG",
+          "label": "Altura da divisória G: ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraG",
+          "label": "Largura da divisória G: ",
+          "default_value": "0,32"
+        },
+        {
+          "key": "QuantidadeG",
+          "label": "Quantidade de divisórias G: ",
+          "default_value": "1"
+        },
+        {
+          "key": "AlturaH",
+          "label": "Altura da divisória H:",
+          "default_value": "1,8"
+        },
+        {
+          "key": "LarguraH",
+          "label": "Largura da divisória H: ",
+          "default_value": "1,32"
+        },
+        {
+          "key": "QuantidadeH",
+          "label": "Quantidade de divisórias H: ",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servest05",
+    "type": "text",
+    "label": "Quantos vasos sanitários foram instalados?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "2",
+    "additional_type": null
+  },
+  {
+    "key": "servvest06",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

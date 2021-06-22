@@ -1,0 +1,306 @@
+[
+    {
+      "key": "servlcv01",
+      "type": "img_plus_input",
+      "label": "Complete com as medidas em metros nos itens a seguir:",
+      "placeholder": "",
+      "description": "",
+      "default_value": "",
+      "additonal_type": null,
+      "image": "servlac1",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "A",
+            "label": "A - ",
+            "default_value": "1,65",
+
+          },
+          {
+            "key": "B",
+            "label": "B - ",
+            "default_value": "3,45",
+
+          },
+          {
+            "key": "C",
+            "label": "C - ",
+            "default_value": "0,85",
+
+          },
+          {
+            "key": "Pe-direito",
+            "label": "Pe-direito - ",
+            "default_value": "2,6",
+
+          }
+        ]
+      }
+    },
+    {
+      "key": "servlac02",
+      "type": "img_plus_input",
+      "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+      "placeholder": "",
+      "description": "",
+      "default_value": "",
+      "additonal_type": null,
+      "image": "servlac2",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "p03",
+            "label": "Quantidade instalada P05?",
+            "default_value": "1",
+
+          },
+          {
+            "key": "ef20",
+            "label": "Quantidade instalada EF 20?",
+            "default_value": "1",
+
+          },
+          {
+            "key": "ef10",
+            "label": "Quantidade instalada EF 10?",
+            "default_value": "1",
+
+          },
+          {
+            "key": "pm04b",
+            "label": "Quantidade instalada PM04B?",
+            "default_value": "1",
+
+          },
+        ]
+      }
+    },
+    {
+      "key": "servlac07",
+      "type": "radio",
+      "label": "O teto foi pintado?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "options": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+
+      ]
+    },
+    {
+      "key": "servlac08",
+      "type": "img_plus_input",
+      "label": "A cerâmica 20cm x 20cm foi aplicada na parede toda?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 1
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Não, em:",
+          },
+        ]
+      }
+    },
+    {
+      "key": "servlac09",
+      "type": "img_plus_input",
+      "label": "O revestimento foi aplicado em todo perímetro?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 1
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Não, em:",
+          },
+        ]
+      }
+    },
+      {
+        "key": "servlac04",
+        "type": "img_plus_input",
+        "label": "As bancadas de granito foram instaladas?",
+        "placeholder": "",
+        "description": "Selecionar alguma opção",
+        "default_value": 0,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Sim, com as seguintes dimensões:",
+          },
+          {
+            "id": 1,
+            "description": "Não",
+          },
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 0
+          },
+          "fields": [
+            {
+              "key": "Comprimento1",
+              "label": "Comprimento da prateleira 1: ",
+              "default_value": "1,65",
+
+            },
+            {
+              "key": "Largura1",
+              "label": "Largura da prateleira 1: ",
+              "default_value": "0,6",
+
+            },
+            {
+                "key": "quantidade1",
+                "label": "Número de prateleiras 2: ",
+                "default_value": "0,5",
+
+              },
+              {
+                "key": "Comprimento2",
+                "label": "Comprimento da prateleira 2: ",
+                "default_value": "1,65",
+
+              },
+              {
+                "key": "Largura2",
+                "label": "Largura da prateleira 2: ",
+                "default_value": "0,6",
+
+              },
+              {
+                  "key": "quantidade2",
+                  "label": "Número de prateleiras 2: ",
+                  "default_value": "0,5",
+
+                },
+          ]
+        }
+      },
+    {
+      "key": "servlac05",
+      "type": "img_plus_input",
+      "label": "O armário foi instalado?",
+      "placeholder": "",
+      "description": "Selecionar alguma opção",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 1
+        },
+        "fields": [
+          {
+            "key": "Comprimento",
+            "label": "Comprimento da prateleira: ",
+            "default_value": "0,5",
+
+          },
+          {
+            "key": "Largura",
+            "label": "Largura das prateleiras: ",
+            "default_value": "0,43",
+
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória: ",
+            "default_value": "1,8",
+
+          },
+          {
+            "key": "ComprimentoDivisoria",
+            "label": "Comprimento da divisória: ",
+            "default_value": "0,43",
+
+          },
+          {
+            "key": "Quantidade",
+            "label": "Número de prateleiras: ",
+            "default_value": "3",
+
+          },
+        ]
+      }
+    },
+    {
+      "key": "servlac06",
+      "type": "picker",
+      "label": "Qual tipo de piso foi instalado?",
+      "description": "Selecionar alguma opção",
+      "placeholder": "exemplo",
+      "default_value": "Granitina",
+      "aditional_type": null,
+      "options": [
+        "Bloco de concreto intertravado",
+        "Cerâmico",
+        "Cimento desempenado",
+        "Granitina",
+        "Outros"
+      ],
+    },
+
+  ]

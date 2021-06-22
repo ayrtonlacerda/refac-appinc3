@@ -1,0 +1,131 @@
+[
+  {
+    "key": "reser01",
+    "type": "img_plus_input",
+    "label": "O reservatório foi construído?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim, com as seguintes dimensões:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 1
+      },
+      "fields": [
+        {
+          "key": "diam",
+          "label": "Diâmetro:",
+          "default_value": "3,55"
+        },
+        {
+          "key": "alt",
+          "label": "Altura:",
+          "default_value": "10,7"
+        }
+      ]
+    }
+  },
+  {
+    "key": "reser02",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas, verifique quantas esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "esquadria1_reser",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "vent",
+          "label": "Qtd de veneziana metálica para ventilação?",
+          "default_value": "8"
+        },
+        {
+          "key": "sobrep",
+          "label": "Qtd de veneziana metálida cega sobreposta?",
+          "default_value": "3"
+        },
+        {
+          "key": "portinhola",
+          "label": "Qtd de portinhola?",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "reser03",
+    "type": "radio",
+    "label": "A caixa d'água de 10.000 litros foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "reser04",
+    "type": "radio",
+    "label": "A escada marinheiro foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "reser05",
+    "type": "radio",
+    "label": "O reservatório foi revestido com cerâmica 20cm x 20cm?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+]

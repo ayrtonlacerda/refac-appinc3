@@ -1,0 +1,174 @@
+[
+  {
+    "key": "crechec-multi01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "crechec_servico_multi",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "5,85"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "5,25"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+          "default_value": "3"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-multi02",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "crechec_servico_multi_tabela",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "P05",
+          "label": "Quantidade instalada P01?",
+          "default_value": "1"
+        },
+        {
+          "key": "e21",
+          "label": "Quantidade instalada EF19?",
+          "default_value": "5"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-multi03",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 40W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "3",
+    "additional_type": null
+  },
+  {
+    "key": "crechec-multi04",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "crechec-multi05",
+    "type": "radio",
+    "label": "Possui rodameio?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "crechec-multi06",
+    "type": "text",
+    "label": "Qual a altura da cerâmica 20 x 20 cm?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1",
+    "additional_type": null
+  },
+  {
+    "key": "crechec-multi07",
+    "type": "text",
+    "label": "Qual a altura de parede que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1,9",
+    "additional_type": null
+  },
+  {
+    "key": "crechec-multi08",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-multi09",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]
