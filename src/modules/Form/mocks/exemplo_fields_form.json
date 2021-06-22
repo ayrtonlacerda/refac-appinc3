@@ -1,0 +1,114 @@
+{
+  "title": "Catalogo de componentes",
+  "name": "catalogo_componentes",
+	"version": "1.0",
+	"area": "1",
+	"class": "1",
+	"subclass": "1",
+	"details": "Formulário contendo todos os tipos de componente",
+	"steps": [
+		{
+      "id": 0,
+      "title": "Titulo dos steps",
+      "description": "descricao do setep",
+      "fields": []
+    },
+    {
+      "id": 1,
+      "title": "Titulo dos steps",
+      "description": "descricao do setep",
+      "info": "sjkadklas",
+      "fields": [
+        {
+          "key": "name", // chave unica de cada campo - data_name
+          "type": "text", // tipo de componente que e chamado no app -component_type
+          "label": "Dados indetificadores", // titulo que fica do lado dos numeros
+          "placeholder": "", 
+          "description": "Informações do SINESP",// hint
+          "default_value": null,		
+          "additonal_type": null // se type = date -> 1. time 2. date
+        },
+        {
+          "key": "name", // chave unica de cada campo
+          "type": "picker", // tipo de componente que e chamado no app
+          "label": "Dados indetificadores", // titulo que fica do lado dos numeros
+          "options": [ // options so existe no picker
+            "opção 1",
+            "opção 1",
+            "opção 1"
+          ],
+          "placeholder": "SINESP", 
+          "description": "Informações do SINESP",
+          "default_value": null,		
+          "additonal_type": null
+        },
+        {
+          /*
+            group e como um mini form, sao varios
+            mini forms iguais,
+          */
+          "key": "name", // chave unica de cada campo
+          "type": "group", // tipo de componente que e chamado no app
+          "label": "Dados indetificadores", // titulo que fica do lado dos numeros
+          "placeholder": "SINESP", 
+          "description": "Informações do SINESP",
+          "default_value": null,		
+          "additonal_type": null,
+          "group": [
+            {
+              "key": "qualquer1",
+              "type": "input",
+              "label": "Nome da amostra",
+              "description": "Nome da amostra que sera computada",
+              "placeholder": "exemplo",
+              "aditional_type": null,
+              "aditional_info": null
+            },
+            {
+              "key": "keypiker2",
+              "type": "picker",
+              "label": "Tipos amostra",
+              "description": "Selecionar alguma opção",
+              "placeholder": "exemplo",
+              "aditional_type": null,
+              "aditional_info": null,
+              "options": [
+                "Opção 1",
+                "Opção 2",
+                "Opção 3",
+                "Opção 4"
+              ]
+            },
+            {
+              "key": "qualquer5",
+              "type": "camera",
+              "label": "Imagem da amostra",
+              "description": "Componente câmera que será utilizado",
+              "placeholder": "Descrição da foto",
+              "aditional_type": null,
+              "aditional_info": null
+            }
+          ]
+        }
+      ]
+    }
+	]
+}
+
+//Nomeparachamaroscomponentes(component_type)
+{
+	"texto": "text",
+	"ocr": "ocr",
+	"camera": "camera",
+	"croqui": "sketch",
+	"audio": "audio",
+	"gps": "gps",
+	"calendário": "calendar",
+	"scanner": "scanner",
+	"periodo": "period",
+  "checkbox": "checkbox",
+  // esses sao novos
+  "veiculo": "veichle",
+  "picker": "picker",
+  "group": "group",
+}

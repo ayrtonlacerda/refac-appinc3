@@ -1,0 +1,173 @@
+[
+  {
+    "key": "adm_circ1",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "adm_circ1",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "1,05"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "5,36"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "1,38"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "1,24"
+        },
+        {
+          "key": "E",
+          "label": "E - ",
+          "default_value": "5,44"
+        },
+        {
+          "key": "Area",
+          "label": "Área - ",
+          "default_value": "7,25"
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perímetro - ",
+          "default_value": "16,61"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+          "default_value": "2,6"
+        }
+      ]
+    }
+  },
+  {
+    "key": "adm_circ2",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1",
+    "additional_type": null
+  },
+  {
+    "key": "adm_circ4",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "adm_circ4",
+    "type": "radio",
+    "label": "Possui rodameio?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "adm_circ5",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1,1",
+    "additional_type": null
+  },
+  {
+    "key": "adm_circ6",
+    "type": "text",
+    "label": "Qual a altura que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1,5",
+    "additional_type": null
+  },
+  {
+    "key": "adm_circ7",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "adm_circ3",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

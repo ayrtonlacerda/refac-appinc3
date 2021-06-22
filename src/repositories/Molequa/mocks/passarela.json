@@ -1,0 +1,207 @@
+[
+  {
+    "key": "pas1",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": "passarela",
+    "radio": null,
+    "input": {
+      "fields": [
+        {
+          "key": "pasA",
+          "label": "A - ",
+          "default_value": "12,65"
+        },
+        {
+          "key": "pasB",
+          "label": "B - ",
+          "default_value": "3"
+        },
+        {
+          "key": "pasarea",
+          "label": "AREA - ",
+          "default_value": "37,95"
+        },
+        {
+          "key": "pasperimetro",
+          "label": "PERíMETRO - ",
+          "default_value": "31,31"
+        }
+      ]
+    }
+  },
+  {
+    "key": "pas2",
+    "type": "img_plus_input",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": null,
+    "radio": null,
+    "input": {
+      "fields": [
+        {
+          "key": "pas2Lamp",
+          "label": "",
+          "default_value": "2"
+        }
+      ]
+    }
+  },
+  {
+    "key": "pas3",
+    "type": "img_plus_input",
+    "label": "A estrutura está compatível com a dimensão da construção?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 0,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim"
+      },
+      {
+        "id": 1,
+        "description": "Não, com as seguintes medidas:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "pas3inputkey",
+        "value": 1
+      },
+      "fields": [
+        {
+          "key": "pas3input3",
+          "label": ""
+        }
+      ]
+    }
+  },
+  {
+    "key": "pas4",
+    "type": "img_plus_input",
+    "label": "Meça as seguintes dimensões para um pilar qualquer",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": null,
+    "radio": null,
+    "input": {
+      "fields": [
+        {
+          "key": "pas4input1",
+          "label": "Altura (m):",
+          "default_value": "3"
+        },
+        {
+          "key": "pas4input2",
+          "label": "Diâmetro (m):",
+          "default_value": "0,4"
+        },
+        {
+          "key": "past4input3",
+          "label": "QTD de pilares:",
+          "default_value": "6"
+        }
+      ]
+    }
+  },
+  {
+    "key": "pas5",
+    "type": "img_plus_input",
+    "label": "A faixa de cerâmica 10 cm x 10 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 0,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim, na altura:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "pas5inputkey1",
+        "value": 1
+      },
+      "fields": [
+        {
+          "key": "pas5input1",
+          "label": ""
+        }
+      ]
+    }
+  },
+  {
+    "key": "pas6",
+    "type": "radio",
+    "label": "O restante do pilar foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "pas7",
+    "type": "radio",
+    "label": "Foi feita a cobertura da passarela?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "pas8",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

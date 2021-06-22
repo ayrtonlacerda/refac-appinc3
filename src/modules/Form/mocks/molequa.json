@@ -1,0 +1,284 @@
+{
+  "name": "Molequa",
+  "version": "2.0",
+  "area": "pericia_molequa",
+  "class": "Laudo de exame de Molequa",
+  "subclass": "",
+  "details": "Formulário voltado para a pericia de local de crime",
+  "form": {
+    "title": "2106/2020-AppInc/XX/PF/RJ",
+    "description": "Descrição",
+    "info": "",
+    "fields": [
+      {
+        "key": "img_plus_input1",
+        "type": "img_plus_input",
+        "label": "Complete com as medidas em metros nos itens a seguir:",
+        "placeholder": "",
+        "description": "",
+        "default_value": "Saliva de pirulito",
+        "additonal_type": null,
+        "image": "Foto3",
+        "radio": null,
+        "input": {
+          "dependency": null,
+          "fields": [
+            {
+              "key": "A",
+              "label": "A - ",
+            },
+            {
+              "key": "B",
+              "label": "B - ",
+            },
+            {
+              "key": "C",
+              "label": "C - ",
+            },
+            {
+              "key": "D",
+              "label": "D - ",
+            },
+            {
+              "key": "Area",
+              "label": "Area - ",
+            },
+            {
+              "key": "Perimetro",
+              "label": "Perimetro - ",
+            },
+            {
+              "key": "Pe-direito",
+              "label": "Pe-direito - ",
+            }
+          ]
+        }
+      },
+      {
+        "key": "img_plus_input2",
+        "type": "img_plus_input",
+        "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+        "placeholder": "",
+        "description": "",
+        "default_value": "Saliva de pirulito",
+        "additonal_type": null,
+        "image": "Foto4",
+        "radio": null,
+        "input": {
+          "dependency": null,
+          "fields": [
+            {
+              "key": "pa06",
+              "label": "Quantidade instalada P06?",
+            },
+            {
+              "key": "ef28",
+              "label": "Quantidade instalada EF 28?",
+            },
+          ]
+        }
+      },
+      {
+        "key": "text1",
+        "type": "text",
+        "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "",
+        "additional_type": null,
+      },
+      {
+        "key": "img_plus_input2",
+        "type": "img_plus_input",
+        "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": null,
+        "additonal_type": null,
+        "image": "Foto5",
+        "radio": [
+          {
+            "id": 0,
+            "description": "Não",
+          },
+          {
+            "id": 2,
+            "description": "Sim, com as seguintes dimensões em  metros:",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 2
+          },
+          "fields": [
+            {
+              "key": "Comprimento",
+              "label": "Comprimento: ",
+            },
+            {
+              "key": "Largura",
+              "label": "Largura: ",
+            },
+          ]
+        }
+      },
+      {
+        "key": "img_plus_input3",
+        "type": "img_plus_input",
+        "label": "As paredes de cobogó foram executadas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": null,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Não",
+          },
+          {
+            "id": 2,
+            "description": "Sim, com as seguintes dimensões em  metros:",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 2
+          },
+          "fields": [
+            {
+              "key": "altura1",
+              "label": "altura - parede 1: ",
+            },
+            {
+              "key": "altura2",
+              "label": "altura - parede 2: ",
+            },
+            {
+              "key": "comprimento1",
+              "label": "comprimento - parede 1: ",
+            },
+            {
+              "key": "comprimento2",
+              "label": "comprimento - parede 2: ",
+            },
+          ]
+        }
+      },
+      {
+        "key": "qualificacao",
+        "type": "picker",
+        "label": "Qual tipo de piso foi instalado?",
+        "description": "Selecionar alguma opção",
+        "placeholder": "exemplo",
+        "default_value": "",
+        "aditional_type": null,
+        "options": [
+          "Bloco de concreto intertravado",
+          "Cerâmico",
+          "Cimento desempenado",
+          "Granitina",
+          "Outros"
+        ],
+      },
+      {
+        "key": "img_plus_input4",
+        "type": "img_plus_input",
+        "label": "O teto foi pintado?",
+        "placeholder": "",
+        "description": "",
+        "default_value": null,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Não",
+          },
+          {
+            "id": 2,
+            "description": "Sim",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 2
+          },
+          "fields": [
+            {
+              "key": "altura1",
+              "label": "Qual a altura que foi pintada?",
+            },
+          ]
+        }
+      },
+      {
+        "key": "img_plus_input5",
+        "type": "img_plus_input",
+        "label": "Possuí rodameio?",
+        "placeholder": "",
+        "description": "",
+        "default_value": null,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Não",
+          },
+          {
+            "id": 2,
+            "description": "Sim",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 2
+          },
+          "fields": [
+            {
+              "key": "altura1",
+              "label": "Qual a altura da cerâmica 20x20?",
+            },
+          ]
+        }
+      },
+      {
+        "key": "img_plus_input5",
+        "type": "img_plus_input",
+        "label": "Possuí rodameio?",
+        "placeholder": "",
+        "description": "",
+        "default_value": null,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Não",
+          },
+          {
+            "id": 2,
+            "description": "Sim",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 0
+          },
+          "fields": [
+            {
+              "key": "altura1",
+              "label": "Dimensão que o revestimento foi aplicado?",
+            },
+          ]
+        }
+      },
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+[
+    {
+      "key": "servcaixa01",
+      "type": "img_plus_input",
+      "label": "A caixa em alvenaria foi instalada?",
+      "placeholder": "",
+      "description": "Selecionar alguma opção",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "Comprimento",
+            "label": "Comprimento: ",
+            "default_value": "1,2",
+
+          },
+          {
+            "key": "Largura",
+            "label": "Largura: ",
+            "default_value": "1,8",
+
+          },
+          {
+            "key": "Quantidade",
+            "label": "Altura: ",
+            "default_value": "1,5",
+
+          },
+        ]
+      }
+    },
+    {
+      "key": "servcaixa02",
+      "type": "radio",
+      "label": "As bombas foram instaladas?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "options": [
+        {
+          "id": 0,
+          "description": "Sim, duas",
+        },
+        {
+           "id": 1,
+           "description": "Não",
+        }
+      ]
+    },
+    {
+      "key": "servcaixa03",
+      "type": "radio",
+      "label": "A caixa em alvenaria foi revestida (pintada)?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "options": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        }
+      ]
+    },
+  ]

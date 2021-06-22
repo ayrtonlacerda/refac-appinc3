@@ -1,0 +1,89 @@
+[
+  {
+    "__v": 0,
+    "_id": "5ff7b17a329658002add90ed",
+    "anotacoes": "",
+    "anotacoesTipoConteudo": "text/markdown",
+    "casosRelacionados": [],
+    "codigoCaso": 777,
+    "codigoVestigio": "2013/2020-AppInc/01/PF/DF",
+    "descricao": "Solicitação Creche Tipo B",
+    "grupos": {},
+    "nome": "Caso Exemplo 2",
+    "privado": false,
+    "referencias": [],
+    "registroModificacao": {
+      "criadoEm": "2021-01-08T01:12:26.907Z",
+      "criadoPor": "Exemplo",
+      "ultimaModificacaoEm": "2021-01-08T01:12:26.907Z",
+      "ultimaModificacaoPor": "Exemplo",
+      "versao": 0
+    },
+    "status": "Em andamento",
+    "tags": [
+      "caso",
+      "exemplo",
+      "genética"
+    ],
+    "usuarios": {},
+    "uuid": "4aa1f091-139c-4186-85e6-ecd98b46432a"
+  },
+  {
+    "__v": 0,
+    "_id": "5ff7b17a329658002add90ee",
+    "anotacoes": "",
+    "anotacoesTipoConteudo": "text/markdown",
+    "casosRelacionados": [],
+    "codigoCaso": 7854,
+      "codigoVestigio": "2013/2020-AppInc/02/PF/DF",
+    "descricao": "Solicitação Creche Tipo C",
+    "grupos": {},
+    "nome": "Caso Exemplo 3",
+    "privado": false,
+    "referencias": [],
+    "registroModificacao": {
+      "criadoEm": "2021-01-08T01:12:26.909Z",
+      "criadoPor": "Exemplo",
+      "ultimaModificacaoEm": "2021-01-08T01:12:26.909Z",
+      "ultimaModificacaoPor": "Exemplo",
+      "versao": 0
+    },
+    "status": "Novo",
+    "tags": [
+      "caso",
+      "exemplo",
+      "genética"
+    ],
+    "usuarios": {},
+    "uuid": "992b42c7-18b3-45c7-af9d-0c87a841a507"
+  },
+  {
+    "__v": 0,
+    "_id": "5ff7b17a329658002add90ec",
+    "anotacoes": "",
+    "anotacoesTipoConteudo": "text/markdown",
+    "casosRelacionados": [],
+    "codigoCaso":7777,
+    "codigoVestigio": "2013/2020-AppInc/03/PF/DF",
+    "descricao": "Solicitação Creche Tipo A",
+    "grupos": {},
+    "nome": "Caso Exemplo 1",
+    "privado": false,
+    "referencias": [],
+    "registroModificacao": {
+      "criadoEm": "2021-01-08T01:12:26.887Z",
+      "criadoPor": "Exemplo",
+      "ultimaModificacaoEm": "2021-01-08T01:12:26.887Z",
+      "ultimaModificacaoPor": "Exemplo",
+      "versao": 0
+    },
+    "status": "Criado",
+    "tags": [
+      "caso",
+      "exemplo",
+      "genética"
+    ],
+    "usuarios": {},
+    "uuid": "c4b9ac30-f98d-454b-9768-17479d64b002"
+  }
+]

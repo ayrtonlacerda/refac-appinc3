@@ -1,0 +1,346 @@
+[
+  {
+    "key": "servdep01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servcozinha1",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "1,05"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "6"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "0,65"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "3,6"
+        },
+        {
+          "key": "E",
+          "label": "E - ",
+          "default_value": "3"
+        },
+        {
+          "key": "F",
+          "label": "F - ",
+          "default_value": "1,65"
+        },
+        {
+          "key": "G",
+          "label": "G - ",
+          "default_value": "2,55"
+        },
+        {
+          "key": "H",
+          "label": "H - ",
+          "default_value": "0,6"
+        },
+        {
+          "key": "I",
+          "label": "I - ",
+          "default_value": "0,9"
+        },
+        {
+          "key": "J",
+          "label": "J - ",
+          "default_value": "1,2"
+        },
+        {
+          "key": "K",
+          "label": "K - ",
+          "default_value": "1,8"
+        },
+        {
+          "key": "L",
+          "label": "L - ",
+          "default_value": "1,2"
+        },
+        {
+          "key": "M",
+          "label": "M - ",
+          "default_value": "0,3"
+        },
+        {
+          "key": "N",
+          "label": "N - ",
+          "default_value": "0,3"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+          "default_value": "2,6"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sercozinha02",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servcozinha2",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "ef15",
+          "label": "Quantidade instalada EF 15?",
+          "default_value": "2"
+        },
+        {
+          "key": "e21",
+          "label": "Quantidade instalada EF 21?",
+          "default_value": "1"
+        },
+        {
+          "key": "ef11",
+          "label": "Quantidade instalada EF 11?",
+          "default_value": "1"
+        },
+        {
+          "key": "pm04b",
+          "label": "Quantidade instalada PM04B?",
+          "default_value": "3"
+        },
+        {
+          "key": "ep03",
+          "label": "Quantidade instalada P03?",
+          "default_value": "2"
+        },
+        {
+          "key": "ef10",
+          "label": "Quantidade instalada EF10?",
+          "default_value": "3"
+        },
+        {
+          "key": "ef16",
+          "label": "Quantidade instalada EF16?",
+          "default_value": "2"
+        },
+        {
+          "key": "ef20",
+          "label": "Quantidade instalada EF20?",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sercozinha03",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "3",
+    "additional_type": null
+  },
+  {
+    "key": "sercozinha06",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "sercozinha07",
+    "type": "img_plus_input",
+    "label": "A cerâmica 20 cm x 20 cm foi aplicada na parede toda?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sercozinha08",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sercozinha04",
+    "type": "img_plus_input",
+    "label": "As bancadas de granito foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": "servcozinha3",
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim, com as seguintes dimensões em  metros:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "Comprimento da bancada 1",
+          "label": "Comprimento da bancada 1: ",
+          "default_value": "3,15"
+        },
+        {
+          "key": "Largura da bancada 1",
+          "label": "Largura da bancada 1: ",
+          "default_value": "0,625"
+        },
+        {
+          "key": "Comprimento da bancada 2",
+          "label": "Comprimento da bancada 2: ",
+          "default_value": "1,65"
+        },
+        {
+          "key": "Largura da bancada 2",
+          "label": "Largura da bancada 2: ",
+          "default_value": "0,295"
+        },
+        {
+          "key": "Comprimento da bancada 3",
+          "label": "Comprimento da bancada 3: ",
+          "default_value": "3"
+        },
+        {
+          "key": "Largura da bancada 3",
+          "label": "Largura da bancada 3: ",
+          "default_value": "0,6"
+        },
+        {
+          "key": "Comprimento da bancada 4",
+          "label": "Comprimento da bancada 4: ",
+          "default_value": "1,15"
+        },
+        {
+          "key": "Largura da bancada 4",
+          "label": "Largurada bancada 4: ",
+          "default_value": "0,6"
+        },
+        {
+          "key": "Comprimento da bancada 5",
+          "label": "Comprimento da bancada 5: ",
+          "default_value": "2,44"
+        },
+        {
+          "key": "Largura da bancada 5",
+          "label": "Largura da bancada 5: ",
+          "default_value": "0,585"
+        },
+        {
+          "key": "Comprimento da bancada 6",
+          "label": "Comprimento da bancada 6: ",
+          "default_value": "2,76"
+        },
+        {
+          "key": "Largura da bancada 6",
+          "label": "Largura da bancada 6: ",
+          "default_value": "0,58"
+        }
+      ]
+    }
+  },
+  {
+    "key": "sercozinha05",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

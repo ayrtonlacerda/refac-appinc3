@@ -1,0 +1,298 @@
+[
+  {
+    "key": "aspectos01",
+    "type": "img_plus_input",
+    "label": "Foi construído muro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ]
+  },
+  {
+    "key": "aspectos02",
+    "type": "img_plus_input",
+    "label": "Possui cinta inferior?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "aspectos03",
+    "type": "img_plus_input",
+    "label": "Possui cinta superior?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "aspectos04",
+    "type": "text",
+    "label": "Qual a altura do muro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "aspectos05",
+    "type": "text",
+    "label": "Qual é o espaçamento entre os pilaretes?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key":"aspectos06",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento externo, o muro foi chapiscado em toda a sua extensão?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Extensão (em metros):",
+        },
+      ]
+    }
+  },
+  {
+    "key": "aspectos07",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento externo, o muro foi rebocado em toda a sua extensão?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Extensão (em metros):",
+        },
+      ]
+    }
+  },
+  {
+    "key": "aspectos08",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento externo, o muro caiado em toda a sua extensão?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Extensão (em metros):",
+        },
+      ]
+    }
+  },
+
+  {
+    "key":"aspectos09",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento interno, o muro foi chapiscado em toda a sua extensão?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Extensão (em metros):",
+        },
+      ]
+    }
+  },
+  {
+    "key": "aspectos10",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento interno, o muro foi rebocado em toda a sua extensão?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Extensão (em metros):",
+        },
+      ]
+    }
+  },
+  {
+    "key": "aspectos11",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento interno, o muro foi caiado em toda a sua extensão?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Extensão (em metros):",
+        },
+      ]
+    }
+  },
+  {
+    "key": "aspectos12",
+    "type": "text",
+    "label": "Qual o perímetro do muro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "aspectos13",
+    "type": "picker",
+    "label": "Qual foi a solução de esgoto adotada? Complete com as medidas adequadas",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Rede coletora de esgoto",
+      "Fossa séptica",
+      "Sumidouro",
+      "Filtro anaeróbico",
+      "Outra"
+    ]
+  }
+]
