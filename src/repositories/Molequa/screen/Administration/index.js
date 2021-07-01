@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import Toast from 'react-native-toast-message';
 import { useCommons } from '../../../../hooks';
 import { useForm } from '../../../../global';
-import Foto2 from '../../../../assets/img/Foto2.png';
+import { MolequaImgs } from '../../../../assets';
 // ui
 import * as Atoms from '../../../../components/Atom';
 import * as Molecules from '../../../../components/Molecules';
@@ -14,7 +14,7 @@ const Administration = () => {
   const { navigation, route } = useCommons();
   console.log('Screen -> Administration');
 
-  const { subAreas } = route.params;
+  const { subAreas, image } = route.params;
 
   const handleBack = useCallback(() => {
     // handleReset();
@@ -25,7 +25,7 @@ const Administration = () => {
       <Molecules.Header title={route.params.title || 'Novo Local'} back />
       <Atoms.Container justifyContent="space-between" p={3}>
         <Atoms.Scroll noPaddingX>
-          <Atoms.Image src={Foto2} />
+          <Atoms.Image src={MolequaImgs[image]} />
           {subAreas?.map((nameArea, index) => (
             <Molecules.StepCard
               title={`${index + 1} - ${nameArea}`}

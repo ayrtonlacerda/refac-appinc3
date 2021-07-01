@@ -45,6 +45,8 @@ const App = () => {
     });
   }, []);
 
+  // teste ci
+
   return (
     <ThemeProvider theme={theme}>
       <Provider url={BASE_URL}>

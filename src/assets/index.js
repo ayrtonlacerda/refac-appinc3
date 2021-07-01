@@ -10,7 +10,12 @@ import LOCAL_CRIME from './img/local_crime.jpg';
 import COMP_FORENSE from './img/computacao_forense.jpg';
 import PER_2 from './img/per2.jpg';
 
-import Foto2 from './img/Foto2.png';
+import creche1 from './img/creche1.png';
+import PLANTA_DO_BLOCO_ADM from './img/planta_do_bloco_adm.png';
+import PLANTA_DO_BLOCO_MULTIUSO from './img/planta_do_bloco_multiuso.png';
+import PLANTA_DO_BLOCO_PEDAGOGIA1 from './img/planta_do_bloco_pedagogia1.png';
+import PLANTA_DO_BLOCO_PEDAGOGIA2 from './img/planta_do_bloco_pedagogia2.png';
+import PLANTA_DO_BLOCO_SERVICO from './img/planta_do_bloco_servico.png';
 import Foto3 from './img/Foto3.png';
 import Foto4 from './img/Foto4.png';
 import Foto5 from './img/Foto5.png';
@@ -176,6 +181,35 @@ import crechec_adm_alm2 from './img/crechec_adm_alm2.png';
 import crechec_adm_alm_tabela from './img/crechec_adm_alm_tabela.png';
 import crechec_adm_prof from './img/crechec_adm_prof.png';
 import crechec_adm_prof_tabela from './img/crechec_adm_prof_tabela.png';
+import sanitariovestiario from './img/sanitariovestiario.png';
+import esquadria_v1quadra from './img/esquadria_v1quadra.png';
+import quadradeposito from './img/quadradeposito.png';
+import esquadriadepositoquadra from './img/esquadriadepositoquadra.png';
+import quadra from './img/quadra.png';
+import alambrado from './img/alambrado.png';
+import quadrapadrao from './img/quadrapadrao.png';
+import plantaquadra from './img/plantaquadra.png';
+import quadracobogo from './img/quadracobogo.png';
+import arquibancada from './img/arquibancada.png';
+import arquibancadacorredores from './img/arquibancadacorredores.png';
+import quadrapilares from './img/quadrapilares.png';
+import plantaquadra2 from './img/plantaquadra2.png';
+import coberta1 from './img/coberta1.png';
+import coberta2 from './img/coberta2.png';
+import coberta3 from './img/coberta3.png';
+import coberta4 from './img/coberta4.png';
+import coberta5 from './img/coberta5.png';
+import crechec_pre_sanfem from './img/crechec_pre_sanfem.png';
+import crechec_pre_sanfem2 from './img/crechec_pre_sanfem2.png';
+import crechec_pre_sanfem_tabela from './img/crechec_pre_sanfem_tabela.png';
+import crechec_pre_sanmas from './img/crechec_pre_sanmas.png';
+import crechec_pre_sanmas_tabela from './img/crechec_pre_sanmas_tabela.png';
+import crechec_pre_creche from './img/crechec_pre_creche.png';
+import crechec_pre_creche_tabela from './img/crechec_pre_creche_tabela.png';
+import crechec_pre_pre from './img/crechec_pre_pre.png';
+import crechec_pre_pre_tabela from './img/crechec_pre_pre_tabela.png';
+import crechec_pre_solarium1 from './img/crechec_pre_solarium1.png';
+import crechec_pre_solarium2 from './img/crechec_pre_solarium2.png';
 
 export const Imgs = {
   LOCAL_CRIME,
@@ -184,6 +218,24 @@ export const Imgs = {
 };
 
 export const MolequaImgs = {
+  coberta1,
+  coberta2,
+  coberta3,
+  coberta4,
+  coberta5,
+  plantaquadra2,
+  quadrapilares,
+  arquibancadacorredores,
+  arquibancada,
+  quadracobogo,
+  plantaquadra,
+  quadrapadrao,
+  alambrado,
+  quadra,
+  esquadriadepositoquadra,
+  quadradeposito,
+  esquadria_v1quadra,
+  sanitariovestiario,
   crechec_solarium2,
   crechec_esquadrias_banheiro,
   crechec_banheiro,
@@ -205,7 +257,6 @@ export const MolequaImgs = {
   pedrarolada,
   pisodecimento,
   placascimento,
-  Foto2,
   Foto3,
   Foto4,
   Foto5,
@@ -350,4 +401,21 @@ export const MolequaImgs = {
   crechec_adm_alm_tabela,
   crechec_adm_prof,
   crechec_adm_prof_tabela,
+  crechec_pre_sanfem,
+  crechec_pre_sanfem2,
+  crechec_pre_sanfem_tabela,
+  crechec_pre_sanmas,
+  crechec_pre_sanmas_tabela,
+  crechec_pre_creche,
+  crechec_pre_creche_tabela,
+  crechec_pre_pre,
+  crechec_pre_pre_tabela,
+  crechec_pre_solarium1,
+  crechec_pre_solarium2,
+  PLANTA_DO_BLOCO_ADM,
+  PLANTA_DO_BLOCO_MULTIUSO,
+  PLANTA_DO_BLOCO_PEDAGOGIA1,
+  PLANTA_DO_BLOCO_PEDAGOGIA2,
+  PLANTA_DO_BLOCO_SERVICO,
+  creche1,
 };
