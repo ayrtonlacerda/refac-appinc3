@@ -7,7 +7,7 @@
       "description": "",
       "default_value": "",
       "additonal_type": null,
-      "image": "servvestf3",
+      "image": "servvestf1",
       "radio": null,
       "input": {
         "dependency": null,
@@ -178,7 +178,7 @@
       "description": "Selecionar alguma opção",
       "default_value": 0,
       "additonal_type": null,
-      "image": "servvestf3",
+      "image": null,
       "radio": [
         {
           "id": 0,

@@ -90,6 +90,15 @@ import crechec_serv_copafuncionario from './crechec_serv_copafuncionario.json';
 import crechec_serv_higienizacao from './crechec_serv_higienizacao.json';
 import crechec_serv_lactario from './crechec_serv_lactario.json';
 import crechec_serv_areaexterna from './crechec_serv_areaexterna.json';
+import quadra_vestiario from './quadra_vestiario.json';
+import quadra_vestiario2 from './quadra_vestiario2.json';
+import quadra_deposito from './quadra_deposito.json';
+import quadra_area from './quadra_areaexterna.json';
+import quadra_arquibancada from './quadra_arquibancada.json';
+import quadra_quadra from './quadra_quadra.json';
+import quadra_pilares from './quadra_pilares.json';
+import quadra_quadraareaexterna from './quadra_quadraareaexterna.json';
+import quadra_coberta from './quadra_coberta.json';
 
 import crechec_adm_banfem from './crechec_adm_banfem.json';
 import crechec_adm_banmas from './crechec_adm_banmas.json';
@@ -97,6 +106,14 @@ import crechec_adm_adm from './crechec_adm_adm.json';
 import crechec_adm_almo from './crechec_adm_almo.json';
 import crechec_adm_prof from './crechec_adm_prof.json';
 import crechec_adm_area from './crechec_adm_area.json';
+
+import crechec_pre_sanfem from './crechec_pre_sanfem.json';
+import crechec_pre_creche3 from './crechec_pre_creche.json';
+import crechec_pre_solarium1 from './crechec_pre_solarium1.json';
+import crechec_pre_pre from './crechec_pre_pre.json';
+import crechec_pre_solarium2 from './crechec_pre_solarium2.json';
+import crechec_pre_sanmas from './crechec_pre_sanmas.json';
+import crechec_pre_areaexterna from './crechec_pre_area.json';
 
 export const subAreas = {
   'Recepção': recepcao,
@@ -206,4 +223,26 @@ export const subAreas = {
   'Lactário - Creche C': crechec_serv_lactario,
   'Área externa - Creche C': crechec_serv_areaexterna,
 
+  // Quadra coberta:
+
+  // 'Vestiário'
+  'Vestiário 1': quadra_vestiario,
+  'Vestiário 2': quadra_vestiario2,
+  'Quadra/Depósito': quadra_deposito,
+  'Quadra/Área Externa': quadra_area,
+
+  // Quadra
+  Arquibancada: quadra_arquibancada,
+  Quadra: quadra_quadra,
+  Pilares: quadra_pilares,
+  'Quadra/Área Externa': quadra_quadraareaexterna,
+  Coberta: quadra_coberta,
+  // Pré-escola
+  'Sanitário Feminino - Pré escola': crechec_pre_sanfem,
+  'Creche III': crechec_pre_creche3,
+  'Solarium 1 - Pré escola ': crechec_pre_solarium1,
+  'Pré-escola': crechec_pre_pre,
+  'Solarium 2 - Pré escola': crechec_pre_solarium2,
+  'Sanitário Masculino - Pré escola': crechec_pre_sanmas,
+  'Área externa - Pré escola': crechec_pre_areaexterna,
 };

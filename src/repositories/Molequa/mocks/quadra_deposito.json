@@ -1,13 +1,13 @@
 [
   {
-    "key": "adm_direx1",
+    "key": "deposito01",
     "type": "img_plus_input",
-    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "label": "Complete com as medidas em metros nos itens a seguir.",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": "",
     "additonal_type": null,
-    "image": "adm_direx1",
+    "image": "quadradeposito",
     "radio": null,
     "input": {
       "dependency": null,
@@ -15,131 +15,54 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "3,45"
+          "default_value": "0,8"
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "2,29"
+          "default_value": "1,55"
         },
         {
           "key": "C",
           "label": "C - ",
-          "default_value": "3,45"
-        },
-        {
-          "key": "D",
-          "label": "D - ",
-          "default_value": "2,29"
+          "default_value": "3,35"
         },
         {
           "key": "Pe-direito",
-          "label": "Pe-direito - ",
+          "label": "Pé-direito - ",
           "default_value": "2,6"
         }
       ]
     }
   },
   {
-    "key": "adm_direx2",
+    "key": "deposito02",
     "type": "img_plus_input",
-    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": "",
     "additonal_type": null,
-    "image": "adm_direx2",
+    "image": "esquadriadepositoquadra",
     "radio": null,
     "input": {
       "dependency": null,
       "fields": [
         {
-          "key": "p05",
-          "label": "Quantidade instalada P05?",
-          "default_value": "1"
-        },
-        {
-          "key": "ef23",
-          "label": "Quantidade instalada EF 28?",
+          "key": "p02",
+          "label": "Quantidade de Porta de Madeira:",
           "default_value": "1"
         }
       ]
     }
   },
   {
-    "key": "adm_direx10",
-    "type": "text",
-    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "3",
-    "additional_type": null
-  },
-  {
-    "key": "adm_direx3",
-    "type": "radio",
-    "label": "O teto foi pintado?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 1,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "adm_direx",
-    "type": "radio",
-    "label": "Possui rodameio?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "adm_direx4",
-    "type": "text",
-    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,1",
-    "additional_type": null
-  },
-  {
-    "key": "adm_direx5",
-    "type": "text",
-    "label": "Qual a altura que foi pintada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,5",
-    "additional_type": null
-  },
-  {
-    "key": "adm_direx6",
+    "key": "deposito03",
     "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo perímetro?",
+    "label": "Foi instalado cobogó nas paredes do vestiário?",
     "placeholder": "",
     "description": "",
-    "default_value": 2,
+    "default_value": null,
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -149,6 +72,73 @@
       },
       {
         "id": 2,
+        "description": "Sim, com as seguintes dimensões:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "altura1",
+          "label": "altura: ",
+          "default_value": "0,5"
+        },
+        {
+          "key": "comprimento1",
+          "label": "comprimento: ",
+          "default_value": "1,2"
+        }
+      ]
+    }
+  },
+  {
+    "key": "deposito04",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "deposito05",
+    "type": "text",
+    "label": "Qual a altura da parede foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "2,6",
+    "additional_type": null
+  },
+  {
+    "key": "deposito06",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
         "description": "Sim"
       }
     ],
@@ -160,18 +150,18 @@
       "fields": [
         {
           "key": "revestimento",
-          "label": "Não, em:"
+          "label": "Quantidade em metros:"
         }
       ]
     }
   },
   {
-    "key": "adm_direx7",
+    "key": "deposito14",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "Cerâmico",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

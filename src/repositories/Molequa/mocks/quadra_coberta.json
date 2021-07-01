@@ -1,0 +1,324 @@
+[
+  {
+    "key": "coberturaquadra01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir.",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta1",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "4,14"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "5,1"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "7,12"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "5,1"
+        },
+        {
+          "key": "E",
+          "label": "E - ",
+          "default_value": "9,16"
+        },
+        {
+          "key": "F",
+          "label": "F - ",
+          "default_value": "5,1"
+        },
+        {
+          "key": "G",
+          "label": "G - ",
+          "default_value": "7,12"
+        },
+        {
+          "key": "H",
+          "label": "H - ",
+          "default_value": "5,1"
+        },
+        {
+          "key": "I",
+          "label": "I - ",
+          "default_value": "4,14"
+        },
+        {
+          "key": "extensão",
+          "label": "Extensão da coberta - ",
+          "default_value": "38"
+        }
+      ]
+    }
+  },
+  {
+    "key": "coberturaquadra02",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir.",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta2",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "4,14"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "0,6"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "1,28"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "3,25"
+        }
+      ]
+    }
+  },
+  {
+    "key": "coberturaquadra03",
+    "type": "radio",
+    "label": "A estrutura metálica foi pintada com primer epóxi?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "coberturaquadra04",
+    "type": "img_plus_input",
+    "label": "Observe a estrutura coberta e preencha com as informações a seguir em metros:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta3",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A (espaçamento entre nós da treliça) - ",
+          "default_value": "0,8"
+        },
+        {
+          "key": "B",
+          "label": "B (banzo - altura da treliça) ",
+          "default_value": "0,8"
+        },
+        {
+          "key": "C",
+          "label": "Comprimento do arco - ",
+          "default_value": "25,5"
+        },
+        {
+          "key": "D",
+          "label": "Qtd de arcos - ",
+          "default_value": "7"
+        },
+        {
+          "key": "D",
+          "label": "Qtd de treliças - ",
+          "default_value": "16"
+        }
+      ]
+    }
+  },
+  {
+    "key": "coberturaquadra05",
+    "type": "radio",
+    "label": "O sistema de contraaventuramento foi instalado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "coberturaquadra06",
+    "type": "img_plus_input",
+    "label": "Perfil do banzo superior (altura da treliça):",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta4",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "0,035"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "0,15"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "0,035"
+        },
+        {
+          "key": "c3",
+          "label": "Esp - ",
+          "default_value": "0,00335"
+        }
+      ]
+    }
+  },
+  {
+    "key": "coberturaquadra07",
+    "type": "img_plus_input",
+    "label": "Perfil das diagonais:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta4",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "0,035"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "0,35"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "0,035"
+        },
+        {
+          "key": "c3",
+          "label": "Esp - ",
+          "default_value": "0,003"
+        }
+      ]
+    }
+  },
+  {
+    "key": "coberturaquadra08",
+    "type": "img_plus_input",
+    "label": "Perfil do banzo inferior (altura da treliça):",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta4",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "0,035"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "0,15"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "0,035"
+        },
+        {
+          "key": "c3",
+          "label": "Esp - ",
+          "default_value": "0,00335"
+        }
+      ]
+    }
+  },
+  {
+    "key": "coberturaquadra09",
+    "type": "img_plus_input",
+    "label": "Perfil das terças:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "coberta5",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "0,025"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "0,075"
+        },
+        {
+          "key": "c3",
+          "label": "Esp - ",
+          "default_value": "0,0026"
+        }
+      ]
+    }
+  }
+]
