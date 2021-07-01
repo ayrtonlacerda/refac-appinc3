@@ -29,7 +29,8 @@ const Steps = () => {
     mock,
     form,
     retriveStore,
-    handleSetExam,
+    setCurrentExam,
+    //  handleSetExam,
     handleProgressStepForm,
     handleCreateArrayForm,
   } = useForm();
@@ -66,7 +67,7 @@ const Steps = () => {
       console.log({ err });
     }
 
-    handleSetExam(exam);
+    setCurrentExam(exam);
 
     if (mock.area === 'pericia_molequa') {
       // tranferir pra outra pagina
@@ -143,32 +144,32 @@ const Steps = () => {
           </Atoms.Container>
           {/*! loading && (response.data?.length > 0 || creches) ? */ creches ? (
             /* (response.data?.length > 0 ? response.data : creches) */creches.map(
-              (exam) => !offlineExams?.find(
-                ({ doc }) => doc.exam.codigoVestigio === exam.codigoVestigio,
-              ) && (response.ok
-                ? (
-                  <Molecules.StepCard
-                    // percentage={() => handleProgressStepForm(mock.form.fields)}
-                    title={`Vestígio: ${exam.codigoVestigio}`}
-                    description={form?.[exam.codigoVestigio]?.description || exam?.nome}
-                    onClickCard={
-                      () => handleSelectExam(exam)
-                    }
-                  />
-                )
-                : (
-                  <Molecules.StepCard
-                    // percentage={() => handleProgressStepForm(mock.form.fields)}
-                    title={`Vestígio: ${exam.codigoVestigio}`}
-                    description={
-                      form?.[exam.codigoVestigio]?.description
-                      || exam?.description
-                    }
-                    onClickCard={
-                      () => handleSelectExam(exam)
-                    }
-                  />
-                )
+            (exam) => !offlineExams?.find(
+              ({ doc }) => doc.exam.codigoVestigio === exam.codigoVestigio,
+            ) && (response.ok
+              ? (
+                <Molecules.StepCard
+                  // percentage={() => handleProgressStepForm(mock.form.fields)}
+                  title={`Vestígio: ${exam.codigoVestigio}`}
+                  description={form?.[exam.codigoVestigio]?.description || exam?.nome}
+                  onClickCard={
+                    () => handleSelectExam(exam)
+                  }
+                />
+              )
+              : (
+                <Molecules.StepCard
+                  // percentage={() => handleProgressStepForm(mock.form.fields)}
+                  title={`Vestígio: ${exam.codigoVestigio}`}
+                  description={
+                    form?.[exam.codigoVestigio]?.description
+                    || exam?.description
+                  }
+                  onClickCard={
+                    () => handleSelectExam(exam)
+                  }
+                />
+              )
               ),
           )
 

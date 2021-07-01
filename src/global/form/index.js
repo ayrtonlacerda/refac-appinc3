@@ -103,6 +103,7 @@ export const useForm = () => {
     setMock,
     setForm,
     setValueInForm,
+    setCurrentExam,
     handleReset,
     handleSetExam,
     handleCreateForm,
