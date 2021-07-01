@@ -7,64 +7,13 @@ on:
   pull_request:
     branches:
       - master
-  workflow_dispatch:
-    inputs:
-      comments:
-        description: 'Comments'
-        required: true
-        default: 'Manual build Actions'
 
 jobs:
   build-android-adhoc:
     runs-on: ubuntu-latest
     steps:
-      - name: Getting the repo
-        uses: actions/checkout@v2
-
-      - name: Installing node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-
-      - name: Install React Native CLI
-        run: yarn global add react-native-cli
-
-      - name: Install yarn dependencies
-        run: yarn install
-
-      - name: Cache Gradle Wrapper
-        uses: actions/cache@v2
-        with:
-          path: ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
-
-      - name: Cache Gradle Dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.gradle/caches
-          key: ${{ runner.os }}-gradle-caches-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
-          restore-keys: ${{ runner.os }}-gradle-caches-
-
-      - name: Building bundle
-        run: |
-          yarn react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
-
-      - name: Build android
-        env:
-          KEYSTORE_ALIAS_PASSPHRASE: appinc
-          KEYSTORE_ALIAS: release
-          KEYSTORE_PASSPHRASE: appinc
-        run: |
-          export VERSION_CODE=${{ github.run_number }}
-          export VERSION_NAME=1.0.${{ github.run_number }}
-          echo ${{ secrets.RELEASE_KEYSTORE }} | base64 --decode > android/app/release.keystore
-          cd android && ./gradlew -PversCode=$VERSION_CODE -PversName=$VERSION_NAME :app:assembleStaging
-
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: artifact
-          path: android/app/build/outputs/apk/staging/app-staging.apk
+      - name: React Native Build
+        uses: bamachoub/react-native-build-action@v1.0.0
 
   upload-android:
     needs: build-android-adhoc
@@ -81,4 +30,4 @@ jobs:
           appId: ${{secrets.FIREBASE_APP_ID_ANDROID}}
           token: ${{secrets.FIREBASE_TOKEN}}
           groups: devs
-          file: app-staging.apk
+          file: app/build/outputs/apk/release/app-release.apk
