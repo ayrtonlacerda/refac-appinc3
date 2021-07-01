@@ -39,17 +39,7 @@ jobs:
 
       - name: Build Android App Bundle
         run: |
-          cd android && ./gradlew bundleRelease --no-daemon
-
-      - name: Sign App Bundle
-        id: sign_app
-        uses: r0adkll/sign-android-release@v1
-        with:
-          releaseDirectory: android/app/build/outputs/bundle/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: release
-          keyStorePassword: ${{ secrets.STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          cd android && ./gradlew assembleRelease
 
   upload-android:
     needs: build-android-adhoc
@@ -66,4 +56,4 @@ jobs:
           appId: ${{secrets.FIREBASE_APP_ID_ANDROID}}
           token: ${{secrets.FIREBASE_TOKEN}}
           groups: devs
-          file: /app/build/outputs/bundle/release/app-release.apk
+          file: /app/build/outputs/apk/release/app-release.apk
