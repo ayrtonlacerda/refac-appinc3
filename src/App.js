@@ -29,23 +29,11 @@ MaterialIcons.loadFont();
 MaterialCommunityIcons.loadFont();
 
 const App = () => {
-  /* const [movies, setMovies] = React.useState([]);
-
-  console.log({ movies });
-
-  React.useEffect(() => {
-    fetch('/api/movies')
-      .then((res) => res.json())
-      .then((json) => setMovies(json.movies));
-  }, []); */
-
   useEffect(() => {
     Geolocation.setRNConfiguration({
       authorizationLevel: 'always',
     });
-  }, []);
-
-  // teste ci
+  }, [])
 
   return (
     <ThemeProvider theme={theme}>
