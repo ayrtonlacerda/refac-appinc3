@@ -13,9 +13,10 @@ import DB from '../../../../database';
 import Estatico1 from '../../../../assets/estaticos1/estatico1.png';
 
 import { subAreas as subAreasMocks } from '../../mocks';
+import * as options from '../../mocks/mocksmolequa';
 
 // TODO: retirar options daqui e colocar no json de formulario molequa
-const options = [
+/* const options = [
   {
     label: 'ADMINISTRAÇÃO',
     screen: 'Administration',
@@ -223,23 +224,21 @@ const options = [
     ],
   },
 ];
-
+ */
 const Estatica1 = ({ route }) => {
   const { navigation } = useCommons();
   const {
     mock, setKeysOfForm, keysOfForm, currentExam,
   } = useForm();
 
-  // console.log('Teste mock:', mock.form);
+  console.log({ o: options[currentExam.tipo], t: currentExam.tipo })
 
   const { title, offline } = route.params;
-
-  console.log({ offline });
 
   const handleSetForm = React.useCallback(async (form) => {
     let keys = {};
 
-    each(options, (local) => {
+    each(options[currentExam.tipo], (local) => {
       each(local.subAreas, (subareas) => {
         if (subAreasMocks[subareas]) {
           each(subAreasMocks[subareas], (field) => {
@@ -251,9 +250,9 @@ const Estatica1 = ({ route }) => {
         }
       });
     });
-    await DB.insert(currentExam, { keysOfForm: keys });
+    await DB.insert(currentExam.codigoVestigio, { keysOfForm: keys });
     setKeysOfForm(keys);
-  }, []);
+  }, [currentExam, options]);
 
   const navigationAdministration = React.useCallback((item) => {
     navigation.navigate(item.screen, item.screen === 'Forms' ? {
@@ -290,7 +289,7 @@ const Estatica1 = ({ route }) => {
           </Atom.Container>
           <Atom.Container variant="row" mt="5">
             <Atom.Container variant="column">
-              {options.map(
+              {options[currentExam.tipo].map(
                 (item, index) => index < 4 && (
                   <Atom.Button
                     textButton={item.label}
@@ -306,7 +305,7 @@ const Estatica1 = ({ route }) => {
               )}
             </Atom.Container>
             <Atom.Container variant="column" pl="2">
-              {options.map(
+              {options[currentExam.tipo].map(
                 (item, index) => index >= 4 && (
                   <Atom.Button
                     textButton={item.label}
