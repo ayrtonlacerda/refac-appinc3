@@ -1,6 +1,12 @@
 name: Build Android adhoc
 
 on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
   workflow_dispatch:
     inputs:
       comments:
@@ -14,27 +20,46 @@ jobs:
     steps:
       - name: Getting the repo
         uses: actions/checkout@v2
+
       - name: Installing node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
       - name: Install React Native CLI
-        run: |
-          yarn global add react-native-cli
+        run: yarn global add react-native-cli
+
       - name: Install yarn dependencies
-        run: |
-          yarn install
+        run: yarn install
+
+      - name: Cache Gradle Wrapper
+        uses: actions/cache@v2
+        with:
+          path: ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-wrapper-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
+
+      - name: Cache Gradle Dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.gradle/caches
+          key: ${{ runner.os }}-gradle-caches-${{ hashFiles('gradle/wrapper/gradle-wrapper.properties') }}
+          restore-keys: ${{ runner.os }}-gradle-caches-
+
       - name: Building bundle
         run: |
           yarn react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
+
       - name: Build android
         env:
-          KEYSTORE_ALIAS_PASSPHRASE: ${{ secrets.STAGING_KEYSTORE_ALIAS_PASSPHRASE }}
-          KEYSTORE_ALIAS: ${{ secrets.STAGING_KEYSTORE_ALIAS }}
-          KEYSTORE_PASSPHRASE: ${{ secrets.STAGING_KEYSTORE_PASSPHRASE }}
+          KEYSTORE_ALIAS_PASSPHRASE: appinc
+          KEYSTORE_ALIAS: release
+          KEYSTORE_PASSPHRASE: appinc
         run: |
           export VERSION_CODE=${{ github.run_number }}
           export VERSION_NAME=1.0.${{ github.run_number }}
-          echo ${{ secrets.STAGING_KEYSTORE }} | base64 --decode > android/app/staging.keystore
+          echo ${{ secrets.RELEASE_KEYSTORE }} | base64 --decode > android/app/release.keystore
           cd android && ./gradlew -PversCode=$VERSION_CODE -PversName=$VERSION_NAME :app:assembleStaging
+
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -49,10 +74,11 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: artifact
+
       - name: upload artifact to Firebase App Distribution
         uses: wzieba/Firebase-Distribution-Github-Action@v1
         with:
           appId: ${{secrets.FIREBASE_APP_ID_ANDROID}}
           token: ${{secrets.FIREBASE_TOKEN}}
-          groups: android_testers
+          groups: devs
           file: app-staging.apk
