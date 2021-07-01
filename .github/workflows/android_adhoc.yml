@@ -41,15 +41,13 @@ jobs:
         run: |
           cd android && ./gradlew bundleRelease --no-daemon
 
-      - name: Sign App Bundle
-        id: sign_app
-        uses: r0adkll/sign-android-release@v1
+      - name: Build Signed APK
+        uses: victorbnl/build-signed-apk@main
         with:
-          releaseDirectory: android/app/build/outputs/bundle/release
-          signingKeyBase64: ${{ secrets.SIGNING_KEY }}
-          alias: release
-          keyStorePassword: ${{ secrets.STORE_PASSWORD }}
-          keyPassword: ${{ secrets.KEY_PASSWORD }}
+          keystore: release
+          keystore_password: ${{ secrets.STORE_PASSWORD }}
+          key_alias: release
+          key_password: ${{ secrets.KEY_PASSWORD }}
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
