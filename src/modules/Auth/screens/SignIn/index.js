@@ -5,6 +5,7 @@ import useFetch from 'use-http';
 import { setLocalStorage, getLocalStorage } from '../../../../service/storage';
 import { useUser } from '../../../../global';
 import * as Atom from '../../../../components/Atom';
+import * as Molecules from '../../../../components/Molecules';
 import { Imgs } from '../../../../assets';
 import { useCommons } from '../../../../hooks';
 import * as db from '../../../../db';
@@ -20,7 +21,6 @@ const SignIn = () => {
     const retriveUser = async () => {
       try {
         const user = await getLocalStorage('@appinc_user');
-        console.log({ user });
         setUser(user);
       } catch (err) {
         console.log({ err });
@@ -33,6 +33,8 @@ const SignIn = () => {
   const {
     post, response, loading, error,
   } = useFetch();
+
+  console.log({ error, loading, response });
 
   const handleSignIn = useCallback(async () => {
     if (!auth.user || !auth.password) {
@@ -51,6 +53,7 @@ const SignIn = () => {
 
     // TODO -  salvar no local e login automatico
     const user = await post('/auth/login', auth);
+    console.log({ user });
     if (response.ok) {
       setLocalStorage('@appinc_user', user);
       setUser(user);

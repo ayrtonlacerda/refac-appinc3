@@ -10,7 +10,6 @@ const Text = styled.Text`
   ${layout}
   ${typography}
   letter-spacing: 0.9px;
-  font-family: Roboto;
 `;
 
 Text.defaultProps = {

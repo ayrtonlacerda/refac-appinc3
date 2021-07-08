@@ -5,7 +5,7 @@
       "label": "Complete com as medidas em metros nos itens a seguir:",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": "",
       "additonal_type": null,
       "image": "servlav1",
       "radio": null,
@@ -15,54 +15,68 @@
           {
             "key": "A",
             "label": "A - ",
+            "default_value": "1,05",
+
           },
           {
             "key": "B",
             "label": "B - ",
+            "default_value": "3",
+
           },
           {
             "key": "C",
             "label": "C - ",
+            "default_value": "1,5",
+
           },
           {
             "key": "D",
             "label": "D - ",
+            "default_value": "4,05",
+
           },
           {
             "key": "E",
             "label": "E - ",
+            "default_value": "3,45",
+
           },
           {
             "key": "F",
             "label": "F - ",
+            "default_value": "1,05",
+
           },
           {
             "key": "G",
             "label": "G - ",
+            "default_value": "1,8",
+
           },
           {
             "key": "H",
             "label": "H - ",
+            "default_value": "2,25",
+
           },
           {
             "key": "I",
             "label": "I - ",
+            "default_value": "0,8",
+
           },
           {
             "key": "J",
             "label": "J - ",
-          },
-          {
-            "key": "Area",
-            "label": "Area - ",
-          },
-          {
-            "key": "Perimetro",
-            "label": "Perimetro - ",
+            "default_value": "3",
+
           },
           {
             "key": "Pe-direito",
             "label": "Pe-direito - ",
+            "default_value": "2,6",
+
           }
         ]
       }
@@ -73,7 +87,7 @@
       "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": "",
       "additonal_type": null,
       "image": "servlav2",
       "radio": null,
@@ -81,21 +95,29 @@
         "dependency": null,
         "fields": [
           {
-            "key": "p03",
+            "key": "p05",
             "label": "Quantidade instalada P05?",
+            "default_value": "2",
+
           },
           {
             "key": "ef23",
             "label": "Quantidade instalada EF 23?",
+            "default_value": "1",
+
           },
           {
             "key": "ef22",
             "label": "Quantidade instalada EF 22?",
+            "default_value": "1",
+
           },
           {
             "key": "pm04b",
             "label": "Quantidade instalada PM04B?",
-          },
+            "default_value": "1",
+
+          }
         ]
       }
     },
@@ -105,8 +127,93 @@
         "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
         "placeholder": "",
         "description": "",
-        "default_value": "",
+        "default_value":"4",
         "additional_type": null,
+      },
+      {
+        "key": "servlavx07",
+        "type": "radio",
+        "label": "O teto foi pintado?",
+        "placeholder": "",
+        "description": "",
+        "default_value": 0,
+        "additonal_type": null,
+        "image": null,
+        "options": [
+          {
+            "id": 0,
+            "description": "Sim",
+          },
+          {
+            "id": 1,
+            "description": "Não",
+          },
+        ],
+      },
+      {
+        "key": "servlav08",
+        "type": "img_plus_input",
+        "label": "A cerâmica 20cm x 20cm foi aplicada na parede toda?",
+        "placeholder": "",
+        "description": "",
+        "default_value": 0,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Sim",
+          },
+          {
+            "id": 1,
+            "description": "Não",
+          },
+
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 1
+          },
+          "fields": [
+            {
+              "key": "revestimento",
+              "label": "Não, em:",
+            },
+          ]
+        }
+      },
+      {
+        "key": "servlav07",
+        "type": "img_plus_input",
+        "label": "O revestimento foi aplicado em todo perímetro?",
+        "placeholder": "",
+        "description": "",
+        "default_value": 0,
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Sim",
+          },
+          {
+            "id": 1,
+            "description": "Não",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 1
+          },
+          "fields": [
+            {
+              "key": "revestimento",
+              "label": "Não, em:",
+            },
+          ]
+        }
       },
       {
         "key": "servlav04",
@@ -114,58 +221,75 @@
         "label": "As bancadas de granito foram instaladas?",
         "placeholder": "",
         "description": "Selecionar alguma opção",
-        "default_value": null,
+        "default_value": 0,
         "additonal_type": null,
         "image": "servlav3",
         "radio": [
           {
             "id": 0,
-            "description": "Não",
+            "description": "Sim, com as seguintes dimensões em  metros:",
           },
           {
-            "id": 2,
-            "description": "Sim, com as seguintes dimensões em  metros:",
-          }
+            "id": 1,
+            "description": "Não",
+          },
+
         ],
         "input": {
           "dependency": {
             "key": "radio",
-            "value": 2
+            "value": 0
           },
           "fields": [
             {
-              "key": "Comprimento",
+              "key": "Comprimento1",
               "label": "Comprimento da bancada 1: ",
+              "default_value": "1,8",
+
             },
             {
-              "key": "Largura",
+              "key": "Largura1",
               "label": "Largura da bancada 1: ",
+              "default_value": "0,5",
+
             },
             {
-                "key": "Comprimento",
+                "key": "Comprimento2",
                 "label": "Comprimento da bancada 2: ",
+                "default_value": "1,35",
+
               },
               {
-                "key": "Largura",
+                "key": "Largura2",
                 "label": "Largura da bancada 2: ",
+                "default_value": "0,5",
+
               },
               {
-                "key": "Comprimento",
+                "key": "Comprimento3",
                 "label": "Comprimento da bancada 3: ",
+                "default_value": "2,1",
+
               },
               {
-                "key": "Largura",
+                "key": "Largura3",
                 "label": "Largura da bancada 3: ",
+                "default_value": "0,5",
+
               },
               {
-                "key": "Comprimento",
+                "key": "Comprimento4",
                 "label": "Comprimento da bancada 4: ",
+                "default_value": "1,53",
+
               },
               {
-                "key": "Largura",
+                "key": "Largura4",
                 "label": "Largura da bancada 4: ",
+                "default_value": "0,4",
+
               },
-            
+
           ]
         }
       },
@@ -175,36 +299,40 @@
       "label": "O armário foi instalado?",
       "placeholder": "",
       "description": "Selecionar alguma opção",
-      "default_value": null,
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
       "radio": [
         {
           "id": 0,
-          "description": "Não",
+          "description": "Sim, com as seguintes dimensões em  metros:",
         },
         {
-          "id": 2,
-          "description": "Sim, com as seguintes dimensões em  metros:",
-        }
+          "id": 1,
+          "description": "Não",
+        },
       ],
       "input": {
         "dependency": {
           "key": "radio",
-          "value": 2
+          "value": 0
         },
         "fields": [
           {
             "key": "Comprimento",
             "label": "Comprimento da prateleira: ",
+            "default_value": "1,05",
+
           },
           {
             "key": "Largura da",
             "label": "Largura: ",
+            "default_value": "0,47",
           },
           {
             "key": "Quantidade",
             "label": "Número de prateleiras: ",
+            "default_value": "0,4",
           },
         ]
       }
@@ -215,7 +343,7 @@
       "label": "Qual tipo de piso foi instalado?",
       "description": "Selecionar alguma opção",
       "placeholder": "exemplo",
-      "default_value": "",
+      "default_value": "Granitina",
       "aditional_type": null,
       "options": [
         "Bloco de concreto intertravado",
@@ -224,90 +352,5 @@
         "Granitina",
         "Outros"
       ],
-    },
-    {
-      "key": "servlav07",
-      "type": "img_plus_input",
-      "label": "O teto foi pintado?",
-      "placeholder": "",
-      "description": "",
-      "default_value": null,
-      "additonal_type": null,
-      "image": null,
-      "radio": [
-        {
-          "id": 0,
-          "description": "Não",
-        },
-        {
-          "id": 2,
-          "description": "Sim",
-        }
-      ]
-    },
-    {
-      "key": "servlav08",
-      "type": "img_plus_input",
-      "label": "A cerâmica 20 cm x 20 cm foi aplicada na parede toda?",
-      "placeholder": "",
-      "description": "",
-      "default_value": null,
-      "additonal_type": null,
-      "image": null,
-      "radio": [
-        {
-          "id": 0,
-          "description": "Não",
-        },
-        {
-          "id": 2,
-          "description": "Sim",
-        }
-      ],
-      "input": {
-        "dependency": {
-          "key": "radio",
-          "value": 0
-        },
-        "fields": [
-          {
-            "key": "revestimento",
-            "label": "Não, em:",
-          },
-        ]
-      }
-    },
-    {
-      "key": "servlav07",
-      "type": "img_plus_input",
-      "label": "O revestimento foi aplicado em todo perímetro?",
-      "placeholder": "",
-      "description": "",
-      "default_value": null,
-      "additonal_type": null,
-      "image": null,
-      "radio": [
-        {
-          "id": 0,
-          "description": "Não",
-        },
-        {
-          "id": 2,
-          "description": "Sim",
-        }
-      ],
-      "input": {
-        "dependency": {
-          "key": "radio",
-          "value": 0
-        },
-        "fields": [
-          {
-            "key": "revestimento",
-            "label": "Não, em:",
-          },
-        ]
-      }
     }
-  ]
-  
+]

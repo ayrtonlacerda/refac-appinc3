@@ -1,187 +1,194 @@
 [
-    {
-      "key": "adm_prof1",
-      "type": "img_plus_input",
-      "label": "Complete com as medidas em metros nos itens a seguir:",
-      "placeholder": "",
-      "description": "",
-      "default_value": "Saliva de pirulito",
-      "additonal_type": null,
-      "image": "adm_prof1",
-      "radio": null,
-      "input": {
-        "dependency": null,
-        "fields": [
-          {
-            "key": "A",
-            "label": "A - ",
-          },
-          {
-            "key": "B",
-            "label": "B - ",
-          },
-          {
-            "key": "C",
-            "label": "C - ",
-          },
-          {
-            "key": "D",
-            "label": "D - ",
-          },
-          {
-            "key": "Area",
-            "label": "Area - ",
-          },
-          {
-            "key": "Perimetro",
-            "label": "Perimetro - ",
-          },
-          {
-            "key": "Pe-direito",
-            "label": "Pe-direito - ",
-          }
-        ]
-      }
-    },
-    {
-      "key": "adm_prof2",
-      "type": "img_plus_input",
-      "label": "De acordo as descrições apresentadas,verifique se as esquadrias foram instaladas corretamente:",
-      "placeholder": "",
-      "description": "",
-      "default_value": "Saliva de pirulito",
-      "additonal_type": null,
-      "image": "adm_prof2",
-      "radio": null,
-      "input": {
-        "dependency": null,
-        "fields": [
-          {
-            "key": "p05",
-            "label": "Quantidade instalada P05?",
-          },
-          {
-            "key": "ef24",
-            "label": "Quantidade instalada EF 24?",
-          },
-        ]
-      }
-    },
-    {
-      "key": "text1",
-      "type": "text",
-      "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
-      "placeholder": "",
-      "description": "",
-      "default_value": "",
-      "additional_type": null,
-    },  
-    {
-      "key": "qualificacao",
-      "type": "picker",
-      "label": "Qual tipo de piso foi instalado?",
-      "description": "Selecionar alguma opção",
-      "placeholder": "exemplo",
-      "default_value": "",
-      "aditional_type": null,
-      "options": [
-        "Bloco de concreto intertravado",
-        "Cerâmico",
-        "Cimento desempenado",
-        "Granitina",
-        "Outros"
-      ],
-    },
-      {
-        "key": "adm_prof2",
-        "type": "img_plus_input",
-        "label": "O teto foi pintado?",
-        "placeholder": "",
-        "description": "",
-        "default_value": null,
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Não",
-          },
-          {
-            "id": 2,
-            "description": "Sim",
-          }
-        ]
-      },
-      {
-        "key": "adm_prof",
-        "type": "img_plus_input",
-        "label": "Possui rodameio?",
-        "placeholder": "",
-        "description": "",
-        "default_value": null,
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Não",
-          },
-          {
-            "id": 2,
-            "description": "Sim",
-          }
-        ]
-      },
-      {
-        "key": "adm_prof3",
-        "type": "text",
-        "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
-        "placeholder": "",
-        "description": "",
-        "default_value": "",
-        "additional_type": null,
-      },
+  {
+    "key": "adm_prof1",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "adm_prof1",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
         {
-          "key": "adm_prof4",
-          "type": "text",
-          "label": "Qual a altura foi pintada?",
-          "placeholder": "",
-          "description": "",
-          "default_value": "",
-          "additional_type": null,
+          "key": "A",
+          "label": "A - ",
+          "default_value": "5,25"
         },
-      {
-        "key": "adm_prof5",
-        "type": "img_plus_input",
-        "label": "O revestimento foi aplicado em todo perímetro?",
-        "placeholder": "",
-        "description": "",
-        "default_value": null,
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Não",
-          },
-          {
-            "id": 2,
-            "description": "Sim",
-          }
-        ],
-        "input": {
-          "dependency": {
-            "key": "radio",
-            "value": 2
-          },
-          "fields": [
-            {
-              "key": "revestimento",
-              "label": "Não, em:",
-            }
-          ]
-      }
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "3,45"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "2,29"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "4,09"
+        },
+        {
+          "key": "Area",
+          "label": "Área - ",
+          "default_value": "6,28"
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perímetro - ",
+          "default_value": "17,63"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+          "default_value": "2,6"
+        }
+      ]
     }
-  ]
-    
-  
+  },
+  {
+    "key": "adm_prof2",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas,verifique se as esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "adm_prof2",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "p05",
+          "label": "Quantidade instalada P05?",
+          "default_value": "1"
+        },
+        {
+          "key": "ef24",
+          "label": "Quantidade instalada EF 24?",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "adm_prof3",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "3",
+    "additional_type": null
+  },
+  {
+    "key": "adm_prof4",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "adm_prof5",
+    "type": "radio",
+    "label": "Possui rodameio?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "adm_prof6",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1,1",
+    "additional_type": null
+  },
+  {
+    "key": "adm_prof7",
+    "type": "text",
+    "label": "Qual a altura que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1,5",
+    "additional_type": null
+  },
+  {
+    "key": "adm_prof8",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 0,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim"
+      },
+      {
+        "id": 2,
+        "description": "Não"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "adm_prof9",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

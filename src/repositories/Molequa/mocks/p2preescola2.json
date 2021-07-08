@@ -31,11 +31,11 @@
 
         {
           "key": "Area",
-          "label": "Area (AB + CD) - ",
+          "label": "Área (AB + CD) - ",
         },
         {
           "key": "Perimetro",
-          "label": "Perimetro (2B + 2C + 2D) - ",
+          "label": "Perímetro (2B + 2C + 2D) - ",
         },
         {
           "key": "Pe-direito",

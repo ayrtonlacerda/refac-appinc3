@@ -13,19 +13,23 @@
       "fields": [
         {
           "key": "pasA",
-          "label": "A - "
+          "label": "A - ",
+          "default_value": "12,65"
         },
         {
           "key": "pasB",
-          "label": "B - "
+          "label": "B - ",
+          "default_value": "3"
         },
         {
           "key": "pasarea",
-          "label": "AREA - "
+          "label": "AREA - ",
+          "default_value": "37,95"
         },
         {
           "key": "pasperimetro",
-          "label": "PERíMETRO - "
+          "label": "PERíMETRO - ",
+          "default_value": "31,31"
         }
       ]
     }
@@ -36,7 +40,7 @@
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": null,
     "additonal_type": null,
     "image": null,
     "radio": null,
@@ -44,7 +48,8 @@
       "fields": [
         {
           "key": "pas2Lamp",
-          "label": ""
+          "label": "",
+          "default_value": "2"
         }
       ]
     }
@@ -55,7 +60,7 @@
     "label": "A estrutura está compatível com a dimensão da construção?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 0,
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -95,15 +100,18 @@
       "fields": [
         {
           "key": "pas4input1",
-          "label": "Altura (m):"
+          "label": "Altura (m):",
+          "default_value": "3"
         },
         {
           "key": "pas4input2",
-          "label": "Diâmetro (m):"
+          "label": "Diâmetro (m):",
+          "default_value": "0,4"
         },
         {
           "key": "past4input3",
-          "label": "QTD de pilares:"
+          "label": "QTD de pilares:",
+          "default_value": "6"
         }
       ]
     }
@@ -114,7 +122,7 @@
     "label": "A faixa de cerâmica 10 cm x 10 cm foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 0,
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -142,14 +150,14 @@
   },
   {
     "key": "pas6",
-    "type": "img_plus_input",
+    "type": "radio",
     "label": "O restante do pilar foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
         "description": "Não"
@@ -162,14 +170,14 @@
   },
   {
     "key": "pas7",
-    "type": "img_plus_input",
+    "type": "radio",
     "label": "Foi feita a cobertura da passarela?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
         "description": "Não"
@@ -186,7 +194,7 @@
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "",
+    "default_value": "Granitina",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

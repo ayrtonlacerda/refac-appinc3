@@ -1,10 +1,11 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import useFetch from 'use-http';
 import { useCommons } from '../../../../hooks';
 import { useForm, useExpertiseStore } from '../../../../global';
 // ui
 import * as Atoms from '../../../../components/Atom';
 import * as Molecules from '../../../../components/Molecules';
+import DB from '../../../../database';
 
 import { PickerSection } from '../NewExam/styles';
 
@@ -16,13 +17,20 @@ import creches from '../../mocks/creches.json';
   2. para o molequa
 */
 
+/*
+  1. se tiver nos docs nao pode aparecer no a fazer ...
+*/
+
 const Steps = () => {
   const { navigation } = useCommons();
   const { currentExpertise } = useExpertiseStore();
+  const [offlineExams, setOfflineExams] = useState(null);
   const {
     mock,
     form,
+    retriveStore,
     setCurrentExam,
+    //  handleSetExam,
     handleProgressStepForm,
     handleCreateArrayForm,
   } = useForm();
@@ -32,10 +40,12 @@ const Steps = () => {
     error,
     loading,
   } = useFetch(
-    `/caso/${currentExpertise.codigoCaso}/vestigio`,
+    `/caso/${currentExpertise.codigoCaso || currentExpertise}/vestigio`,
     {},
-    [currentExpertise.codigoCaso],
+    [currentExpertise],
   );
+
+  console.log({ error, currentExpertise });
 
   const handleBack = useCallback(() => {
     // handleReset();
@@ -43,8 +53,22 @@ const Steps = () => {
   }, [navigation]);
 
   const handleSelectExam = async (exam) => {
-    console.log({ exam });
-    setCurrentExam(exam?.codigoVestigio);
+    /*
+      salvar exam offline, - vestigio tem que construir um array
+      salvar form offline,
+      salvar o mock
+    */try {
+      const doc = await DB.create({
+        exam,
+        mock,
+      }, exam?.codigoVestigio);
+      console.log({ doc });
+    } catch (err) {
+      console.log({ err });
+    }
+
+    setCurrentExam(exam);
+
     if (mock.area === 'pericia_molequa') {
       // tranferir pra outra pagina
       navigation.navigate('Molequa', {
@@ -60,14 +84,47 @@ const Steps = () => {
     }
   };
 
+  const handleSelectOfflineExam = (examOffline) => {
+    retriveStore(examOffline);
+    handleSetExam(examOffline.exam);
+    if (mock.area === 'pericia_molequa') {
+      // tranferir pra outra pagina
+      navigation.navigate('Molequa', {
+        fields: mock.form.fields,
+        title: `Cód. ${examOffline.exam.codigoVestigio}`,
+        offline: true,
+      });
+    }
+    if (mock.area === 'pericia_genetica') {
+      navigation.navigate('Forms', {
+        fields: mock.form.fields,
+        title: `Cód. ${examOffline.exam.codigoVestigio}`,
+        offline: true,
+      });
+    }
+    console.log({ examOffline });
+  };
+
+  const retriveExamOffline = useCallback(async () => {
+    const exams = (await DB.all()).rows;
+    console.log('all exams offline -> ', exams);
+    setOfflineExams(exams);
+  }, []);
+
   useEffect(() => {
-    handleCreateArrayForm(creches);
+    retriveExamOffline();
 
     if (response.ok) {
+      handleCreateArrayForm(response.data || creches);
+    } else {
       handleCreateArrayForm(creches);
     }
   }, [response, loading]);
 
+  /*
+    Desassociar creche do data trazendo da api
+  */
+  // TODO: fazer filtro offline de acordo com o tipo tb!
   return (
     <Atoms.Container>
       <Molecules.Header title={mock?.name} back handlePress={handleBack} />
@@ -78,17 +135,31 @@ const Steps = () => {
             flexDirection="row"
             mb="5"
             pl="3"
+            pt="5"
           >
             <Atoms.Ball size="XXBIG" text={1} />
             <Atoms.Text ml={11} fontWeight={4} width="95%">
               Novas Solicitações de Exame:
             </Atoms.Text>
           </Atoms.Container>
-          {!loading && (response.data?.length > 0 || creches) ? (
-            creches.map(
-              (exam) => (
+          {/*! loading && (response.data?.length > 0 || creches) ? */ creches ? (
+            /* (response.data?.length > 0 ? response.data : creches) */creches.map(
+            (exam) => !offlineExams?.find(
+              ({ doc }) => doc.exam.codigoVestigio === exam.codigoVestigio,
+            ) && (response.ok
+              ? (
                 <Molecules.StepCard
-                  percentage={() => handleProgressStepForm(mock.form.fields)}
+                  // percentage={() => handleProgressStepForm(mock.form.fields)}
+                  title={`Vestígio: ${exam.codigoVestigio}`}
+                  description={form?.[exam.codigoVestigio]?.description || exam?.nome}
+                  onClickCard={
+                    () => handleSelectExam(exam)
+                  }
+                />
+              )
+              : (
+                <Molecules.StepCard
+                  // percentage={() => handleProgressStepForm(mock.form.fields)}
                   title={`Vestígio: ${exam.codigoVestigio}`}
                   description={
                     form?.[exam.codigoVestigio]?.description
@@ -98,14 +169,16 @@ const Steps = () => {
                     () => handleSelectExam(exam)
                   }
                 />
+              )
               ),
-            )
+          )
 
           ) : (
             <Atoms.Text>
               Não há nenhum objeto de exame para esse caso
             </Atoms.Text>
           )}
+
           <Atoms.Container
             variant="viewSelection"
             flexDirection="row"
@@ -118,27 +191,22 @@ const Steps = () => {
               Exames em Andamento:
             </Atoms.Text>
           </Atoms.Container>
-          {!loading && (response.data?.length > 0 || creches) ? (
-            creches.map(
-              (exam) => (
-                <Molecules.StepCard
-                  percentage={() => handleProgressStepForm(mock.form.fields)}
-                  title={`Vestígio: ${exam.codigoVestigio}`}
-                  description={
-                    form?.[exam.codigoVestigio]?.description
-                    || exam?.description
-                  }
-                  onClickCard={
-                    () => handleSelectExam(exam)
-                  }
-                />
-              ),
-            )
-          ) : (
-            <Atoms.Text>
-              Não há nenhum objeto de exame para esse caso
-            </Atoms.Text>
+          {offlineExams?.map(
+            ({ doc }) => doc.mock.type === mock.type && (
+              <Molecules.StepCard
+                // percentage={() => handleProgressStepForm(mock.form.fields)}
+                title={`Vestígio: ${doc.exam.codigoVestigio}`}
+                description={
+                  form?.[doc.exam.codigoVestigio]?.description
+                  || doc.exam?.description
+                }
+                onClickCard={
+                  () => handleSelectOfflineExam(doc)
+                }
+              />
+            ),
           )}
+
         </Atoms.Scroll>
         <Atoms.Button
           mb={3}

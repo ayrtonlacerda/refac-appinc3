@@ -5,32 +5,35 @@
       "label": "A caixa em alvenaria foi instalada?",
       "placeholder": "",
       "description": "Selecionar alguma opção",
-      "default_value": null,
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
       "radio": [
         {
           "id": 0,
-          "description": "Não",
+          "description": "Sim, com as seguintes dimensões:",
         },
         {
-          "id": 2,
-          "description": "Sim, com as seguintes dimensões em  metros:",
-        }
+          "id": 1,
+          "description": "Não",
+        },
+
       ],
       "input": {
         "dependency": {
           "key": "radio",
-          "value": 2
+          "value": 0
         },
         "fields": [
           {
             "key": "Altura",
             "label": "Altura: ",
+            "default_value":"3,57"
           },
           {
             "key": "Diâmetro:",
             "label": "Diâmetro: ",
+            "default_value":"13,45"
           },
         ]
       }
@@ -51,77 +54,82 @@
             {
               "key": "a",
               "label": "Veneziana metálica para ventilação",
+              "default_value":"7"
             },
             {
               "key": "b",
               "label": "Veneziana metálica cega sobreposta",
+              "default_value":"4"
             },
             {
               "key": "c",
               "label": "Portinhola",
+              "default_value":"2"
             },
           ]
         }
       },
     {
       "key": "servreserv03",
-      "type": "img_plus_input",
+      "type": "radio",
       "label": "A caixa d'água de 15.000 litros foi instalada?",
       "placeholder": "",
       "description": "",
-      "default_value": null,
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
-      "radio": [
+      "options": [
         {
           "id": 0,
-          "description": "Não",
-        },
-        {
-          "id": 2,
           "description": "Sim",
         },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+
       ]
     },
     {
       "key": "servreserv04",
-      "type": "img_plus_input",
+      "type": "radio",
       "label": "A escada marinheiro foi instalada?",
       "placeholder": "",
       "description": "",
-      "default_value": null,
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
-      "radio": [
+      "options": [
         {
           "id": 0,
-          "description": "Não",
+          "description": "Sim",
         },
         {
-          "id": 2,
-          "description": "Sim",
-        }
+          "id": 1,
+          "description": "Não",
+        },
+
       ]
     },
     {
         "key": "servreserv05",
-        "type": "img_plus_input",
+        "type": "radio",
         "label": "O reservatório foi revestido (pintado)?",
         "placeholder": "",
         "description": "",
-        "default_value": null,
+        "default_value": 0,
         "additonal_type": null,
         "image": null,
-        "radio": [
+        "options": [
           {
             "id": 0,
-            "description": "Não",
+            "description": "Sim",
           },
           {
-            "id": 2,
-            "description": "Sim",
-          }
+            "id": 1,
+            "description": "Não",
+          },
+
         ]
       },
   ]
-  

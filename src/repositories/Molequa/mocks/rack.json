@@ -15,30 +15,27 @@
         {
           "key": "A",
           "label": "A - ",
+          "default_value": "1,65"
         },
         {
           "key": "B",
           "label": "B - ",
+          "default_value": "3,7"
         },
         {
           "key": "C",
           "label": "C - ",
+          "default_value": "0,95"
         },
         {
           "key": "D",
           "label": "D - ",
-        },
-        {
-          "key": "Area",
-          "label": "Area (AB+CD) - ",
-        },
-        {
-          "key": "Perimetro",
-          "label": "Perimetro (2B + 2C + 2D) - ",
+          "default_value": "0,7"
         },
         {
           "key": "Pe-direito",
-          "label": "Pe-direito - ",
+          "label": "Pé-direito - ",
+          "default_value": "2,6"
         }
       ]
     }
@@ -46,36 +43,26 @@
   {
     "key": "rack02",
     "type": "img_plus_input",
-    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Caso não informe as quantidades.",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
     "placeholder": "",
     "description": "",
     "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "tabelarack",
-    "radio": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 2,
-        "description": "Não",
-      }
-    ],
+    "radio": null,
     "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 2
-      },
+      "dependency": null,
       "fields": [
         {
-          "key": "revestimento",
+          "key": "inputrack1",
           "label": "Quantidade de P04:",
+          "default_value": "1"
         },
         {
-          "key": "revestimento",
+          "key": "inputrack2",
           "label": "Quantidade de EF18:",
-        },
+          "default_value": "1"
+        }
       ]
     }
   },
@@ -85,48 +72,48 @@
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "",
-    "additional_type": null,
+    "default_value": "2",
+    "additional_type": null
   },
   {
     "key": "rack05",
-    "type": "img_plus_input",
+    "type": "radio",
     "label": "O teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 1,
-        "description": "Sim",
+        "description": "Sim"
       }
-    ],
+    ]
   },
   {
-    "key": "rack05",
-    "type": "img_plus_input",
-    "label": "Possui rodameio?",
+    "key": "rack06",
+    "type": "radio",
+    "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 1,
-        "description": "Sim",
+        "description": "Sim"
       }
-    ],
+    ]
   },
   {
     "key": "rack07",
@@ -134,8 +121,8 @@
     "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": "",
-    "additional_type": null,
+    "default_value": "1,7",
+    "additional_type": null
   },
   {
     "key": "rack08",
@@ -143,8 +130,8 @@
     "label": "Qual a altura de parede que foi pintada?",
     "placeholder": "",
     "description": "",
-    "default_value": "",
-    "additional_type": null,
+    "default_value": "0,8",
+    "additional_type": null
   },
   {
     "key": "rack09",
@@ -152,17 +139,17 @@
     "label": "O revestimento foi aplicado em todo o perímetro?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 0,
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim",
+        "description": "Sim"
       },
       {
         "id": 2,
-        "description": "Não, em ",
+        "description": "Não, em "
       }
     ],
     "input": {
@@ -172,19 +159,19 @@
       },
       "fields": [
         {
-          "key": "revestimento",
-          "label": "Quantidade em metros:",
-        },
+          "key": "inputrack",
+          "label": "Quantidade em metros:"
+        }
       ]
     }
   },
-   {
+  {
     "key": "rack13",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "",
+    "default_value": "Granitina",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

@@ -15,22 +15,17 @@
         {
           "key": "A",
           "label": "A - ",
+          "default_value": "1,65"
         },
         {
           "key": "B",
           "label": "B - ",
-        },
-        {
-          "key": "Area",
-          "label": "Area (AB) - ",
-        },
-        {
-          "key": "Perimetro",
-          "label": "Perimetro (2A+2B) - ",
+          "default_value": "1,05"
         },
         {
           "key": "Pe-direito",
-          "label": "Pe-direito - ",
+          "label": "Pé-direito - ",
+          "default_value": "2,6"
         }
       ]
     }
@@ -38,74 +33,63 @@
   {
     "key": "ciaele02",
     "type": "img_plus_input",
-    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Caso não informe as quantidades.",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
     "placeholder": "",
     "description": "",
     "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "tabelaciaele",
-    "radio": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 2,
-        "description": "Não",
-      }
-    ],
+    "radio": null,
     "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
+      "dependency": null,
       "fields": [
         {
           "key": "revestimento",
           "label": "Quantidade de P04:",
-        },
+          "default_value": "1"
+        }
       ]
     }
   },
   {
     "key": "ciaele05",
-    "type": "img_plus_input",
+    "type": "radio",
     "label": "O teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 1,
-        "description": "Sim",
+        "description": "Sim"
       }
-    ],
+    ]
   },
   {
     "key": "ciaele05",
-    "type": "img_plus_input",
-    "label": "Possui rodameio?",
+    "type": "radio",
+    "label": "Possui rodameio de ecrâmica 10x10?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 1,
-        "description": "Sim",
+        "description": "Sim"
       }
-    ],
+    ]
   },
   {
     "key": "ciaele07",
@@ -113,8 +97,8 @@
     "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": "",
-    "additional_type": null,
+    "default_value": "1,7",
+    "additional_type": null
   },
   {
     "key": "ciaele08",
@@ -122,8 +106,8 @@
     "label": "Qual a altura de parede que foi pintada?",
     "placeholder": "",
     "description": "",
-    "default_value": "",
-    "additional_type": null,
+    "default_value": "0,8",
+    "additional_type": null
   },
   {
     "key": "ciaele09",
@@ -131,17 +115,17 @@
     "label": "O revestimento foi aplicado em todo o perímetro?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 0,
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim",
+        "description": "Sim"
       },
       {
         "id": 2,
-        "description": "Não, em ",
+        "description": "Não, em "
       }
     ],
     "input": {
@@ -152,18 +136,18 @@
       "fields": [
         {
           "key": "revestimento",
-          "label": "Quantidade em metros:",
-        },
+          "label": "Quantidade em metros:"
+        }
       ]
     }
   },
-   {
+  {
     "key": "ciaele13",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "",
+    "default_value": "Granitina",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

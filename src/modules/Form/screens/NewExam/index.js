@@ -30,13 +30,14 @@ const NewExam = () => {
   const [nameForm, setNameForm] = useState('');
 
   const handleContinue = useCallback(() => {
-    navigation.navigate('Steps');
     setCurrentExpertise('8789789');
     // FIXME: desassociar a construção do objeto aqui, para colocar no repositorio
     if (exam.name === 'Genética') {
       handleCreateForm(exam.form, nameForm || 'Perícia sem nome');
+      navigation.navigate('ConsultExpertise');
     }
     if (exam.name === 'Engenharia civil – Molequa') {
+      navigation.navigate('Steps');
       setMock(exam.form);
     }
   }, [navigation, exam, nameForm]);

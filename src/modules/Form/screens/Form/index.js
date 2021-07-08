@@ -1,11 +1,13 @@
 /* eslint-disable no-unused-expressions */
 import React, { useState, useMemo } from 'react';
+import { each, isEmpty } from 'lodash';
 import { useCommons } from '../../../../hooks';
 import { useForm } from '../../../../global';
 // ui
 import * as Atom from '../../../../components/Atom';
 import * as Molecules from '../../../../components/Molecules';
 import { FormBuilder } from '../../../../components/Templates';
+import DB from '../../../../database';
 
 import areaExterna from '../../../../repositories/Molequa/mocks/areaexterna.json';
 import passarela from '../../../../repositories/Molequa/mocks/passarela.json';
@@ -14,20 +16,20 @@ import obs from '../../../../repositories/Molequa/mocks/observacoes.json';
 
 const Form = () => {
   const { route, navigation } = useCommons();
-  const { handleChangeValueForm, form, currentExam } = useForm();
+  const {
+    handleChangeValueForm, form, currentExam, handleChangeValueKeysOfForm, keysOfForm,
+  } = useForm();
   const [showModal, setShowModal] = useState(false);
 
   const { title, fields } = route.params;
   // 1. amostra consumida totalmente
   // 2.
   const handleConsumedTotally = () => {
-    if (form[currentExam].question === 0) {
+    if (form[currentExam]?.question === 0) {
       setShowModal(true);
     } else {
       navigation.navigate('FinishExam');
     }
-
-    // navegar pro fim da pericia
   };
 
   const formFields = useMemo(() => {
@@ -45,16 +47,65 @@ const Form = () => {
     }
   }, []);
 
+  console.log('Title -> ', title);
+  console.log('Fields -> ', fields);
+
+  const handleFillDefaultValues = async () => {
+    let saveFieldsValues = {};
+    each(formFields, (field) => {
+      // "Saliva de pirulito"
+
+      if (!isEmpty(field?.input?.fields)) {
+        let defaultValue = {};
+        if (!isEmpty(field?.radio)) {
+          defaultValue = { ...defaultValue, radio: field?.default_value };
+        }
+        each(field?.input?.fields, (item) => {
+          defaultValue = {
+            ...defaultValue,
+            [item.key]: item?.default_value,
+          };
+        });
+        saveFieldsValues = {
+          ...saveFieldsValues,
+          [field.key]: defaultValue,
+        };
+
+        handleChangeValueKeysOfForm(field.key, defaultValue, true);
+        return;
+      }
+      saveFieldsValues = {
+        ...saveFieldsValues,
+        [field.key]: field.default_value,
+      };
+
+      handleChangeValueKeysOfForm(field.key, field.default_value, true);
+    });
+    await DB.insert(
+      currentExam,
+      { keysOfForm: { ...keysOfForm, ...saveFieldsValues } },
+    );
+  };
+
   return (
     <Atom.Container>
       <Molecules.Header title={title} back />
       <Atom.Scroll noPaddingX>
-        <Molecules.Toggles />
+        <Atom.Container>
+          <Atom.Button
+            onPress={handleFillDefaultValues}
+            width="90%"
+            m={2}
+            type={2}
+            textButton="Preencher com valores padrão"
+          />
+        </Atom.Container>
+
         <FormBuilder
           fields={formFields}
-          handleChangeValueForm={handleChangeValueForm}
+          handleChangeValueForm={handleChangeValueKeysOfForm}
         />
-        {(form[currentExam].question || form[currentExam].question === 0) && (
+        {(form[currentExam]?.question || form[currentExam]?.question === 0) && (
           <Atom.Container p={3}>
             <Atom.Button type={3} textButton="Salvar" onPress={handleConsumedTotally} />
           </Atom.Container>

@@ -13,7 +13,7 @@ export default function Molequa(props) {
       initialRouteName="StartLocal"
     >
       <Stack.Screen name="StartLocal" component={() => <StartLocal {...props} />} />
-      <Stack.Screen name="Administration" component={Administration} />
+      <Stack.Screen name="Administration" component={() => <Administration {...props} />} />
     </Stack.Navigator>
   );
 }

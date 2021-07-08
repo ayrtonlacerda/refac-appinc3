@@ -27,7 +27,7 @@ export default function FormRoute() {
       <Stack.Screen name="Steps" component={Steps} />
       <Stack.Screen name="Forms" component={Forms} />
       <Stack.Screen name="FinishExam" component={FinishExam} />
-      <Stack.Screen name="Molequa" component={(props) => <Molequa {...props} />} />
+      <Stack.Screen name="Molequa" component={Molequa} />
     </Stack.Navigator>
   );
 }

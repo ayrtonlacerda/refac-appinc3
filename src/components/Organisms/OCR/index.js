@@ -65,7 +65,6 @@ const OCR = ({
   }, []);
 
   const responseOcr = checkForText(picture.data);
-  console.log({ responseOcr });
 
   return (
     <Atom.Container>

@@ -5,7 +5,7 @@
       "label": "Complete com as medidas em metros nos itens a seguir.",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": "",
       "additonal_type": null,
       "image": "p1banheiro1",
       "radio": null,
@@ -15,30 +15,32 @@
           {
             "key": "A",
             "label": "A - ",
+            "default_value": "5,8",
+
           },
           {
             "key": "B",
             "label": "B - ",
+            "default_value": "2,85",
+
           },
           {
             "key": "C",
             "label": "C - ",
+            "default_value": "1,4",
+
           },
           {
             "key": "D",
             "label": "D - ",
-          },
-          {
-            "key": "Area",
-            "label": "Area - ",
-          },
-          {
-            "key": "Perimetro",
-            "label": "Perimetro - ",
+            "default_value": "1,85",
+
           },
           {
             "key": "Pe-direito",
             "label": "Pe-direito - ",
+            "default_value": "2,6",
+
           }
         ]
       }
@@ -49,7 +51,7 @@
       "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": "",
       "additonal_type": null,
       "image": "p1banheiro1tab",
       "radio": null,
@@ -59,14 +61,17 @@
           {
             "key": "p05",
             "label": "Quantidade instalada P05?",
+            "default_value": "1",
           },
           {
             "key": "pm04b",
             "label": "Quantidade instalada PM04B?",
+            "default_value": "2",
           },
           {
             "key": "ef11",
             "label": "Quantidade instalada EF 11?",
+            "default_value": "2",
           },
         ]
       }
@@ -77,175 +82,65 @@
         "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
         "placeholder": "",
         "description": "",
-        "default_value": "",
+        "default_value": "2",
         "additional_type": null,
-      },
-      {
-        "key": "banheiro04",
-        "type": "img_plus_input",
-        "label": " As divisórias de granito entre os vasos sanitários foram instaladas?",
-        "placeholder": "",
-        "description": "",
-        "default_value": "Saliva de pirulito",
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Sim",
-          },
-          {
-            "id": 2,
-            "description": "Não",
-          }
-        ],
-        "input": {
-          "dependency": {
-            "key": "radio",
-            "value": 0
-          },
-          "fields": [
-            {
-              "key": "comp",
-              "label": "Altura da divisória:",
-            },
-            {
-              "key": "larg",
-              "label": "Largura da divisória:",
-            }
-          ]
-        }
-      },
-    {
-      "key": "banheiro5",
-      "type": "text",
-      "label": "Quantos vasos sanitários foram instalados?",
-      "placeholder": "",
-      "description": "",
-      "default_value": "",
-      "additional_type": null,
     },
     {
-        "key": "banheiro6",
-        "type": "img_plus_input",
-        "label": "A mureta dos chuveiros foi executada?",
-        "placeholder": "",
-        "description": "",
-        "default_value": "Saliva de pirulito",
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Sim",
-          },
-          {
-            "id": 1,
-            "description": "Não",
-          }
-        ],
-      },
-    {
-        "key": "banheiro7",
-        "type": "img_plus_input",
-        "label": "O trocador foi instalado?",
-        "placeholder": "",
-        "description": "",
-        "default_value": "Saliva de pirulito",
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Sim",
-          },
-          {
-            "id": 2,
-            "description": "Não",
-          }
-        ],
-        "input": {
-          "dependency": {
-            "key": "radio",
-            "value": 0
-          },
-          "fields": [
-            {
-              "key": "comp",
-              "label": "Qual o comprimento do trocador?",
-            },
-            {
-              "key": "larg",
-              "label": "Qual a largura do trocador?",
-            }
-          ]
-        }
-      },
-    {
-      "key": "banheiro8",
-      "type": "img_plus_input",
+      "key": "banheiro4",
+      "type": "radio",
       "label": "O teto foi pintado?",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
-      "radio": [
+      "options": [
         {
           "id": 0,
-          "description": "Não",
+          "description": "Sim",
         },
         {
           "id": 1,
-          "description": "Sim",
-        }
+          "description": "Não",
+        },
       ],
     },
     {
-      "key": "banheiro9",
-      "type": "img_plus_input",
+      "key": "banheiro5",
+      "type": "radio",
       "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
-      "radio": [
+      "options": [
         {
           "id": 0,
-          "description": "Não",
+          "description": "Sim",
         },
         {
           "id": 1,
-          "description": "Sim",
-        }
+          "description": "Não",
+        },
       ],
     },
     {
-      "key": "banheiro10",
+      "key": "banheiro6",
       "type": "text",
       "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
       "placeholder": "",
       "description": "",
-      "default_value": "",
+      "default_value": "1,7",
       "additional_type": null,
     },
     {
-      "key": "banheiro11",
-      "type": "text",
-      "label": "Qual a altura de parede que foi pintada?",
-      "placeholder": "",
-      "description": "",
-      "default_value": "",
-      "additional_type": null,
-    },
-    {
-      "key": "banheiro12",
+      "key": "banheiro7",
       "type": "img_plus_input",
       "label": "O revestimento foi aplicado em todo o perímetro?",
       "placeholder": "",
       "description": "",
-      "default_value": "Saliva de pirulito",
+      "default_value": 0,
       "additonal_type": null,
       "image": null,
       "radio": [
@@ -254,14 +149,14 @@
           "description": "Sim",
         },
         {
-          "id": 2,
+          "id": 1,
           "description": "Não",
         }
       ],
       "input": {
         "dependency": {
           "key": "radio",
-          "value": 2
+          "value": 1
         },
         "fields": [
           {
@@ -272,12 +167,123 @@
       }
     },
     {
-      "key": "qualificacao",
+      "key": "banheiro8",
+      "type": "img_plus_input",
+      "label": " As divisórias de granito entre os vasos sanitários foram instaladas?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim, com as seguintes dimensões",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "comp",
+            "label": "Altura da divisória:",
+            "default_value": "1,3",
+          },
+          {
+            "key": "larg",
+            "label": "Largura da divisória:",
+            "default_value": "0,8",
+          },
+          {
+            "key": "qtd",
+            "label": "Quantidade de divisórias:",
+            "default_value": "2",
+          }
+        ]
+      }
+    },
+    {
+      "key": "banheiro9",
+      "type": "text",
+      "label": "Quantos vasos sanitários foram instalados?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "2",
+      "additional_type": null,
+    },
+    {
+      "key": "banheiro10",
+      "type": "radio",
+      "label": "A mureta dos chuveiros foi executada?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "options": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        }
+      ],
+    },
+  {
+      "key": "banheiro11",
+      "type": "img_plus_input",
+      "label": "O trocador foi instalado?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "comp",
+            "label": "Qual o comprimento do trocador?",
+            "default_value": "1,39",
+          },
+          {
+            "key": "larg",
+            "label": "Qual a largura do trocador?",
+            "default_value": "0.675",
+          }
+        ]
+      }
+    },
+
+    {
+      "key": "adm_alm9",
       "type": "picker",
       "label": "Qual tipo de piso foi instalado?",
       "description": "Selecionar alguma opção",
       "placeholder": "exemplo",
-      "default_value": "",
+      "default_value": "Granitina",
       "aditional_type": null,
       "options": [
         "Bloco de concreto intertravado",
@@ -288,4 +294,3 @@
       ]
     }
   ]
-  

@@ -15,38 +15,32 @@
         {
           "key": "A",
           "label": "A - ",
+          "default_value": "5,6"
         },
         {
           "key": "B",
           "label": "B - ",
+          "default_value": "5,4"
         },
         {
           "key": "C",
           "label": "C - ",
+          "default_value": "9,45"
         },
         {
           "key": "D",
           "label": "D - ",
+          "default_value": "2,975"
         },
         {
           "key": "E",
           "label": "E - ",
+          "default_value": "0,4"
         },
         {
           "key": "F",
           "label": "F - ",
-        },
-        {
-          "key": "Area",
-          "label": "Area - ",
-        },
-        {
-          "key": "Perimetro",
-          "label": "Perimetro - ",
-        },
-        {
-          "key": "Pe-direito",
-          "label": "Pe-direito - ",
+          "default_value": "0,4"
         }
       ]
     }
@@ -65,13 +59,15 @@
       "dependency": null,
       "fields": [
         {
-          "key": "potao1",
-          "label": "Quantidade de portão 100 x 210",
+          "key": "portao1",
+          "label": "Quantidade de portão (100 x 210)",
+          "default_value": "2"
         },
         {
-          "key": "potao1",
-          "label": "Quantidade de portão 100 x 210",
-        },  
+          "key": "portao2",
+          "label": "Quantidade de portão (100 x 150)",
+          "default_value": "1"
+        }
       ]
     }
   },
@@ -81,17 +77,17 @@
     "label": "As paredes de cobogó foram executadas?",
     "placeholder": "",
     "description": "Selecionar alguma opção",
-    "default_value": null,
+    "default_value": 2,
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 2,
-        "description": "Sim, com as seguintes dimensões em  metros:",
+        "description": "Sim, com as seguintes dimensões em  metros:"
       }
     ],
     "input": {
@@ -103,11 +99,13 @@
         {
           "key": "Altura",
           "label": "Altura: ",
+          "default_value": "2,1"
         },
         {
           "key": "Comprimento",
           "label": "Comprimento: ",
-        },
+          "default_value": "3,7"
+        }
       ]
     }
   },
@@ -117,17 +115,17 @@
     "label": "A bancada de granito foi instalada?",
     "placeholder": "",
     "description": "Selecionar alguma opção",
-    "default_value": null,
+    "default_value": 2,
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 2,
-        "description": "Sim, com as seguintes dimensões em  metros:",
+        "description": "Sim, com as seguintes dimensões em  metros:"
       }
     ],
     "input": {
@@ -139,16 +137,18 @@
         {
           "key": "Comprimento",
           "label": "Comprimento da bancada: ",
+          "default_value": "6,15"
         },
         {
           "key": "Largura",
           "label": "Largura da bancada: ",
-        },
+          "default_value": "0,9"
+        }
       ]
     }
   },
   {
-    "key": "servarea01",
+    "key": "servarea0123",
     "type": "img_plus_input",
     "label": "Complete com as medidas em metros nos itens a seguir:",
     "placeholder": "",
@@ -163,58 +163,48 @@
         {
           "key": "A",
           "label": "A - ",
+          "default_value": "1,15"
         },
         {
           "key": "B",
           "label": "B - ",
+          "default_value": "0,87"
         },
         {
           "key": "C",
           "label": "C - ",
-        },
-        {
-          "key": "Area",
-          "label": "Area - ",
-        },
-        {
-          "key": "Perimetro",
-          "label": "Perimetro - ",
-        },
-        {
-          "key": "Pe-direito",
-          "label": "Pe-direito - ",
+          "default_value": "1,47"
         }
       ]
     }
   },
   {
     "key": "servarea07",
-    "type": "img_plus_input",
+    "type": "radio",
     "label": "Foi instalado o gás na casa de gás?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 1,
     "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
-        "description": "Não",
+        "description": "Não"
       },
       {
         "id": 1,
-        "description": "Sim",
+        "description": "Sim"
       }
-    ],
+    ]
   },
-
   {
     "key": "servarea08",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "",
+    "default_value": "Granitina",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",
@@ -222,6 +212,6 @@
       "Cimento desempenado",
       "Granitina",
       "Outros"
-    ],
-  },
+    ]
+  }
 ]

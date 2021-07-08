@@ -17,17 +17,18 @@ const ConsultExpertise = () => {
   const { setCurrentExpertise } = useExpertiseStore();
   const { handleReset } = useForm();
 
-  // const {
-  //   get, response, error, loading,
-  // } = useFetch();
+  const {
+    get, response, error, loading,
+  } = useFetch();
 
-  // const handleContinue = useCallback(async () => {
-  //   const expertise = caso; /* await get(`/caso/${numberOfCase}`);  adicionar db (caso) */
-  //   if (response.ok) {
-  //     setCurrentExpertise(expertise);
-  //     navigation.navigate('Steps');
-  //   }
-  // }, [navigation, numberOfCase]);
+  const handleContinue = useCallback(async () => {
+    // const expertise = caso;
+    await get(`/caso/${numberOfCase}`);//  adicionar db (caso)
+    if (response.ok) {
+      setCurrentExpertise(response.data);
+      navigation.navigate('Steps');
+    }
+  }, [navigation, numberOfCase]);
 
   const handleContinueMock = useCallback(async () => {
     const expertise = caso;
@@ -40,19 +41,19 @@ const ConsultExpertise = () => {
     navigation.navigate('Home');
   }, [navigation]);
 
-  // useEffect(() => {
-  //   if (error) {
-  //     Toast.show({
-  //       type: 'error',
-  //       position: 'top',
-  //       text1: 'Não existe esse caso...',
-  //       visibilityTime: 3000,
-  //       autoHide: true,
-  //       topOffset: 100,
-  //       bottomOffset: 40,
-  //     });
-  //   }
-  // }, [error]);
+  useEffect(() => {
+    if (error) {
+      Toast.show({
+        type: 'error',
+        position: 'top',
+        text1: 'Não existe esse caso...',
+        visibilityTime: 3000,
+        autoHide: true,
+        topOffset: 100,
+        bottomOffset: 40,
+      });
+    }
+  }, [error]);
 
   return (
     <>
@@ -70,7 +71,7 @@ const ConsultExpertise = () => {
             maxLength={6}
             keyboardType="numeric"
             bg="WHITE_ICE"
-            width='100%'
+            width="100%"
             variant="line"
             placeholder="6 dígitos"
             onChangeText={(text) => setNumberOfCase(text)}
@@ -79,7 +80,7 @@ const ConsultExpertise = () => {
           />
         </Atoms.Container>
         {numberOfCase.length > 3 && (
-          <Atoms.Button loading={false} textButton="CONSULTAR" onPress={handleContinueMock} />
+          <Atoms.Button loading={loading} textButton="CONSULTAR" onPress={handleContinue} />
         )}
       </Atoms.Container>
     </>

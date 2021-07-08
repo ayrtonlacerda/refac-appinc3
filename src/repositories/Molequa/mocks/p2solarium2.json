@@ -1,11 +1,11 @@
 [
   {
-    "key": "p2solariu201",
+    "key": "p2solarium201",
     "type": "img_plus_input",
     "label": "Complete com as medidas em metros nos itens a seguir",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": "",
     "additonal_type": null,
     "image": "p2solarium2",
     "radio": null,
@@ -15,33 +15,33 @@
         {
           "key": "A",
           "label": "A - ",
+          "default_value": "2,85"
         },
         {
           "key": "B",
           "label": "B - ",
+          "default_value": "9,62",
         },
         {
-          "key": "Area",
-          "label": "Area (AB) - ",
+          "key": "C",
+          "label": "C - ",
+          "default_value": "3,325"
         },
         {
-          "key": "Perimetro",
-          "label": "Perimetro (2A+2B)- ",
-        },
-        {
-          "key": "pe-direito",
-          "label": "Pé-direito(m) - ",
+          "key": "D",
+          "label": "D - ",
+          "default_value": "4,525",
         },
       ]
     }
   },
   {
-    "key": "p2solariu202",
+    "key": "p2solarium202",
     "type": "img_plus_input",
     "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente.",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 0,
     "additonal_type": null,
     "image": "p2tabelasolarium2",
     "radio": [
@@ -61,20 +61,20 @@
       },
       "fields": [
         {
-          "key": "revestimento",
+          "key": "pf",
           "label": "Qual a quantidade instalada de PF?",
+          "default_value": "1",
         },
       ]
     }
   },
-
   {
-    "key": "p2solariu203",
+    "key": "p2solarium203",
     "type": "img_plus_input",
     "label": "As paredes de cobogó foram executadas?",
     "placeholder": "",
     "description": "",
-    "default_value": "Saliva de pirulito",
+    "default_value": 0,
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -96,12 +96,16 @@
       },
       "fields": [
         {
-          "key": "revestimento",
-          "label": "Altura: ",
+          "key": "alt1",
+          "label": "Altura 1: ",
+          "default_value": "1,3",
+
         },
         {
-          "key": "revestimento",
-          "label": "Comprimento: ",
+          "key": "comp1",
+          "label": "Comprimento 1: ",
+          "default_value": "4,525",
+
         },
       ]
     }
@@ -112,7 +116,7 @@
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "",
+    "default_value": "Granitina",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",
@@ -122,4 +126,6 @@
       "Outros"
     ]
   }
+
+
 ]
