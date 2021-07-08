@@ -22,10 +22,6 @@ const useStore = create(
     }, '', 'RESET'),
     setForm: (form) => set({ form }, '', 'SET_FORM'),
     setKeysOfForm: (keysOfForm) => set({ keysOfForm }, '', 'SET_KEY_FORM'),
-    setValueKeyOfForm: (key, value) => set(produce((draftState) => {
-      draftState.keysOfForm[key] = value;
-    })),
-    retriveStore: (store) => set((prevStore) => ({ ...prevStore, ...store })),
     setCurrentExam: (currentExam) => set({ currentExam }, '', 'SET_CURRENT_EXAM'),
     setMock: (mock) => set((prevStore) => ({ ...prevStore, mock }), '', 'SET_MOCK'),
   }), 'form'),

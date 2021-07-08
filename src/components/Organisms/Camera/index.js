@@ -41,6 +41,7 @@ const Camera = ({
   const handleCamera = useCallback(() => {
     ImageCropPicker.openCamera({ ...config })
       .then((image) => {
+        console.log({ image });
         onChange(keyField, {
           ...value,
           pictures: value?.pictures
@@ -65,6 +66,7 @@ const Camera = ({
   }, [value]);
 
   const handleChangeRadio = useCallback((id) => {
+    // console.log({ id, value, keyField });
     onChange(keyField, { ...value, radio: id });
   }, [value]);
 
@@ -116,12 +118,12 @@ const Camera = ({
 
         </>
       ) : (
-        <>
-          <Atom.CameraButtonsViewComponent>
-            <Atom.Button icon iconName="add-a-photo" textButton="Capturar Imagem" onPress={handleCamera} />
-          </Atom.CameraButtonsViewComponent>
-        </>
-      )}
+          <>
+            <Atom.CameraButtonsViewComponent>
+              <Atom.Button icon iconName="add-a-photo" textButton="Capturar Imagem" onPress={handleCamera} />
+            </Atom.CameraButtonsViewComponent>
+          </>
+        )}
     </>
   );
 };

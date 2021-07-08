@@ -1,6 +1,6 @@
-[
+ [
   {
-    "key": "recepcao",
+    "key": "img_plus_input1",
     "type": "img_plus_input",
     "label": "Complete com as medidas em metros nos itens a seguir:",
     "placeholder": "",
@@ -15,43 +15,36 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "5,25"
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "1,65"
         },
         {
           "key": "C",
           "label": "C - ",
-          "default_value": "0,77"
         },
         {
           "key": "D",
           "label": "D - ",
-          "default_value": "0,84"
         },
         {
           "key": "Area",
           "label": "Area - ",
-          "default_value": "34,16"
         },
         {
           "key": "Perimetro",
           "label": "Perimetro - ",
-          "default_value": "31,37"
         },
         {
           "key": "Pe-direito",
           "label": "Pe-direito - ",
-          "default_value": "2,6"
         }
       ]
     }
   },
   {
-    "key": "recepcao1",
+    "key": "img_plus_input2",
     "type": "img_plus_input",
     "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
     "placeholder": "",
@@ -66,42 +59,40 @@
         {
           "key": "pa06",
           "label": "Quantidade instalada P06?",
-          "default_value": "2"
         },
         {
           "key": "ef28",
           "label": "Quantidade instalada EF 28?",
-          "default_value": "1"
-        }
+        },
       ]
     }
   },
   {
-    "key": "recepcao2",
+    "key": "text1",
     "type": "text",
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "3",
-    "additional_type": null
+    "default_value": "",
+    "additional_type": null,
   },
   {
-    "key": "recepcao3",
+    "key": "img_plus_input2",
     "type": "img_plus_input",
-    "label": "A bancada de granito foi instalada?",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "",
+    "default_value": null,
     "additonal_type": null,
     "image": "Foto5",
     "radio": [
       {
         "id": 0,
-        "description": "Não"
+        "description": "Não",
       },
       {
         "id": 2,
-        "description": "Sim, com as seguintes dimensões em  metros:"
+        "description": "Sim, com as seguintes dimensões em  metros:",
       }
     ],
     "input": {
@@ -113,23 +104,65 @@
         {
           "key": "Comprimento",
           "label": "Comprimento: ",
-          "default_value": "0,55"
         },
         {
           "key": "Largura",
           "label": "Largura: ",
-          "default_value": "0,707"
-        }
+        },
       ]
     }
   },
   {
-    "key": "recepcao5",
+    "key": "img_plus_input3",
+    "type": "img_plus_input",
+    "label": "As paredes de cobogó foram executadas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 2,
+        "description": "Sim, com as seguintes dimensões em  metros:",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "altura1",
+          "label": "altura - parede 1: ",
+        },
+        {
+          "key": "altura2",
+          "label": "altura - parede 2: ",
+        },
+        {
+          "key": "comprimento1",
+          "label": "comprimento - parede 1: ",
+        },
+        {
+          "key": "comprimento2",
+          "label": "comprimento - parede 2: ",
+        },
+      ]
+    }
+  },
+  {
+    "key": "qualificacao",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",
@@ -137,6 +170,102 @@
       "Cimento desempenado",
       "Granitina",
       "Outros"
-    ]
+    ],
+  },
+  {
+    "key": "img_plus_input4",
+    "type": "img_plus_input",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 2,
+        "description": "Sim",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "altura1",
+          "label": "Qual a altura que foi pintada?",
+        },
+      ]
+    }
+  },
+  {
+    "key": "img_plus_input5",
+    "type": "img_plus_input",
+    "label": "Possuí rodameio?",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 2,
+        "description": "Sim",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "altura1",
+          "label": "Qual a altura da cerâmica 20x20?",
+        },
+      ]
+    }
+  },
+  {
+    "key": "img_plus_input5",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": null,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 2,
+        "description": "Sim",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "altura2",
+          "label": "Não, em:",
+        },
+      ]
+    }
   },
 ]

@@ -12,14 +12,12 @@ const Stack = createStackNavigator();
 
 export default function Routes() {
   const { user } = useUser();
-
-  console.log({ user });
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
         {// <Stack.Screen name="OCR" component={OCR} />
         }
-        {!user ? (
+        {user ? (
           <Stack.Screen name="UnAuthRoutes" component={UnAuthRoutes} />
         ) : (
           <>

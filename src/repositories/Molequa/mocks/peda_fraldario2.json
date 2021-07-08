@@ -1,324 +1,273 @@
 [
-  {
-    "key": "fraldario101",
-    "type": "img_plus_input",
-    "label": "Qual a área da sala de repouso? Complete com as medidas em metros nos itens a seguir",
-    "placeholder": "",
-    "description": "",
-    "default_value": "",
-    "additonal_type": null,
-    "image": "fraldario22",
-    "radio": null,
-    "input": {
-      "dependency": null,
-      "fields": [
-        {
-          "key": "A",
-          "label": "A - ",
-          "default_value": "3",
-
-        },
-        {
-          "key": "B",
-          "label": "B - ",
-          "default_value": "2,85",
-
-        },
-        {
-          "key": "C",
-          "label": "C - ",
-          "default_value": "2,05",
-
-        },
-        {
-          "key": "D",
-          "label": "D - ",
-          "default_value": "0,6",
-
-        },
-        {
-          "key": "Pe-direito",
-          "label": "Pe-direito - ",
-          "default_value": "2,6",
-
-        }
-      ]
-    }
-  },
-  {
-    "key":  "fraldario102",
-    "type": "img_plus_input",
-    "label": "Observe a descrição das esquadrias a seguir. Elas foram instaladas corretamente?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": "fraldario2",
-    "radio": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 1,
-        "description": "Não",
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
-        {
-          "key": "revestimento",
-          "label": "Qual a quantidade instalada de EF 11?",
-          "default_value": "1",
-
-        },
-      ]
-    }
-  },
-  {
-      "key":  "fraldario103",
-      "type": "text",
-      "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    {
+      "key": "fraldario101",
+      "type": "img_plus_input",
+      "label": "Qual a área da sala de repouso? Complete com as medidas em metros nos itens a seguir",
       "placeholder": "",
       "description": "",
-      "default_value": "1",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": "fraldario22",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "A",
+            "label": "A - ",
+          },
+          {
+            "key": "B",
+            "label": "B - ",
+          },
+          {
+            "key": "C",
+            "label": "C - ",
+          },
+          {
+            "key": "D",
+            "label": "D - ",
+          },
+          {
+            "key": "Area",
+            "label": "Area - ",
+          },
+          {
+            "key": "Perimetro",
+            "label": "Perimetro - ",
+          },
+          {
+            "key": "Pe-direito",
+            "label": "Pe-direito - ",
+          }
+        ]
+      }
+    },
+    {
+      "key":  "fraldario102",
+      "type": "img_plus_input",
+      "label": "Observe a descrição das esquadrias a seguir. Elas foram instaladas corretamente?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": "fraldario2",
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Qual a quantidade instalada de EF 11?",
+          },
+        ]
+      }
+    },
+    {
+        "key":  "fraldario203",
+        "type": "text",
+        "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "",
+        "additional_type": null,
+      },
+
+    {
+      "key": "fraldario204",
+      "type": "img_plus_input",
+      "label": "O teto foi pintado?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 1,
+          "description": "Sim",
+        },
+        {
+          "id": 0,
+          "description": "Não",
+        },
+      ],
+    },
+    {
+      "key":  "fraldario205",
+      "type": "img_plus_input",
+      "label": "Possui rodameio?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 1,
+          "description": "Sim",
+        },
+        {
+          "id": 0,
+          "description": "Não",
+        },
+  
+      ],
+    },
+    {
+      "key": "fraldario206",
+      "type": "text",
+      "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "",
       "additional_type": null,
     },
-
-  {
-    "key": "fraldario104",
-    "type": "radio",
-    "label": "O teto foi pintado?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 1,
-        "description": "Não",
-      },
-    ],
-  },
-  {
-    "key":  "fraldario105",
-    "type": "radio",
-    "label": "Possui rodameio?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 1,
-        "description": "Não",
-      },
-
-    ],
-  },
-  {
-    "key": "fraldario106",
-    "type": "text",
-    "label": "Qual a altura que a cerâmica 20cm x 20cm foi instalada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,1",
-    "additional_type": null,
-  },
-  {
-    "key":  "fraldario107",
-    "type": "text",
-    "label": "Qual a altura de parede que foi pintada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,5",
-    "additional_type": null,
-  },
-  {
-    "key":  "fraldario108",
-    "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo o perímetro?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": null,
-    "radio": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 1,
-        "description": "Não",
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 1
-      },
-      "fields": [
+    {
+      "key":  "fraldario207",
+      "type": "text",
+      "label": "Qual a altura de parede que foi pintada?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "",
+      "additional_type": null,
+    },
+    {
+      "key":  "fraldario208",
+      "type": "img_plus_input",
+      "label": "O revestimento foi aplicado em todo o perímetro?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": null,
+      "radio": [
         {
-          "key": "revestimento",
-          "label": "Perímetro não aplicado (m):",
-        },
-      ]
-    }
-  },
-  {
-    "key":  "fraldario109",
-    "type": "img_plus_input",
-    "label": "As prateleiras foram instaladas?",
-    "placeholder": "",
-    "description": "Selecionar alguma opção",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": null,
-    "radio": [
-      {
-        "id": 0,
-        "default_value": "Sim, com as seguintes dimensões:",
-      },
-      {
-        "id": 2,
-        "default_value": "Não",
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
-        {
-          "key": "comprimento1",
-          "label": "Comprimento das prateleiras 1:",
-          "default_value": "1,45"
+          "id": 0,
+          "description": "Sim",
         },
         {
-            "key": "largura1",
-            "label": "Largura das prateleiras 1:",
-            "default_value": "0,15"
-          },
+          "id": 2,
+          "description": "Não",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 2
+        },
+        "fields": [
           {
-            "key": "Qto1",
-            "label": "Quantidade de prateleiras 1:",
-            "default_value": "1"
+            "key": "revestimento",
+            "label": "Perímetro não aplicado (em metros):",
           },
-
-          {
-            "key": "comprimento2",
-            "label": "Comprimento das prateleiras 2:",
-            "default_value": "1,65"
-          },
-          {
-              "key": "largura2",
-              "label": "Largura das prateleiras 2:",
-              "default_value": "0,15"
-            },
-
-            {
-              "key": "Qto1",
-              "label": "Quantidade de prateleiras 2:",
-              "default_value": "1"
-            },
-      ]
-    }
-  },
-  {
-    "key":  "fraldario110",
-    "type": "img_plus_input",
-    "label": "As bancadas foram instaladas?",
-    "placeholder": "",
-    "default_value": 0,
-    "description": "Selecionar alguma opção",
-    "additonal_type": null,
-    "image": "fraldario3",
-    "radio": [
-      {
-        "id": 0,
-        "description": "Sim",
-      },
-      {
-        "id": 2,
-        "description": "Não",
+        ]
       }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
-        {
-            "key": "comprimento1",
-            "label": "Comprimento da bancada 1:",
-            "default_value": "0,95"
-
+    },
+    {
+        "key":  "fraldario209",
+        "type": "img_plus_input",
+        "label": "As prateleiras foram instaladas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "Saliva de pirulito",
+        "additonal_type": null,
+        "image": null,
+        "radio": [
+          {
+            "id": 0,
+            "description": "Sim, com as seguintes dimensões:",
           },
           {
-              "key": "largura1",
-              "label": "Largura da bancada 1:",
-              "default_value": "0,6"
-
+            "id": 2,
+            "description": "Não",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 0
+          },
+          "fields": [
+            {
+              "key": "comprimento",
+              "label": "Comprimento das prateleiras:",
             },
             {
-              "key": "comprimento2",
-              "label": "Comprimento da bancada 2:",
-              "default_value": "2,85"
-
-            },
+                "key": "largura",
+                "label": "Largura das prateleiras:",
+              },
+              {
+                "key": "Qto",
+                "label": "Quantidade de prateleiras:",
+              },
+          ]
+        }
+      },
+      {
+        "key":  "fraldario210",
+        "type": "img_plus_input",
+        "label": "As bancadas foram instaladas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "Saliva de pirulito",
+        "additonal_type": null,
+        "image": "fraldario3",
+        "radio": [
+          {
+            "id": 0,
+            "description": "Sim, com as seguintes dimensões:",
+          },
+          {
+            "id": 2,
+            "description": "Não",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 0
+          },
+          "fields": [
             {
-                "key": "largura2",
-                "label": "Largura da bancada 2:",
-                "default_value": "0,5"
-
+                "key": "comprimento",
+                "label": "Comprimento da bancada:",
               },
               {
-                "key": "comprimento3",
-                "label": "Comprimento da bancada 3:",
-                "default_value": "1,15"
-
-              },
-              {
-                  "key": "largura3",
-                  "label": "Largura da bancada 3:",
-                  "default_value": "0,6"
-
+                  "key": "largura",
+                  "label": "Largura da bancada:",
                 },
+          ]
+        }
+      },
+
+    {
+      "key":  "fraldario211",
+      "type": "picker",
+      "label": "Qual tipo de piso foi instalado?",
+      "description": "Selecionar alguma opção",
+      "placeholder": "exemplo",
+      "default_value": "",
+      "aditional_type": null,
+      "options": [
+        "Bloco de concreto intertravado",
+        "Cerâmica",
+        "Cimento desempenado",
+        "Granitina",
+        "Outros"
       ]
     }
-  },
-
-  {
-    "key":  "fraldario111",
-    "type": "picker",
-    "label": "Qual tipo de piso foi instalado?",
-    "description": "Selecionar alguma opção",
-    "placeholder": "exemplo",
-    "default_value": "Granitina",
-    "aditional_type": null,
-    "options": [
-      "Bloco de concreto intertravado",
-      "Cerâmica",
-      "Cimento desempenado",
-      "Granitina",
-      "Outros"
-    ]
-  }
-]
+  ]
+  

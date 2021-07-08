@@ -15,27 +15,30 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "2,85"
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "1,2"
         },
         {
           "key": "C",
           "label": "C - ",
-          "default_value": "5,85"
         },
         {
           "key": "D",
           "label": "D - ",
-          "default_value": "4,05"
+        },
+        {
+          "key": "Area",
+          "label": "Area (AB+CD) - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro (2B + 2C + 2D) - ",
         },
         {
           "key": "Pe-direito",
-          "label": "Pé-direito - ",
-          "default_value": "2,6"
+          "label": "Pe-direito - ",
         }
       ]
     }
@@ -43,118 +46,20 @@
   {
     "key": "multiuso02",
     "type": "img_plus_input",
-    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Caso não informe as quantidades.",
     "placeholder": "",
     "description": "",
     "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "tabelaleitura",
-    "radio": null,
-    "input": {
-      "dependency": null,
-      "fields": [
-        {
-          "key": "inputmultiuso1",
-          "label": "Quantidade de P01:",
-          "default_value": "1"
-        },
-        {
-          "key": "inputmultiuso2",
-          "label": "Quantidade de EF14:",
-          "default_value": "1"
-        },
-        {
-          "key": "inputmultiuso3",
-          "label": "Quantidade de EF26:",
-          "default_value": "1"
-        }
-      ]
-    }
-  },
-  {
-    "key": "multiuso03",
-    "type": "text",
-    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "3",
-    "additional_type": null
-  },
-  {
-    "key": "multiuso05",
-    "type": "radio",
-    "label": "O teto foi pintado?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 1,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "multiuso05",
-    "type": "iradio",
-    "label": "Possui rodameio de cerâmica 10x10?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 1,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "multiuso07",
-    "type": "text",
-    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,7",
-    "additional_type": null
-  },
-  {
-    "key": "multiuso08",
-    "type": "text",
-    "label": "Qual a altura de parede que foi pintada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "0,8",
-    "additional_type": null
-  },
-  {
-    "key": "multiuso09",
-    "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo o perímetro?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim"
+        "description": "Sim",
       },
       {
         "id": 2,
-        "description": "Não, em "
+        "description": "Não",
       }
     ],
     "input": {
@@ -164,9 +69,116 @@
       },
       "fields": [
         {
-          "key": "inputmultiuso",
-          "label": "Quantidade em metros:"
-        }
+          "key": "revestimento",
+          "label": "Quantidade de P01:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Quantidade de EF14:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Quantidade de EF26:",
+        },
+      ]
+    }
+  },
+  {
+    "key": "multiuso03",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "multiuso05",
+    "type": "img_plus_input",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "multiuso05",
+    "type": "img_plus_input",
+    "label": "Possui rodameio?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "multiuso07",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "multiuso08",
+    "type": "text",
+    "label": "Qual a altura de parede que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "multiuso09",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não, em ",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Quantidade em metros:",
+        },
       ]
     }
   },
@@ -176,17 +188,17 @@
     "label": "As prateleiras de granito foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim, com as seguintes dimensões:"
+        "description": "Sim, com as seguintes dimensões:",
       },
       {
         "id": 2,
-        "description": "Não"
+        "description": "Não",
       }
     ],
     "input": {
@@ -196,45 +208,35 @@
       },
       "fields": [
         {
-          "key": "ainputmultiuso1",
+          "key": "revestimento",
           "label": "Comprimento da prateleira 1:",
-          "default_value": "7,05"
         },
         {
-          "key": "ainputmultiuso2",
+          "key": "revestimento",
           "label": "Largura da prateleira 1:",
-          "default_value": "0,4"
         },
         {
-          "key": "ainputmultiuso3",
-          "label": "Qtd de prateleiras 1:",
-          "default_value": "2"
-        },
-        {
-          "key": "ainputmultiuso4",
+          "key": "revestimento",
           "label": "Comprimento da prateleira 2:",
-          "default_value": "4,25"
         },
         {
-          "key": "ainputmultiuso5",
+          "key": "revestimento",
           "label": "Largura da prateleira 2:",
-          "default_value": "0,4"
         },
         {
-          "key": "ainputmultiuso6",
-          "label": "Qtd de prateleiras 2:",
-          "default_value": "2"
-        }
+          "key": "revestimento",
+          "label": "Qtd de prateleiras:",
+        },
       ]
     }
   },
-  {
+   {
     "key": "multiuso13",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

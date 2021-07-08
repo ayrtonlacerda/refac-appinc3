@@ -5,7 +5,7 @@
     "label": "Complete com as medidas em metros nos itens a seguir",
     "placeholder": "",
     "description": "",
-    "default_value": "",
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "p2preescola1",
     "radio": null,
@@ -15,32 +15,31 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "2,85",
-
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "1,2",
-
         },
         {
           "key": "C",
           "label": "C - ",
-          "default_value": "4,65",
-
         },
         {
           "key": "D",
           "label": "D - ",
-          "default_value": "7,05",
+        },
 
+        {
+          "key": "Area",
+          "label": "Area (AB + CD) - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro (2B + 2C + 2D) - ",
         },
         {
           "key": "Pe-direito",
           "label": "Pé-direito - ",
-          "default_value": "2,6",
-
         }
       ]
     }
@@ -51,7 +50,7 @@
     "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente.",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "p2tabelapreescola1",
     "radio": [
@@ -71,22 +70,16 @@
       },
       "fields": [
         {
-          "key": "p01",
+          "key": "revestimento",
           "label": "Qual a quantidade instalada de P01?",
-          "default_value": "2",
-
         },
                 {
-          "key": "ef14",
+          "key": "revestimento",
           "label": "Qual a quantidade instalada de EF 14",
-          "default_value": "1",
-
         },
         {
-          "key": "ef26",
+          "key": "revestimento",
           "label": "Qual a quantidade instalada de EF 26",
-          "default_value": "1",
-
         },
       ]
     }
@@ -97,47 +90,48 @@
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "4",
+    "default_value": "",
     "additional_type": null,
   },
   {
     "key": "p2preescola104",
-    "type": "radio",
-    "label": "O teto foi pintado?",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento do ambiente, o teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
   },
   {
     "key": "p2preescola105",
-    "type": "radio",
-    "label": "Possui rodameio?",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento do ambiente, possui rodameio?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
+
     ],
   },
 
@@ -147,7 +141,7 @@
     "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": "1,7",
+    "default_value": "",
     "additional_type": null,
   },
 
@@ -157,7 +151,7 @@
     "label": "Qual a altura de parede que foi pintada?",
     "placeholder": "",
     "description": "",
-    "default_value": "0,9",
+    "default_value": "",
     "additional_type": null,
   },
   {
@@ -166,7 +160,7 @@
     "label": "O revestimento foi aplicado em todo o perímetro?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -201,7 +195,7 @@
     "label": "A bancada de granito foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -223,16 +217,12 @@
       },
       "fields": [
         {
-          "key": "comp",
+          "key": "revestimento",
           "label": "Comprimento: ",
-          "default_value": "2,85",
-
         },
         {
-          "key": "alt",
+          "key": "revestimento",
           "label": "Altura: ",
-          "default_value": "0,6",
-
         },
       ]
     }
@@ -243,7 +233,7 @@
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

@@ -37,7 +37,7 @@ Input.defaultProps = {
 const InputComponent = ({
   auth, keyField, onChange, noForm, ...props
 }) => (auth ? (
-  <Input bg="WHITE_TRANSPARENT" borderRadius={25} {...props} width="100%" />
+  <Input bg="WHITE_TRANSPARENT" borderRadius={25} {...props} />
 ) : (
   <Input {...props} />
 ));

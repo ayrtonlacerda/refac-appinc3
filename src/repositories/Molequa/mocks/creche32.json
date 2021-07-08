@@ -1,11 +1,11 @@
 [
   {
-    "key": "3.2creche201",
+    "key": "creche3201",
     "type": "img_plus_input",
     "label": "Complete com as medidas em metros nos itens a seguir",
     "placeholder": "",
     "description": "",
-    "default_value": "",
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "p2creche3",
     "radio": null,
@@ -15,50 +15,47 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "1,65",
-
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "2,4",
-
         },
         {
           "key": "C",
           "label": "C - ",
-          "default_value": "4,65",
-
         },
         {
           "key": "D",
           "label": "D - ",
-          "default_value": "4,65",
-
         },
         {
           "key": "E",
           "label": "E - ",
-          "default_value": "0,525",
-
+        },
+        {
+          "key": "Area",
+          "label": "Area (AB+CD) - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro (2B + 2C + 2D + 2E) - ",
         },
         {
           "key": "Pe-direito",
           "label": "Pe-direito - ",
-          "default_value": "2,6",
         }
       ]
     }
   },
   {
-    "key":  "3.2creche202",
+    "key": "creche3202",
     "type": "img_plus_input",
     "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente.",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
-    "image": "creche21",
+    "image": "tabelaCrecheIII",
     "radio": [
       {
         "id": 0,
@@ -76,101 +73,79 @@
       },
       "fields": [
         {
-          "key": "p01",
+          "key": "revestimento",
           "label": "Qual a quantidade instalada de P01?",
-          "default_value": "2",
-
         },
         {
-          "key": "ef27",
-          "label": "Qual a quantidade instalada de EF 27",
-          "default_value": "1",
-
+          "key": "revestimento",
+          "label": "Qual a quantidade instalada de EF 26",
         },
       ]
     }
   },
   {
-    "key": "3.2creche204",
+    "key": "creche3203",
     "type": "text",
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "4",
+    "default_value": "",
     "additional_type": null,
   },
   {
-    "key":  "3.2creche205",
-    "type": "radio",
-    "label": "O teto foi pintado?",
+    "key": "creche3204",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento da creche III e complete com as medidas a seguir. O teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
   },
   {
-    "key":  "3.2creche206",
-        "type": "radio",
-    "label": "Possui rodameio?",
+    "key": "creche3205",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento da creche III e complete com as medidas a seguir. Possui rodameio?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
 
     ],
   },
   {
-      "key": "3.2creche207",
-      "type": "text",
-      "label": "Qual a altura que a cerâmica 20cm x20cm foi instalada?",
-      "placeholder": "",
-      "description": "",
-      "default_value": "1,7",
-      "additional_type": null,
-    },
-    {
-      "key": "creche208",
-      "type": "text",
-      "label": "Qual a altura foi pintada?",
-      "placeholder": "",
-      "description": "",
-      "default_value": "0,9",
-      "additional_type": null,
-    },
-  {
-    "key":  "3.2creche209",
+    "key": "creche3206",
     "type": "img_plus_input",
-    "label": "Os escaninhos foram instalados?",
+    "label": "Os escaninhos foram instalados? Se sim, qual o comprimento, largura e quantidade de prateleiras? (medida horizontal e vertical respectivamente em m):",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim, com as seguintes dimensões",
+        "description": "Sim",
       },
       {
         "id":
@@ -186,51 +161,28 @@
       },
       "fields": [
         {
-          "key": "comprh",
-          "label": "Comprimento prateleiras horizontais:",
-          "default_value": "2,25",
-
+          "key": "revestimento",
+          "label": "Comprimento das prateleiras ",
         },
         {
-          "key": "largh",
-          "label": "Largura prateleiras horizontais:",
-          "default_value": "0,4",
-
+          "key": "revestimento",
+          "label": "Largura das prateleiras ",
         },
         {
-          "key": "qtdh",
+          "key": "revestimento",
           "label": "Quantidade de prateleiras",
-          "default_value": "4",
-
-        },
-        {
-          "key": "comprv",
-          "label": "Comprimento prateleiras verticais:",
-          "default_value": "1,8",
-
-        },
-        {
-          "key": "largv",
-          "label": "Largura prateleiras verticais:",
-          "default_value": "0,4",
-
-        },
-        {
-          "key": "qtdv",
-          "label": "Quantidade de prateleiras verticais",
-          "default_value": "3",
-
         },
       ]
     }
   },
+
   {
-    "key": "3.2creche210",
+    "key": "creche3207",
     "type": "img_plus_input",
     "label": "A bancada de granito foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -252,27 +204,23 @@
       },
       "fields": [
         {
-          "key": "compr",
+          "key": "revestimento",
           "label": "Comprimento da bancada: ",
-          "default_value": "3,11",
-
         },
         {
-          "key": "larg",
+          "key": "revestimento",
           "label": "Largura da bancada: ",
-          "default_value": "0,5",
-
         },
       ]
     }
   },
   {
-    "key":  "3.2creche211",
+    "key": "creche3208",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

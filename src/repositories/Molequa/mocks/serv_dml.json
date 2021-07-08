@@ -1,197 +1,199 @@
 [
-  {
-    "key": "servdml01",
-    "type": "img_plus_input",
-    "label": "Complete com as medidas em metros nos itens a seguir:",
-    "placeholder": "",
-    "description": "",
-    "default_value": "Saliva de pirulito",
-    "additonal_type": null,
-    "image": "servdml1",
-    "radio": null,
-    "input": {
-      "dependency": null,
-      "fields": [
+    {
+      "key": "servdml01",
+      "type": "img_plus_input",
+      "label": "Complete com as medidas em metros nos itens a seguir:",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": "servdml1",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "A",
+            "label": "A - ",
+          },
+          {
+            "key": "B",
+            "label": "B - ",
+          },
+          {
+            "key": "Area",
+            "label": "Area - ",
+          },
+          {
+            "key": "Perimetro",
+            "label": "Perimetro - ",
+          },
+          {
+            "key": "Pe-direito",
+            "label": "Pe-direito - ",
+          }
+        ]
+      }
+    },
+    {
+      "key": "servdml02",
+      "type": "img_plus_input",
+      "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": "servdml2",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "p04",
+            "label": "Quantidade instalada P04?",
+          },
+        ]
+      }
+    },
+    {
+      "key": "sevdml03",
+      "type": "img_plus_input",
+      "label": "O armário foi instalado?",
+      "placeholder": "",
+      "description": "Selecionar alguma opção",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
         {
-          "key": "A",
-          "label": "A - ",
-          "default_value": "1,65"
+          "id": 0,
+          "description": "Não",
         },
         {
-          "key": "B",
-          "label": "B - ",
-          "default_value": "1,05"
+          "id": 2,
+          "description": "Sim, com as seguintes dimensões em  metros:",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 2
+        },
+        "fields": [
+          {
+            "key": "Comprimento",
+            "label": "Comprimento da prateleira: ",
+          },
+          {
+            "key": "Largura da",
+            "label": "Largura: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Número de prateleiras: ",
+          },
+        ]
+      }
+    },
+    {
+      "key": "servperc4",
+      "type": "picker",
+      "label": "Qual tipo de piso foi instalado?",
+      "description": "Selecionar alguma opção",
+      "placeholder": "exemplo",
+      "default_value": "",
+      "aditional_type": null,
+      "options": [
+        "Bloco de concreto intertravado",
+        "Cerâmico",
+        "Cimento desempenado",
+        "Granitina",
+        "Outros"
+      ],
+    },
+    {
+      "key": "servdeposito05",
+      "type": "img_plus_input",
+      "label": "O teto foi pintado?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Não",
         },
         {
-          "key": "Pe-direito",
-          "label": "Pe-direito - ",
-          "default_value": "2,6"
+          "id": 2,
+          "description": "Sim",
         }
       ]
-    }
-  },
-  {
-    "key": "servdml02",
-    "type": "img_plus_input",
-    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
-    "placeholder": "",
-    "description": "",
-    "default_value": "Saliva de pirulito",
-    "additonal_type": null,
-    "image": "servdml2",
-    "radio": null,
-    "input": {
-      "dependency": null,
-      "fields": [
+    },
+    {
+      "key": "servdeposito06",
+      "type": "img_plus_input",
+      "label": "A cerâmica 20 cm x 20 cm foi aplicada na parede toda?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
         {
-          "key": "p04",
-          "label": "Quantidade instalada P04?",
-          "default_value": "1"
-        }
-      ]
-    }
-  },
-  {
-    "key": "servdeposito05",
-    "type": "radio",
-    "label": "O teto foi pintado?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "servdeposito06",
-    "type": "img_plus_input",
-    "label": "A cerâmica 20 cm x 20 cm foi aplicada na parede toda?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "radio": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
-        {
-          "key": "revestimento",
-          "label": "Não, em:"
-        }
-      ]
-    }
-  },
-  {
-    "key": "servdeposito07",
-    "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo perímetro?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "radio": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
-        {
-          "key": "revestimento",
-          "label": "Não, em:"
-        }
-      ]
-    }
-  },
-  {
-    "key": "sevdml03",
-    "type": "img_plus_input",
-    "label": "O armário foi instalado?",
-    "placeholder": "",
-    "description": "Selecionar alguma opção",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "radio": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim, com as seguintes dimensões em  metros:"
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 2
-      },
-      "fields": [
-        {
-          "key": "Comprimento",
-          "label": "Comprimento da prateleiras: ",
-          "default_value": "1,65"
+          "id": 0,
+          "description": "Não",
         },
         {
-          "key": "Largura da",
-          "label": "Largura das prateleiras: ",
-          "default_value": "0,35"
+          "id": 2,
+          "description": "Sim",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Não, em:",
+          },
+        ]
+      }
+    },
+    {
+      "key": "servdeposito07",
+      "type": "img_plus_input",
+      "label": "O revestimento foi aplicado em todo perímetro?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Não",
         },
         {
-          "key": "Quantidade",
-          "label": "Número de prateleiras: ",
-          "default_value": "4"
+          "id": 2,
+          "description": "Sim",
         }
-      ]
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Não, em:",
+          },
+        ]
+      }
     }
-  },
-  {
-    "key": "servperc4",
-    "type": "picker",
-    "label": "Qual tipo de piso foi instalado?",
-    "description": "Selecionar alguma opção",
-    "placeholder": "exemplo",
-    "default_value": "Granitina",
-    "aditional_type": null,
-    "options": [
-      "Bloco de concreto intertravado",
-      "Cerâmico",
-      "Cimento desempenado",
-      "Granitina",
-      "Outros"
-    ]
-  }
-]
+  ]
+  

@@ -5,7 +5,7 @@
     "label": "Qual a área da sala de repouso? Complete com as medidas em metros nos itens a seguir",
     "placeholder": "",
     "description": "",
-    "default_value": "",
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "p2repouso2",
     "radio": null,
@@ -15,20 +15,22 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "2,85",
-
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "3,45",
-
+        },
+        {
+          "key": "Area",
+          "label": "Area (AB) - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro (2A+2B) - ",
         },
         {
           "key": "Pe-direito",
-          "label": "Pé-direito - ",
-          "default_value": "2,6",
-
+          "label": "Pe-direito - ",
         }
       ]
     }
@@ -39,7 +41,7 @@
     "label": "Observe a descrição das esquadrias a seguir. Elas foram instaladas corretamente?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "tabelap2repouso",
     "radio": [
@@ -59,139 +61,145 @@
       },
       "fields": [
         {
-          "key": "p05",
+          "key": "revestimento",
           "label": "Qual a quantidade instalada de P05?",
-          "default_value": "1",
-
         },
         {
-          "key": "ef14",
+          "key": "revestimento",
           "label": "Qual a quantidade instalada de EF 14",
-          "default_value": "1",
-
         },
       ]
     }
   },
   {
     "key": "p2repouso203",
-    "type": "radio",
-    "label": "O teto foi pintado?",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento da creche III e complete com as medidas a seguir. O teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
   },
   {
-    "key":  "p2repouso04",
-    "type": "radio",
-    "label": "Possui rodameio?",
+    "key": "p2repouso204",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento da creche III e complete com as medidas a seguir. Possui rodameio?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
 
     ],
   },
+
+
+
+
+
+
+
+
+
+
+
   {
-    "key": "p2repouso205",
+    "key": "text3",
     "type": "text",
-    "label": "Qual a altura que a cerâmica 20cm x 20cm foi instalada?",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": "1,7",
+    "default_value": "",
     "additional_type": null,
   },
   {
-    "key":  "p2repouso206",
+    "key": "text4",
     "type": "text",
     "label": "Qual a altura de parede que foi pintada?",
     "placeholder": "",
     "description": "",
-    "default_value": "0,9",
+    "default_value": "",
     "additional_type": null,
   },
   {
-    "key":  "p2repouso07",
+    "key": "img_plus_input5",
     "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo perímetro?",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim"
+        "description": "Sim",
       },
       {
-        "id": 1,
-        "description": "Não"
-      },
-
+        "id": 2,
+        "description": "Não",
+      }
     ],
     "input": {
       "dependency": {
         "key": "radio",
-        "value": 1
+        "value": 2
       },
       "fields": [
         {
           "key": "revestimento",
-          "label": "Não, em apenas:"
-        }
+          "label": "Perímetro não aplicado (em metros):",
+        },
       ]
     }
   },
   {
-    "key":  "p2repouso208",
-    "type": "radio",
+    "key": "img_plus_input5",
+    "type": "img_plus_input",
     "label": "Foi instalada a divisória entre a sala de repouso e a creche III?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
         "id": 0,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 2,
         "description": "Não",
       }
     ]
   },
   {
-    "key":  "p2repouso209",
+    "key": "qualificacao",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

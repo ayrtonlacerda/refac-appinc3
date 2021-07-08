@@ -1,14 +1,14 @@
 [
   {
     "key": "ae1",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "O anfiteatro foi executado?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
         "id": 0,
         "description": "Não"
@@ -21,14 +21,14 @@
   },
   {
     "key": "ae2",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "As hastes das bandeiras foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
         "id": 0,
         "description": "Não"
@@ -45,7 +45,7 @@
     "label": "Foi feita a pavimentação em blocket do estacionamento?",
     "placeholder": "",
     "description": "",
-    "default_value": 2,
+    "default_value": null,
     "additonal_type": null,
     "image": "areaExterna",
     "radio": [
@@ -66,57 +66,49 @@
       "fields": [
         {
           "key": "aeA",
-          "label": "A - ",
-          "default_value": "10,2"
+          "label": "A - "
         },
         {
           "key": "aeB",
-          "label": "B - ",
-          "default_value": "4,5"
+          "label": "B - "
         },
         {
           "key": "aeC",
-          "label": "C - ",
-          "default_value": "14,98"
+          "label": "C - "
         },
         {
           "key": "aeD",
-          "label": "D - ",
-          "default_value": "5,5"
+          "label": "D - "
         },
         {
           "key": "aeE",
-          "label": "E - ",
-          "default_value": "4,5"
+          "label": "E - "
         },
         {
           "key": "aeF",
-          "label": "F - ",
-          "default_value": "9,18"
+          "label": "F - "
         },
         {
           "key": "aearea",
-          "label": "AREA - ",
-          "default_value": "169,6"
+          "label": "AREA - "
         },
         {
           "key": "aeperimetro",
-          "label": "PERíMETRO - ",
-          "default_value": "58,96"
+          "label": "PERíMETRO - "
         }
       ]
     }
   },
   {
     "key": "ae4",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "A drenagem, por meio das calhas na calçada interna, foi executada?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
         "id": 0,
         "description": "Não"
@@ -133,7 +125,7 @@
     "label": "Foi instalada grama em toda a área externa?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": null,
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -161,14 +153,14 @@
   },
   {
     "key": "ae6",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "Foi feita a pavimentação com cimento desempenado?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
         "id": 0,
         "description": "Não"
@@ -181,14 +173,14 @@
   },
   {
     "key": "ae7",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "O playground foi executado?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
         "id": 0,
         "description": "Não"

@@ -7,7 +7,7 @@
     "description": "",
     "default_value": "Saliva de pirulito",
     "additonal_type": null,
-    "image": "sanitario1",
+    "image": "sanitario2",
     "radio": null,
     "input": {
       "dependency": null,
@@ -15,27 +15,30 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "2,25"
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "1,2"
         },
         {
           "key": "C",
           "label": "C - ",
-          "default_value": "3,45"
         },
         {
           "key": "D",
           "label": "D - ",
-          "default_value": "2,8"
+        },
+        {
+          "key": "Area",
+          "label": "Area - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro - ",
         },
         {
           "key": "Pe-direito",
-          "label": "Pé-direito - ",
-          "default_value": "2,6"
+          "label": "Pe-direito - ",
         }
       ]
     }
@@ -43,31 +46,40 @@
   {
     "key": "sanitario202",
     "type": "img_plus_input",
-    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Caso não informe as quantidades.",
     "placeholder": "",
     "description": "",
     "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "tabelasanitario1",
-    "radio": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
     "input": {
-      "dependency": null,
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
       "fields": [
         {
-          "key": "p02",
+          "key": "revestimento",
           "label": "Quantidade de P02:",
-          "default_value": "1"
         },
         {
-          "key": "pm04b",
-          "label": "Quantidade de PM04B:",
-          "default_value": "3"
+          "key": "revestimento",
+          "label": "Quantidade de EF11:",
         },
         {
-          "key": "ef13",
-          "label": "Quantidade de EF13:",
-          "default_value": "2"
-        }
+          "key": "revestimento",
+          "label": "Quantidade de EF12:",
+        },
       ]
     }
   },
@@ -77,113 +89,133 @@
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "2",
-    "additional_type": null
+    "default_value": "",
+    "additional_type": null,
   },
   {
     "key": "sanitario204",
     "type": "text",
-    "label": "Quantos vasos sanitários foram instalados?",
+    "label": "  A mureta dos chuveiros foi executada?",
     "placeholder": "",
     "description": "",
-    "default_value": "4",
-    "additional_type": null
+    "default_value": "",
+    "additional_type": null,
   },
   {
     "key": "sanitario205",
-    "type": "radio",
-    "label": "A mureta dos chuveiros foi executada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "sanitario206",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "O teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "sanitario207",
-    "type": "radio",
-    "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 1,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "sanitario208",
-    "type": "text",
-    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,7",
-    "additional_type": null
-  },
-  {
-    "key": "sanitario209",
-    "type": "text",
-    "label": "Qual a altura da parede que foi pintada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "0,8",
-    "additional_type": null
-  },
-  {
-    "key": "sanitario210",
-    "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo o perímetro?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Não"
+        "description": "Não",
       },
       {
         "id": 1,
-        "description": "Sim"
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "sanitario206",
+    "type": "img_plus_input",
+    "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "sanitario207",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "sanitario208",
+    "type": "text",
+    "label": "Qual a altura de parede que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "sanitario209",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "sanitario209",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "sanitario211",
+    "type": "img_plus_input",
+    "label": "A bancada de granito foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "divisoriasanitario1",
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim, com as seguintes dimensões:",
+      },
+      {
+        "id": 2,
+        "description": "Não",
       }
     ],
     "input": {
@@ -194,101 +226,60 @@
       "fields": [
         {
           "key": "revestimento",
-          "label": "Quantidade em metros:"
-        }
+          "label": "Altura da divisória de A:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Largura da divisória de A:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Qtd de divisórias de A:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Altura da divisória de B:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Largura da divisória de B:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Qtd de divisórias de B:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Altura da divisória de C:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Largura da divisória de C:",
+        },
+        {
+          "key": "revestimento",
+          "label": "Qtd de divisórias de C:",
+        },
       ]
     }
   },
   {
     "key": "sanitario212",
     "type": "img_plus_input",
-    "label": "A divisórias de granito entre os vasos sanitários foram instaladas?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 0,
-    "additonal_type": null,
-    "image": "divisoriasanitario1",
-    "radio": [
-      {
-        "id": 0,
-        "description": "Sim, com as seguintes dimensões:"
-      },
-      {
-        "id": 2,
-        "description": "Não"
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
-        {
-          "key": "alturaa",
-          "label": "Altura da divisória de A:",
-          "default_value": "1,8"
-        },
-        {
-          "key": "larguraa",
-          "label": "Largura da divisória de A:",
-          "default_value": "0,25"
-        },
-        {
-          "key": "qtda",
-          "label": "Qtd de divisórias de A:",
-          "default_value": "1"
-        },
-        {
-          "key": "alturab",
-          "label": "Altura da divisória de B:",
-          "default_value": "1,8"
-        },
-        {
-          "key": "largurab",
-          "label": "Largura da divisória de B:",
-          "default_value": "0,8"
-        },
-        {
-          "key": "qtdb",
-          "label": "Qtd de divisórias de B:",
-          "default_value": "3"
-        },
-        {
-          "key": "alturac",
-          "label": "Altura da divisória de C:",
-          "default_value": "1,8"
-        },
-        {
-          "key": "largurac",
-          "label": "Largura da divisória de C:",
-          "default_value": "0,8"
-        },
-        {
-          "key": "qtdc",
-          "label": "Qtd de divisórias de C:",
-          "default_value": "1"
-        }
-      ]
-    }
-  },
-  {
-    "key": "sanitario213",
-    "type": "img_plus_input",
     "label": "A bancada de granito foi instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Sim, com as seguintes dimensões:"
+        "description": "Sim, com as seguintes dimensões:",
       },
       {
         "id": 2,
-        "description": "Não"
+        "description": "Não",
       }
     ],
     "input": {
@@ -298,25 +289,23 @@
       },
       "fields": [
         {
-          "key": "comp",
+          "key": "revestimento",
           "label": "Comprimento da bancada:",
-          "default_value": "2,5"
         },
         {
-          "key": "larg",
+          "key": "revestimento",
           "label": "Largura da bancada:",
-          "default_value": "0,45"
-        }
+        },
       ]
     }
   },
   {
-    "key": "sanitario214",
+    "key": "sanitario213",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

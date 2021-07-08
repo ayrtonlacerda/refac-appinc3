@@ -1,20 +1,20 @@
 [
   {
     "key": "p2areaexterna01",
-    "type": "radio",
-    "label": "O teto foi pintado?",
+    "type": "img_plus_input",
+    "label": "Observe o revestimento externo, o teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
@@ -25,54 +25,54 @@
     "label": "Qual a altura que foi pintada? (m)",
     "placeholder": "",
     "description": "",
-    "default_value": "2,1",
+    "default_value": "",
     "additional_type": null,
   },
   {
     "key": "p2areaexterna03",
     "type": "text",
-    "label": "Qual a altura da faixa inferior de cerâmica 10x10 cm? (m)",
+    "label": "Qual a altura da faixa inferior de cerâmica 10 x 10 cm? (m)",
     "placeholder": "",
     "description": "",
-    "default_value": "0,5",
+    "default_value": "",
     "additional_type": null,
   },
   {
     "key": "p2areaexterna04",
-    "type": "radio",
-    "label": "A faixa superior de cerâmica 10x10 cm instalada?",
+    "type": "img_plus_input",
+    "label": "A faixa superior de cerâmica 10 x 10 cm instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
   },
   {
     "key": "p2areaexterna05",
-    "type": "radio",
-    "label": "Os triângulos da coberta foram revestidos com cerâmica 10x10 cm?",
+    "type": "img_plus_input",
+    "label": "A faixa superior de cerâmica 10 x 10 cm instalada?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
@@ -85,7 +85,7 @@
     "label": "O revestimento foi aplicado em todo o perímetro?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
@@ -118,7 +118,7 @@
     "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
     "placeholder": "",
     "description": "",
-    "default_value": "4",
+    "default_value": "",
     "additional_type": null,
   },
   {
@@ -127,7 +127,7 @@
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",
@@ -139,20 +139,20 @@
   },
   {
     "key": "p2areaexterna09",
-    "type": "radio",
+    "type": "img_plus_input",
     "label": "A estrutura do prédio está compatível com a dimensão da construção?",
     "placeholder": "",
     "description": "",
-    "default_value": 0,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
-    "options": [
+    "radio": [
       {
-        "id": 0,
+        "id": 1,
         "description": "Sim",
       },
       {
-        "id": 1,
+        "id": 0,
         "description": "Não",
       },
     ],
@@ -167,4 +167,7 @@
     "default_value": "",
     "additional_type": null,
   },
+
+
+
 ]

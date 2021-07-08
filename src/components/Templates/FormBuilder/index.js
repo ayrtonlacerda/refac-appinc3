@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import * as Atom from '../../Atom';
 import * as Molecules from '../../Molecules';
 import * as Organisms from '../../Organisms';
@@ -7,14 +7,13 @@ import { useForm } from '../../../global';
 const FormBuilder = ({
   fields, group, handleChangeValueForm, item,
 }) => {
-  // TODO: no genetica utilizamos os form,
-  const { form, currentExam, keysOfForm } = useForm();
+  const { form, currentExam } = useForm();
   let index = 0;
 
   const conditional = (type, field) => {
     const render = (
       field.type === type && !field.dependency)
-      || (field.type === type && field.value_dependency === keysOfForm[field.dependency]);
+      || (field.type === type && field.value_dependency === form[currentExam][field.dependency]);
 
     if (render) {
       index += 1;
@@ -23,14 +22,6 @@ const FormBuilder = ({
   };
 
   return fields?.map((field, i) => {
-    /* no genetica utilizamos form[currentExam][field.key] */
-    const value = keysOfForm[field.key];
-
-    console.log({ field });
-    console.log('Teste ->', field.input);
-    console.log('Teste2 ->', field.radio);
-    console.log('Teste3 ->', value);
-
     if (conditional('text', field)) {
       return (
         <Organisms.FormField
@@ -39,11 +30,10 @@ const FormBuilder = ({
           label={field.label}
           description={field.description}
         >
-
           <Atom.Input
             width="100%"
             keyField={field.key}
-            value={group ? item[i][field.key] : value}
+            value={group ? item[i][field.key] : form[currentExam][field.key]}
             onChangeText={
               (text) => handleChangeValueForm(field.key, text)
             }
@@ -62,7 +52,7 @@ const FormBuilder = ({
         >
           <Organisms.Camera
             keyField={field.key}
-            value={group ? item[i][field.key] : value}
+            value={group ? item[i][field.key] : form[currentExam][field.key]}
             onChange={handleChangeValueForm}
             type={field.additional_type}
             options={field.options}
@@ -80,7 +70,7 @@ const FormBuilder = ({
         >
           <Organisms.OCR
             keyField={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             onChangeText={
               (text) => handleChangeValueForm(field.key, text)
             }
@@ -98,7 +88,7 @@ const FormBuilder = ({
         >
           <Organisms.Vehicle
             keyField={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             onChange={handleChangeValueForm}
           />
         </Organisms.FormField>
@@ -114,7 +104,7 @@ const FormBuilder = ({
         >
           <Molecules.DatePicker
             keyField={field.key}
-            value={value && new Date(form[currentExam][field.key])}
+            value={form[currentExam][field.key] && new Date(form[currentExam][field.key])}
             onChange={handleChangeValueForm}
             mode={field.aditional_type}
           />
@@ -130,7 +120,7 @@ const FormBuilder = ({
           description={field.description}
         >
           <Molecules.GeoLocation
-            value={value}
+            value={form[currentExam][field.key]}
             onChange={handleChangeValueForm}
             keyRef={field.key}
           />
@@ -147,7 +137,7 @@ const FormBuilder = ({
         >
           <Molecules.Scanner
             keyField={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             onChange={handleChangeValueForm}
           />
         </Organisms.FormField>
@@ -163,13 +153,14 @@ const FormBuilder = ({
         >
           <Organisms.AudioRecoder
             onChange={handleChangeValueForm}
-            value={value}
+            value={form[currentExam][field.key]}
             keyField={field.key}
           />
         </Organisms.FormField>
       );
     }
     if (conditional('group', field)) {
+      console.log({ group: conditional('group', field) });
       return (
         <Organisms.FormField
           group={group}
@@ -179,7 +170,7 @@ const FormBuilder = ({
         >
           <Organisms.Group
             onChange={handleChangeValueForm}
-            value={value}
+            value={form[currentExam][field.key]}
             keyField={field.key}
             group={field.group}
           />
@@ -198,7 +189,7 @@ const FormBuilder = ({
           <Molecules.RadioButton
             keyField={field.key}
             onChange={handleChangeValueForm}
-            value={value}
+            value={form[currentExam][field.key]}
             options={field.options}
           />
         </Organisms.FormField>
@@ -216,7 +207,7 @@ const FormBuilder = ({
           <Organisms.Seal
             keyField={field.key}
             onChange={handleChangeValueForm}
-            value={value}
+            value={form[currentExam][field.key]}
             options={field.options}
           />
         </Organisms.FormField>
@@ -234,7 +225,7 @@ const FormBuilder = ({
           <Organisms.Description
             keyField={field.key}
             onChange={handleChangeValueForm}
-            value={value || field.default_value}
+            value={form[currentExam][field.key] || field.default_value}
             options={field.options}
           />
         </Organisms.FormField>
@@ -251,7 +242,7 @@ const FormBuilder = ({
         >
           <Molecules.Toggles
             keyField={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             onChange={handleChangeValueForm}
           />
         </Organisms.FormField>
@@ -268,7 +259,7 @@ const FormBuilder = ({
         >
           <Molecules.ImgPlusInput
             keyField={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             onChange={handleChangeValueForm}
             {...field}
           />
@@ -285,7 +276,7 @@ const FormBuilder = ({
         >
           <Organisms.Picker
             keyRef={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             options={field.options}
             onChangeOption={handleChangeValueForm}
             onChangeText={
@@ -305,7 +296,7 @@ const FormBuilder = ({
         >
           <Organisms.PickerPlusInput
             keyRef={field.key}
-            value={value}
+            value={form[currentExam][field.key]}
             options={field.options}
             onChangeOption={handleChangeValueForm}
             onChangeText={

@@ -1,6 +1,6 @@
 [
   {
-    "key": "sanitariopne201",
+    "key": "sanitariopne01",
     "type": "img_plus_input",
     "label": "Complete com as medidas em metros nos itens a seguir.",
     "placeholder": "",
@@ -15,136 +15,150 @@
         {
           "key": "A",
           "label": "A - ",
-          "default_value": "2,25"
         },
         {
           "key": "B",
           "label": "B - ",
-          "default_value": "2,25"
+        },
+        {
+          "key": "Area",
+          "label": "Area (AB) - ",
+        },
+        {
+          "key": "Perimetro",
+          "label": "Perimetro (2A+2B) - ",
         },
         {
           "key": "Pe-direito",
-          "label": "Pé-direito - ",
-          "default_value": "2,6"
+          "label": "Pe-direito - ",
         }
       ]
     }
   },
   {
-    "key": "sanitariopne202",
+    "key": "sanitariopne02",
     "type": "img_plus_input",
-    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Caso não informe as quantidades.",
     "placeholder": "",
     "description": "",
     "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": "tabelasanitariopne1",
-    "radio": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim",
+      },
+      {
+        "id": 2,
+        "description": "Não",
+      }
+    ],
     "input": {
-      "dependency": null,
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
       "fields": [
         {
-          "key": "p02",
+          "key": "revestimento",
           "label": "Quantidade de P02:",
-          "default_value": "1"
         },
         {
-          "key": "ef11",
+          "key": "revestimento",
           "label": "Quantidade de EF11:",
-          "default_value": "1"
         },
         {
-          "key": "ef12",
+          "key": "revestimento",
           "label": "Quantidade de EF12:",
-          "default_value": "1"
-        }
+        },
       ]
     }
   },
   {
-    "key": "sanitariopne203",
+    "key": "sanitariopne03",
     "type": "text",
     "label": "Quantos vasos sanitários foram instalados?",
     "placeholder": "",
     "description": "",
-    "default_value": "1",
-    "additional_type": null
+    "default_value": "",
+    "additional_type": null,
   },
   {
-    "key": "sanitariopne204",
-    "type": "radio",
+    "key": "sanitariopne04",
+    "type": "img_plus_input",
     "label": "O teto foi pintado?",
     "placeholder": "",
     "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "sanitariopne205",
-    "type": "radio",
-    "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 1,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "sanitariopne206",
-    "type": "text",
-    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,7",
-    "additional_type": null
-  },
-  {
-    "key": "sanitariopne207",
-    "type": "text",
-    "label": "Qual a altura da parede que foi pintada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "0,8",
-    "additional_type": null
-  },
-  {
-    "key": "sanitariopne208",
-    "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo o perímetro?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
+    "default_value": "Saliva de pirulito",
     "additonal_type": null,
     "image": null,
     "radio": [
       {
         "id": 0,
-        "description": "Não"
+        "description": "Não",
       },
       {
         "id": 1,
-        "description": "Sim"
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "sanitariopne05",
+    "type": "img_plus_input",
+    "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
+      }
+    ],
+  },
+  {
+    "key": "sanitariopne06",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "sanitariopne07",
+    "type": "text",
+    "label": "Qual a altura de parede que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null,
+  },
+  {
+    "key": "sanitariopne08",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim",
       }
     ],
     "input": {
@@ -154,19 +168,19 @@
       },
       "fields": [
         {
-          "key": "altura1",
-          "label": "Quantidade em metros: "
-        }
+          "key": "revestimento",
+          "label": "Quantidade em metros:",
+        },
       ]
     }
   },
   {
-    "key": "sanitariopne209",
+    "key": "sanitariopne09",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",
     "placeholder": "exemplo",
-    "default_value": "Granitina",
+    "default_value": "",
     "aditional_type": null,
     "options": [
       "Bloco de concreto intertravado",

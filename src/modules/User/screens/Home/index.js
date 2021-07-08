@@ -20,11 +20,10 @@ const Home = () => {
     navigation.navigate('FormsRoutes');
   }, [navigation]);
 
-  const handleExit = () => {
-    console.log('exit');
+  const handleExit = useCallback(() => {
     removeLocalStorage('@appinc_user');
     setUser(null);
-  };
+  }, [navigation]);
 
   const handleMy = useCallback(() => navigation.navigate('MyExpertise'), [navigation]);
 
@@ -52,16 +51,28 @@ const Home = () => {
         </Text>
         <Container background>
           <Button mb={2} textButton="Nova Pericia" mt={4} fontSize={2} onPress={handleNew} />
-          <Button mb={2} textButton="Renovar Token" fontSize={2} onPress={handleNew} />
           <Button
             mb={20}
             type={4}
-            textButton="Sair"
-            onPress={handleExit}
+            textButton=" Renovar Token"
+            onPress={() => {
+
+            }}
           />
+          <Text
+            color="SECONDARY"
+            onPress={handleExit}
+            fontWeight={4}
+            fontSize={3}
+            mt={1}
+          >
+            Sair
+          </Text>
         </Container>
+
       </Container>
     </>
+
   );
 };
 

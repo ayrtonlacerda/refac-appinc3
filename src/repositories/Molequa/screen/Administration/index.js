@@ -3,7 +3,7 @@ import React, { useCallback } from 'react';
 import Toast from 'react-native-toast-message';
 import { useCommons } from '../../../../hooks';
 import { useForm } from '../../../../global';
-import { MolequaImgs } from '../../../../assets';
+import Foto2 from '../../../../assets/img/Foto2.png';
 // ui
 import * as Atoms from '../../../../components/Atom';
 import * as Molecules from '../../../../components/Molecules';
@@ -12,24 +12,24 @@ import { subAreas as subAreasMocks } from '../../mocks';
 
 const Administration = () => {
   const { navigation, route } = useCommons();
-  console.log('Screen -> Administration');
 
-  const { subAreas, image } = route.params;
+  const { subAreas } = route.params;
 
   const handleBack = useCallback(() => {
     // handleReset();
     navigation.navigate('Estatica1');
-  }, []);
+  }, [navigation]);
+
   return (
     <Atoms.Container>
       <Molecules.Header title={route.params.title || 'Novo Local'} back />
       <Atoms.Container justifyContent="space-between" p={3}>
         <Atoms.Scroll noPaddingX>
-          <Atoms.Image src={MolequaImgs[image]} />
+          <Atoms.Image src={Foto2} />
           {subAreas?.map((nameArea, index) => (
             <Molecules.StepCard
               title={`${index + 1} - ${nameArea}`}
-              // percentage={30}
+              percentage={30}
               onClickCard={() => (subAreasMocks[nameArea] ? navigation.navigate('Forms', {
                 fields: subAreasMocks[nameArea],
                 title: `${index + 1} - ${nameArea}`,

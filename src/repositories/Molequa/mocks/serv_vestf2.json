@@ -5,7 +5,7 @@
       "label": "Complete com as medidas em metros nos itens a seguir:",
       "placeholder": "",
       "description": "",
-      "default_value": "",
+      "default_value": "Saliva de pirulito",
       "additonal_type": null,
       "image": "servvestf1",
       "radio": null,
@@ -15,22 +15,23 @@
           {
             "key": "A",
             "label": "A - ",
-            "default_value": "2,85",
-
           },
           {
             "key": "B",
             "label": "B - ",
-            "default_value": "5,25",
-
+          },
+          {
+            "key": "Area",
+            "label": "Area - ",
+          },
+          {
+            "key": "Perimetro",
+            "label": "Perimetro - ",
           },
           {
             "key": "Pe-direito",
             "label": "Pe-direito - ",
-            "default_value": "2,6",
-
           }
-
         ]
       }
     },
@@ -40,7 +41,7 @@
       "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
       "placeholder": "",
       "description": "",
-      "default_value": "",
+      "default_value": "Saliva de pirulito",
       "additonal_type": null,
       "image": "servvestf2",
       "radio": null,
@@ -50,26 +51,18 @@
           {
             "key": "p05",
             "label": "Quantidade instalada P05?",
-            "default_value": "1",
-
           },
           {
             "key": "pm04a",
             "label": "Quantidade instalada PM04A?",
-            "default_value": "6",
-
           },
           {
             "key": "ef10",
             "label": "Quantidade instalada EF 10?",
-            "default_value": "2",
-
           },
           {
             "key": "ef13",
             "label": "Quantidade instalada EF 13?",
-            "default_value": "2",
-
           },
         ]
       }
@@ -80,95 +73,8 @@
         "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
         "placeholder": "",
         "description": "",
-        "default_value": "2",
+        "default_value": "",
         "additional_type": null,
-      },
-      {
-        "key": "servvestf07",
-        "type": "radio",
-        "label": "O teto foi pintado?",
-        "placeholder": "",
-        "description": "",
-        "default_value": 0,
-        "additonal_type": null,
-        "image": null,
-        "options": [
-          {
-            "id": 0,
-            "description": "Sim",
-          },
-          {
-            "id": 1,
-            "description": "Não",
-          },
-
-        ]
-      },
-      {
-        "key": "servvest08",
-        "type": "img_plus_input",
-        "label": "A cerâmica 20cm x 20cm foi aplicada na parede toda?",
-        "placeholder": "",
-        "description": "",
-        "default_value": 0,
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Sim",
-          },
-          {
-            "id": 1,
-            "description": "Não",
-          },
-
-        ],
-        "input": {
-          "dependency": {
-            "key": "radio",
-            "value": 0
-          },
-          "fields": [
-            {
-              "key": "revestimento",
-              "label": "Não, em:",
-            },
-          ]
-        }
-      },
-      {
-        "key": "servvestf09",
-        "type": "img_plus_input",
-        "label": "O revestimento foi aplicado em todo perímetro?",
-        "placeholder": "",
-        "description": "",
-        "default_value": 0,
-        "additonal_type": null,
-        "image": null,
-        "radio": [
-          {
-            "id": 0,
-            "description": "Sim",
-          },
-          {
-            "id": 1,
-            "description": "Não",
-          },
-
-        ],
-        "input": {
-          "dependency": {
-            "key": "radio",
-            "value": 1
-          },
-          "fields": [
-            {
-              "key": "revestimento",
-              "label": "Não, em apenas (m):",
-            },
-          ]
-        }
       },
     {
       "key": "servvestf04",
@@ -176,19 +82,223 @@
       "label": "As divisórias de granito entre os vasos sanitários e entre os chuveiros foram instaladas?",
       "placeholder": "",
       "description": "Selecionar alguma opção",
-      "default_value": 0,
+      "default_value": null,
+      "additonal_type": null,
+      "image": "servvestf3",
+      "radio": [
+        {
+          "id": 0,
+          "description": "Não",
+        },
+        {
+          "id": 2,
+          "description": "Sim, com as seguintes dimensões em  metros:",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 2
+        },
+        "fields": [
+          {
+            "key": "Altura",
+            "label": "Altura da divisória A: ",
+          },
+          {
+            "key": "Largura :",
+            "label": "Largura da divisória A: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias A: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória B ",
+          },
+          {
+            "key": "Largura da",
+            "label": "Largura da divisória B: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias B: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória C: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória C: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias C: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória D: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória D:",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias D: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória E: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória E: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias E: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória F: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória F:",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias F: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória G: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória G: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias G: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória H:",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória H: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias H: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória I: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória I:",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias I: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória J: ",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória J: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias J: ",
+          },
+          {
+            "key": "Altura",
+            "label": "Altura da divisória K:",
+          },
+          {
+            "key": "Largura",
+            "label": "Largura da divisória K: ",
+          },
+          {
+            "key": "Quantidade",
+            "label": "Quantidade de divisórias K: ",
+          },
+        ]
+      }
+    },
+    {
+        "key": "servestf05",
+        "type": "text",
+        "label": "Quantos vasos sanitários foram instalados?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "",
+        "additional_type": null,
+      },
+    {
+      "key": "servvesf06",
+      "type": "picker",
+      "label": "Qual tipo de piso foi instalado?",
+      "description": "Selecionar alguma opção",
+      "placeholder": "exemplo",
+      "default_value": "",
+      "aditional_type": null,
+      "options": [
+        "Bloco de concreto intertravado",
+        "Cerâmico",
+        "Cimento desempenado",
+        "Granitina",
+        "Outros"
+      ],
+    },
+    {
+      "key": "servvestf07",
+      "type": "img_plus_input",
+      "label": "O teto foi pintado?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
       "additonal_type": null,
       "image": null,
       "radio": [
         {
           "id": 0,
-          "description": "Sim, com as seguintes dimensões em  metros:",
-        },
-        {
-          "id": 1,
           "description": "Não",
         },
-
+        {
+          "id": 2,
+          "description": "Sim",
+        }
+      ]
+    },
+    {
+      "key": "servvest08",
+      "type": "img_plus_input",
+      "label": "A cerâmica 20 cm x 20 cm foi aplicada na parede toda?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Não",
+        },
+        {
+          "id": 2,
+          "description": "Sim",
+        }
       ],
       "input": {
         "dependency": {
@@ -197,231 +307,43 @@
         },
         "fields": [
           {
-            "key": "Alturaa",
-            "label": "Altura da divisória A: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Larguraa :",
-            "label": "Largura da divisória A: ",
-            "default_value": "1,14",
-
-          },
-          {
-            "key": "Quantidadea",
-            "label": "Quantidade de divisórias A: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturab",
-            "label": "Altura da divisória B ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurab",
-            "label": "Largura da divisória B: ",
-            "default_value": "0,08",
-
-          },
-          {
-            "key": "Quantidadeb",
-            "label": "Quantidade de divisórias B: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturac",
-            "label": "Altura da divisória C: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurac",
-            "label": "Largura da divisória C: ",
-            "default_value": "0,25",
-
-          },
-          {
-            "key": "Quantidadec",
-            "label": "Quantidade de divisórias C: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturad",
-            "label": "Altura da divisória D: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurad",
-            "label": "Largura da divisória D:",
-            "default_value": "0,25",
-
-          },
-          {
-            "key": "Quantidaded",
-            "label": "Quantidade de divisórias D: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturae",
-            "label": "Altura da divisória E: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurae",
-            "label": "Largura da divisória E: ",
-            "default_value": "0,17",
-
-          },
-          {
-            "key": "Quantidadee",
-            "label": "Quantidade de divisórias E: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturaf",
-            "label": "Altura da divisória F: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Larguraf",
-            "label": "Largura da divisória F:",
-            "default_value": "1,32",
-
-          },
-          {
-            "key": "Quantidadef",
-            "label": "Quantidade de divisórias F: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturag",
-            "label": "Altura da divisória G: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurag",
-            "label": "Largura da divisória G: ",
-            "default_value": "0,88",
-
-          },
-          {
-            "key": "Quantidadeg",
-            "label": "Quantidade de divisórias G: ",
-            "default_value": "2",
-
-          },
-          {
-            "key": "Alturah",
-            "label": "Altura da divisória H:",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurah",
-            "label": "Largura da divisória H: ",
-            "default_value": "0,84",
-
-          },
-          {
-            "key": "Quantidadeh",
-            "label": "Quantidade de divisórias H: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturai",
-            "label": "Altura da divisória I: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Largurai",
-            "label": "Largura da divisória I:",
-            "default_value": "0,13",
-
-          },
-          {
-            "key": "Quantidadei",
-            "label": "Quantidade de divisórias I: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturaj",
-            "label": "Altura da divisória J: ",
-            "default_value": "1,8",
-
-          },
-          {
-            "key": "Larguraj",
-            "label": "Largura da divisória J: ",
-            "default_value": "0,05",
-
-          },
-          {
-            "key": "Quantidadej",
-            "label": "Quantidade de divisórias J: ",
-            "default_value": "1",
-
-          },
-          {
-            "key": "Alturak",
-            "label": "Altura da divisória K:",
-            "default_value": "1,",
-
-          },
-          {
-            "key": "Largurak",
-            "label": "Largura da divisória K: ",
-            "default_value": "0,83",
-
-          },
-          {
-            "key": "Quantidadek",
-            "label": "Quantidade de divisórias K: ",
-            "default_value": "1",
-
+            "key": "revestimento",
+            "label": "Não, em:",
           },
         ]
       }
     },
-
-
     {
-      "key": "servestf05",
-      "type": "text",
-      "label": "Quantos vasos sanitários foram instalados?",
+      "key": "servvestf09",
+      "type": "img_plus_input",
+      "label": "O revestimento foi aplicado em todo perímetro?",
       "placeholder": "",
       "description": "",
-      "default_value": "3",
-      "additional_type": null,
-    },
-    {
-      "key": "servvestf06",
-      "type": "picker",
-      "label": "Qual tipo de piso foi instalado?",
-      "description": "Selecionar alguma opção",
-      "placeholder": "exemplo",
-      "default_value": "Granitina",
-      "aditional_type": null,
-      "options": [
-        "Bloco de concreto intertravado",
-        "Cerâmica",
-        "Cimento desempenado",
-        "Granitina",
-        "Outros"
-      ]
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Não",
+        },
+        {
+          "id": 2,
+          "description": "Sim",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Não, em:",
+          },
+        ]
+      }
     }
   ]
+  

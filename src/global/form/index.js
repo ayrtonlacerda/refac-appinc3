@@ -1,7 +1,6 @@
 import { useCallback } from 'react';
 import produce from 'immer';
 import useStore from './store';
-import DB from '../../database';
 
 export const useForm = () => {
   const {
@@ -10,13 +9,11 @@ export const useForm = () => {
     currentExam,
     keysOfForm,
     set,
+    setKeysOfForm,
     reset,
     setMock,
     setForm,
-    setKeysOfForm,
-    setCurrentExam,
     setValueInForm,
-    setValueKeyOfForm,
     ...propsFormStore
   } = useStore();
 
@@ -40,6 +37,7 @@ export const useForm = () => {
   };
 
   const handleCreateArrayForm = (exams) => {
+    console.log({ exams123213: exams });
     let object = {};
     exams.map((exam) => {
       object = {
@@ -52,6 +50,7 @@ export const useForm = () => {
       };
     });
 
+    console.log({ object });
     setForm(object);
   };
 
@@ -66,28 +65,12 @@ export const useForm = () => {
     // await db.insert(`${mock.id}`, { [key]: value });
   }, [form, currentExam]);
 
-  const handleChangeValueKeysOfForm = useCallback(async (key, value, dontSaveOffline) => {
-    setValueKeyOfForm(key, value);
-    // set({ [key]: value }, currentExam);
-    // set(produce(draftState => ) { [key]: value });
-    if (!dontSaveOffline) {
-      await DB.insert(
-        currentExam,
-        { keysOfForm: { ...keysOfForm, [key]: value } },
-      );
-    }
-  }, [form]);
-
   const handleProgressStepForm = useCallback((step) => {
     if (!form) return 0;
     // const filed = step.fields.filter((field) => !!form[field.key]);
     const percentage = 75;// (filed.length / step.fields.length) * 100;
     return percentage;
   }, [mock, form]);
-
-  const handleSetExam = (exam) => {
-    setCurrentExam(exam?.codigoVestigio || exam);
-  };
 
   const handleReset = () => reset();
 
@@ -104,12 +87,10 @@ export const useForm = () => {
     setForm,
     setValueInForm,
     handleReset,
-    handleSetExam,
     handleCreateForm,
     handlreRetriveForm: () => { },
     handleChangeValueForm,
     handleCreateArrayForm,
     handleProgressStepForm,
-    handleChangeValueKeysOfForm,
   };
 };

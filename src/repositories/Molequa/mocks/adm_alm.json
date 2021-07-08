@@ -1,247 +1,214 @@
 [
-  {
-    "key": "adm_alm1",
-    "type": "img_plus_input",
-    "label": "Complete com as medidas em metros nos itens a seguir:",
-    "placeholder": "",
-    "description": "",
-    "default_value": "Saliva de pirulito",
-    "additonal_type": null,
-    "image": "adm_alm1",
-    "radio": null,
-    "input": {
-      "dependency": null,
-      "fields": [
+    {
+      "key": "adm_alm1",
+      "type": "img_plus_input",
+      "label": "Complete com as medidas em metros nos itens a seguir:",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": "adm_alm1",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "A",
+            "label": "A - ",
+          },
+          {
+            "key": "B",
+            "label": "B - ",
+          },
+          {
+            "key": "Area",
+            "label": "Area - ",
+          },
+          {
+            "key": "Perimetro",
+            "label": "Perimetro - ",
+          }
+        ]
+      }
+    },
+    {
+      "key": "adm_alm2",
+      "type": "img_plus_input",
+      "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+      "placeholder": "",
+      "description": "",
+      "default_value": "Saliva de pirulito",
+      "additonal_type": null,
+      "image": "adm_alm2",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "p05",
+            "label": "Quantidade instalada P05?",
+          },
+          {
+            "key": "ef14",
+            "label": "Quantidade instalada EF 14?",
+          }
+        ]
+      }
+    },
+    {
+      "key": "text1",
+      "type": "text",
+      "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "",
+      "additional_type": null,
+    },
+    {
+      "key": "qualificacao",
+      "type": "picker",
+      "label": "Qual tipo de piso foi instalado?",
+      "description": "Selecionar alguma opção",
+      "placeholder": "exemplo",
+      "default_value": "",
+      "aditional_type": null,
+      "options": [
+        "Bloco de concreto intertravado",
+        "Cerâmico",
+        "Cimento desempenado",
+        "Granitina",
+        "Outros"
+      ],
+    },
+    {
+      "key": "adm_alm3",
+      "type": "img_plus_input",
+      "label": "O teto foi pintado?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
         {
-          "key": "A",
-          "label": "A - ",
-          "default_value": "3,45"
+          "id": 0,
+          "description": "Não",
         },
         {
-          "key": "B",
-          "label": "B - ",
-          "default_value": "3,45"
-        },
-        {
-          "key": "pe-direito",
-          "label": "Pé-direito - ",
-          "default_value": "2,6"
+          "id": 2,
+          "description": "Sim",
         }
       ]
-    }
-  },
-  {
-    "key": "adm_alm2",
-    "type": "img_plus_input",
-    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
-    "placeholder": "",
-    "description": "",
-    "default_value": "Saliva de pirulito",
-    "additonal_type": null,
-    "image": "adm_alm2",
-    "radio": null,
-    "input": {
-      "dependency": null,
-      "fields": [
+    },
+    {
+      "key": "adm_alm4",
+      "type": "img_plus_input",
+      "label": "Possui rodameio?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
         {
-          "key": "p05",
-          "label": "Quantidade instalada P05?",
-          "default_value": "1"
+          "id": 0,
+          "description": "Não",
         },
         {
-          "key": "ef14",
-          "label": "Quantidade instalada EF 14?",
-          "default_value": "1"
+          "id": 2,
+          "description": "Sim",
         }
       ]
-    }
-  },
-  {
-    "key": "adm_alm3",
-    "type": "text",
-    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1",
-    "additional_type": null
-  },
-  {
-    "key": "adm_alm10",
-    "type": "radio",
-    "label": "O teto foi pintado?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 1,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
+    },
+    {
+        "key": "adm_alm5",
+        "type": "text",
+        "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "",
+        "additional_type": null,
       },
       {
-        "id": 1,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "adm_alm4",
-    "type": "radio",
-    "label": "Possui rodameio?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "options": [
-      {
-        "id": 0,
-        "description": "Não"
+        "key": "adm_alm6",
+        "type": "text",
+        "label": "Qual a altura foi pintada?",
+        "placeholder": "",
+        "description": "",
+        "default_value": "",
+        "additional_type": null,
       },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ]
-  },
-  {
-    "key": "adm_alm5",
-    "type": "text",
-    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,1",
-    "additional_type": null
-  },
-  {
-    "key": "adm_alm6",
-    "type": "text",
-    "label": "Qual a altura foi que pintada?",
-    "placeholder": "",
-    "description": "",
-    "default_value": "1,5",
-    "additional_type": null
-  },
-  {
-    "key": "adm_alm7",
-    "type": "img_plus_input",
-    "label": "O revestimento foi aplicado em todo perímetro?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": null,
-    "radio": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
-      }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 0
-      },
-      "fields": [
+    {
+      "key": "adm_alm7",
+      "type": "img_plus_input",
+      "label": "O revestimento foi aplicado em todo perímetro?",
+      "placeholder": "",
+      "description": "",
+      "default_value": null,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
         {
-          "key": "revestimento",
-          "label": "Não, em:"
+          "id": 0,
+          "description": "Não",
+        },
+        {
+          "id": 2,
+          "description": "Sim",
         }
-      ]
-    }
-  },
-  {
-    "key": "adm_alm8",
-    "type": "img_plus_input",
-    "label": "As prateleiras foram instaladas?",
-    "placeholder": "",
-    "description": "",
-    "default_value": 2,
-    "additonal_type": null,
-    "image": "adm_alm3",
-    "radio": [
-      {
-        "id": 0,
-        "description": "Não"
-      },
-      {
-        "id": 2,
-        "description": "Sim"
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Não, em:",
+          },
+        ]
       }
-    ],
-    "input": {
-      "dependency": {
-        "key": "radio",
-        "value": 2
-      },
-      "fields": [
-        {
-          "key": "comp",
-          "label": "Qual o comprimento da prateleira 1?",
-          "default_value": "3,45"
-        },
-        {
-          "key": "larg",
-          "label": "Qual a largura da prateleira 1?",
-          "default_value": "0,5"
-        },
-        {
-          "key": "larg",
-          "label": "Quantidade de prateleira 1?",
-          "default_value": "0,2"
-        },
-        {
-          "key": "comp",
-          "label": "Qual o comprimento da prateleira 2?",
-          "default_value": "2,9"
-        },
-        {
-          "key": "larg",
-          "label": "Qual a largura da prateleira 2?",
-          "default_value": "0,4"
-        },
-        {
-          "key": "larg",
-          "label": "Quantidade de prateleira 2?",
-          "default_value": "2"
-        },
-        {
-          "key": "comp",
-          "label": "Qual o comprimento da prateleira 3?",
-          "default_value": "3,45"
-        },
-        {
-          "key": "larg",
-          "label": "Qual a largura da prateleira 3?",
-          "default_value": "0,5"
-        },
-        {
-          "key": "larg",
-          "label": "Quantidade de prateleira 3?",
-          "default_value": "2"
+    },
+      {
+        "key": "adm_alm8",
+        "type": "img_plus_input",
+        "label": "As prateleiras foram instaladas?",
+        "placeholder": "",
+        "description": "",
+        "default_value": null,
+        "additonal_type": null,
+        "image": "adm_alm3",
+        "radio": [
+          {
+            "id": 0,
+            "description": "Não",
+          },
+          {
+            "id": 2,
+            "description": "Sim",
+          }
+        ],
+        "input": {
+          "dependency": {
+            "key": "radio",
+            "value": 2
+          },
+          "fields": [
+            {
+              "key": "comp",
+              "label": "Qual o comprimento da prateleira?",
+            },
+            {
+                "key": "larg",
+                "label": "Qual a largura da prateleira?",
+            },
+            {
+                "key": "larg",
+                "label": "Quantidade de prateleira?",
+            }
+          ]
         }
-      ]
-    }
-  },
-  {
-    "key": "adm_alm9",
-    "type": "picker",
-    "label": "Qual tipo de piso foi instalado?",
-    "description": "Selecionar alguma opção",
-    "placeholder": "exemplo",
-    "default_value": "Granitina",
-    "aditional_type": null,
-    "options": [
-      "Bloco de concreto intertravado",
-      "Cerâmico",
-      "Cimento desempenado",
-      "Granitina",
-      "Outros"
-    ]
-  }
+      }
 ]
+    

@@ -1,7 +1,7 @@
 /* eslint-disable no-underscore-dangle */
 import PouchDB from 'pouchdb-react-native';
 
-// PouchDB.debug.enable('*');
+PouchDB.debug.enable('*');
 
 const db = new PouchDB('appincdb');
 // tables - 1. forms_started,

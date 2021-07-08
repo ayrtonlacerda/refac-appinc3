@@ -1,4 +1,4 @@
-/* import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import AudioRecorderPlayer from 'react-native-audio-recorder-player';
 
 import * as Atom from '../../Atom';
@@ -12,7 +12,7 @@ const config = {
 a. gravar novo
 b. estuar existente(play e pause)
 c. apagar (volta pro estado 1)
-
+*/
 const audioRecorderPlayer = new AudioRecorderPlayer();
 
 const AudioRec = ({ keyField, value, onChange }) => {
@@ -155,4 +155,3 @@ const AudioRec = ({ keyField, value, onChange }) => {
 };
 
 export default AudioRec;
- */

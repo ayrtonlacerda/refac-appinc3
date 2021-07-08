@@ -5,84 +5,83 @@
       "label": "A caixa em alvenaria foi instalada?",
       "placeholder": "",
       "description": "Selecionar alguma opção",
-      "default_value": 0,
+      "default_value": null,
       "additonal_type": null,
       "image": null,
       "radio": [
         {
           "id": 0,
-          "description": "Sim",
-        },
-        {
-          "id": 1,
           "description": "Não",
         },
+        {
+          "id": 2,
+          "description": "Sim, com as seguintes dimensões em  metros:",
+        }
       ],
       "input": {
         "dependency": {
           "key": "radio",
-          "value": 0
+          "value": 2
         },
         "fields": [
           {
             "key": "Comprimento",
-            "label": "Comprimento: ",
-            "default_value": "1,2",
-
+            "label": "Comprimento da prateleira: ",
           },
           {
             "key": "Largura",
             "label": "Largura: ",
-            "default_value": "1,8",
-
           },
           {
             "key": "Quantidade",
-            "label": "Altura: ",
-            "default_value": "1,5",
-
+            "label": "Número de prateleiras: ",
           },
         ]
       }
     },
     {
-      "key": "servcaixa02",
-      "type": "radio",
+      "key": "servcaixa01",
+      "type": "img_plus_input",
       "label": "As bombas foram instaladas?",
       "placeholder": "",
       "description": "",
-      "default_value": 0,
+      "default_value": null,
       "additonal_type": null,
       "image": null,
-      "options": [
+      "radio": [
         {
           "id": 0,
-          "description": "Sim, duas",
+          "description": "Não",
         },
         {
-           "id": 1,
-           "description": "Não",
+          "id": 2,
+          "description": "Sim",
+        },
+        {
+           "id": 3,
+           "description": "Sim, duas",
         }
       ]
     },
     {
-      "key": "servcaixa03",
-      "type": "radio",
+      "key": "servcaixa01",
+      "type": "img_plus_input",
       "label": "A caixa em alvenaria foi revestida (pintada)?",
       "placeholder": "",
       "description": "",
-      "default_value": 0,
+      "default_value": null,
       "additonal_type": null,
       "image": null,
-      "options": [
+      "radio": [
         {
           "id": 0,
-          "description": "Sim",
+          "description": "Não",
         },
         {
-          "id": 1,
-          "description": "Não",
+          "id": 2,
+          "description": "Sim",
         }
       ]
     },
   ]
+  
