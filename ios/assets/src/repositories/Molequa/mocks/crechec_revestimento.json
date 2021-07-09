@@ -1,0 +1,229 @@
+[
+  {
+    "key": "revestimento01",
+    "type": "img_plus_input",
+    "label": "Foi instalado o portal de entrada, se sim indique as medidas do pórtico:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "crechec_revestimento",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "14,6"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "3,65"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "1,9"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "0,8"
+        },
+        {
+          "key": "E",
+          "label": "E - ",
+          "default_value": "4"
+        },
+        {
+          "key": "F",
+          "label": "F - ",
+          "default_value": "2,75"
+        }
+      ]
+    }
+  },
+
+  {
+    "key": "revestimento02",
+    "type": "radio",
+    "label": "A parte voltada para dentro foi pintada",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "revestimento03",
+    "type": "radio",
+    "label": "Foi fabricada cerâmica 10x10 cm na parte frontal?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "revestimento04",
+    "type": "picker",
+    "label": "Como foram revestidas as laterais do pórtico?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Com cerâmica 10x10cm",
+    "aditional_type": null,
+    "options": [
+      "Com cerâmica 10x10cm",
+      "Foram pintadas",
+      "Não foram revestidas",
+    ]
+  },
+  {
+    "key": "revestimento05",
+    "type": "picker",
+    "label": "Foram instaladas vigas e pilaresde madeira no hall de entrada da creche?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Sim, vigas e pilares",
+    "aditional_type": null,
+    "options": [
+      "Sim, vigas e pilares",
+      "Sim, apenas vigas",
+      "Sim, apenas pilares",
+      "Não, nem viga e nem pilar",
+    ]
+  },
+  {
+    "key": "revestimento06",
+    "type": "text",
+    "label": "Comprimento das vigas 1 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "4,05",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento07",
+    "type": "text",
+    "label": "Quantidade de vigas 1?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "11",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento08",
+    "type": "text",
+    "label": "Comprimento das vigas 2 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "6,85",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento09",
+    "type": "text",
+    "label": "Quantidade de vigas 2?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "2",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento10",
+    "type": "text",
+    "label": "Comprimento dos pilares 1 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "4",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento11",
+    "type": "text",
+    "label": "Quantidade dos pilares 1?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "3",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento12",
+    "type": "text",
+    "label": "Comprimento das vigas 2 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento13",
+    "type": "text",
+    "label": "Quantidade de vigas 2 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento14",
+    "type": "img_plus_input",
+    "label": "A parede de cobogó que separa a carga e a descarga e a área de serviço descoberta foi executada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não",
+      },
+      {
+        "id": 1,
+        "description": "Sim, com as seguintes dimensões :",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 1
+      },
+      "fields": [
+        {
+          "key": "altura1",
+          "label": "altura: ",
+          "default_value": "2,1",
+        },
+        {
+          "key": "comprimento1",
+          "label": "comprimento: ",
+          "default_value": "3",
+
+        },
+      ]
+    }
+  },
+]

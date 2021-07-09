@@ -1,0 +1,214 @@
+[
+  {
+    "key": "crechec-lact01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "crechec_servico_lactario",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "0,85"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "1,175"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "2,85"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "1,5"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pe-direito - ",
+          "default_value": "3"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-lact02",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "crechec_servico_lactario_tabela",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "P05",
+          "label": "Quantidade instalada P03?",
+          "default_value": "1"
+        },
+        {
+          "key": "PM04",
+          "label": "Quantidade instalada PM04B?",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-lact03",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 40W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1",
+    "additional_type": null
+  },
+  {
+    "key": "crechec-lact04",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "crechec-lact05",
+    "type": "radio",
+    "label": "A parede foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "crechec-lact06",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "revestimento",
+          "label": "Não, em:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-lact07",
+    "type": "img_plus_input",
+    "label": "A bancada de granito foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim, com as seguintes dimensões"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "c1",
+          "label": "Comprimento da bancada 1: ",
+          "default_value": "0,55"
+        },
+        {
+          "key": "l1",
+          "label": "Largura da bancada 1: ",
+          "default_value": "0,6"
+        },
+        {
+          "key": "c2",
+          "label": "Comprimento da bancada 2: ",
+          "default_value": "1,7"
+        },
+        {
+          "key": "l2",
+          "label": "Largura da bancada 2: ",
+          "default_value": "0,6"
+        }
+      ]
+    }
+  },
+  {
+    "key": "crechec-lact08",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

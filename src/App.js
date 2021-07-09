@@ -10,14 +10,10 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import { Provider } from 'use-http';
-import { BASE_URL, STATUS } from '@env';
-import { startMirage } from '../server';
+import './config/ReactotronConfig';
 import theme from './styles';
 import Routes from './routes';
-
-if (STATUS === 'local') {
-  startMirage();
-}
+//import './config/SetryConfig';
 
 console.disableYellowBox = true;
 
@@ -33,11 +29,11 @@ const App = () => {
     Geolocation.setRNConfiguration({
       authorizationLevel: 'always',
     });
-  }, [])
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
-      <Provider url={BASE_URL}>
+      <Provider url="https://api.appditec.redes.unb.br">
         <StatusBar barStyle="dark-content" />
         <Routes />
         <Toast ref={(ref) => Toast.setRef(ref)} />

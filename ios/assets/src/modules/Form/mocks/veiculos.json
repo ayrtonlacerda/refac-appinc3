@@ -1,0 +1,249 @@
+{  
+    "name": "pericia_veiculoss",
+    "title": "Perícias de Veículos",
+    "version": "1.0",
+    "area": "3",
+    "class": "1",
+    "subclass": "1",
+    "details": "Formulário voltado para a pericia de veiculos ",
+    "steps": [
+        {   
+            "id": 0,
+            "title": "Preparo",
+            "description": "Informações inciais do laudo pericial",
+            "info": "",
+            "fields": [
+                {
+                    "key": "reg_criminalistica",
+                    "type": "text",
+                    "label": "Protocolo Criminalística",
+                    "placeholder": "",
+                    "description": "Número de registro no sistema criminalística",    
+                    "default_value": null,  
+                    "additonal_type": null
+                },
+                {       
+                    "key": "num_despacho",
+                    "type": "text",
+                    "label": "Número do despacho",
+                    "placeholder": "",
+                    "description": "Ex: 423/2018 - DIP/DPF",
+                    "default_value": "",
+                    "additonal_type": null
+                    
+                },
+                {
+                    "key": "data_despacho",
+                    "type": "date",
+                    "label": "Data do despacho",
+                    "placeholder": "", 
+                    "description": "Clique abaixo para selecionar",
+                    "default_value": "1980-01-21",
+                    "additonal_type": 1
+                   
+                },
+                {
+                    "key": "num_siapro",
+                    "type": "text",
+                    "label": "Número protocolo SIAPRO",
+                    "placeholder": "", 
+                    "description": "Exemplo: 08203.001036/2018-11",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "autor_requisita",
+                    "type": "text",
+                    "label": "Autoridade requisitante",
+                    "placeholder": "",
+                    "description": "Exemplo: Delegado de Polícia Federal João da Silva",
+                    "default_value": "",
+                    "additonal_type": null,
+                    
+                },
+                {
+                    "key": "membro_adicional",
+                    "type": "text",
+                    "label": "Membro adicional",
+                    "placeholder": "",
+                    "description": "Participante. Ex: perito participante , papiloscopista , etc.",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "diretor_inc",
+                    "type": "text",
+                    "label": "Chefe (INC,SETEC,NUTEC)",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                }
+            ]
+        },
+        {
+            "id": 1,            
+            "title": "Histórico",
+            "description": "",
+            "info": "",
+            "fields": [
+                {
+                    "key": "data_inicio",
+                    "type": "date",
+                    "label": "Data de início",
+                    "placeholder": "", 
+                    "description": "informe a data de início",
+                    "default_value": "1980-01-21",
+                    "additonal_type": 1
+                },
+                {
+                    "key": "data_final",
+                    "type": "date",
+                    "label": "Data de término",
+                    "placeholder": "", 
+                    "description": "informe a data de término",
+                    "default_value": "1980-01-21",
+                    "additonal_type":1
+                },
+                {
+                    "key": "local_pericia",
+                    "type": "geoloc",
+                    "label": "Local da perícia",
+                    "placeholder": "",
+                    "description": "Local da perícia",
+                    "default_value": "",
+                    "additonal_type": null
+
+                },
+                {
+                    "key": "imagem_local",
+                    "type": "camera",
+                    "label": "Imagem do local",
+                    "placeholder": "", 
+                    "description": "(Opcional)",
+                    "default_value": "",
+                    "additonal_type": null
+                }
+            ]
+        },
+        {   "id": 2,
+            "title": "Informações do veículo",
+            "description":"",
+            "info": "",
+            "fields": [
+                {
+                    "key": "info_veiculo",
+                    "type": "vehicle",
+                    "label": "Informações do veículo",
+                    "placeholder": "", 
+                    "description": "",
+                    "default_value": "Fulano",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_frontal",
+                    "type": "camera",
+                    "label": "Imagem frontal",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_lateral",
+                    "type": "camera",
+                    "label": "Imagem lateral",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_posterior",
+                    "type": "camera",
+                    "label": "Imagem posterior",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_chassi",
+                    "type": "camera",
+                    "label": "Imagem do chassi",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                    
+                },
+                {
+                    "key": "imagem_motor",
+                    "type": "camera",
+                    "label": "Imagem da numeração do motor",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Mídias adicionais",
+            "description": "",
+            "info": "",
+            "fields": [
+                {
+                    "key": "imagem_adicional1",
+                    "type": "camera", 
+                    "label": "Imagem adicional",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                   
+                },
+                {
+                    "key": "imagem_adicional2",
+                    "type": "camera",
+                    "label": "Imagem adicional",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_adicional3",
+                    "type": "camera",
+                    "label": "Imagem adicional",
+                    "placeholder": "",
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_adicional4",
+                    "type": "camera",
+                    "label": "Imagem adicional",
+                    "placeholder": "", 
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+                },
+                {
+                    "key": "imagem_adicional5",
+                    "type": "camera",
+                    "label": "Imagem adicional",
+                    "placeholder": "", 
+                    "description": "",
+                    "default_value": "",
+                    "additonal_type": null
+
+                }
+            ]
+           
+        }
+    ]
+
+}

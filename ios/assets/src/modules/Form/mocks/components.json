@@ -1,0 +1,131 @@
+{
+  "name": "catalogo",
+  "title": "Catalogo de componentes",
+  "version": "1.0",
+  "area": "4",
+  "class": "4",
+  "subclass": "4",
+  "details": "Formulário voltado para a pericia de veiculos ",
+  "steps": [
+      {
+          "id": 0,
+          "title": "Preparo",
+          "description": "Informações inciais do laudo pericial",
+          "info": "",
+          "fields": [
+              {
+                  "key": "text",
+                  "type": "text",
+                  "label": "Campo Text",
+                  "placeholder": "",
+                  "description": "label text",
+                  "default_value": null,
+                  "max-length": 6,
+                  "keyboardType": "number",
+                  "additonal_type": null
+              },
+              {
+                  "key": "date",
+                  "type": "date",
+                  "label": "Data do despacho",
+                  "placeholder": "",
+                  "description": "Clique abaixo para selecionar",
+                  "default_value": "1980-01-21",
+                  "additonal_type": 1
+
+              },
+              {
+                "key": "local_pericia",
+                "type": "geoloc",
+                "label": "Local da perícia",
+                "placeholder": "",
+                "description": "Local da perícia",
+                "default_value": "",
+                "additonal_type": null
+              },
+              {
+                "key": "imagem_local",
+                "type": "camera",
+                "label": "Imagem do local",
+                "placeholder": "",
+                "description": "(Opcional)",
+                "default_value": "",
+                "additonal_type": null
+              },
+              {
+                "key": "info_veiculo",
+                "type": "vehicle",
+                "label": "Informações do veículo",
+                "placeholder": "",
+                "description": "",
+                "default_value": "Fulano",
+                "additonal_type": null
+            },
+            {
+              "key": "referencia_lacre",
+              "type": "scanner",
+              "label": "REFERÊNCIA",
+              "description": "REFERÊNCIA",
+              "placeholder": "",
+              "additional_type": null,
+              "aditional_info": null
+            },
+            {
+              "key": "radio",
+              "type": "radio",
+              "label": "Radio Button",
+              "description": "REFERÊNCIA",
+              "placeholder": "",
+              "options": [
+                {
+                  "id": 5,
+                  "description": "Amostra de Fração"
+                }
+              ],
+              "additional_type": null,
+              "aditional_info": null
+            },
+            {
+              "key": "id_material",
+              "type": "group",
+              "label": "Identificação de materiais",
+              "placeholder": "",
+              "description": "Identificação de materiais",
+              "default_value": "",
+              "additional_type": null,
+              "group": [
+                {
+                  "key": "material_cod",
+                  "type": "text",
+                  "label": "Código do material",
+                  "description": "Código do material",
+                  "placeholder": "",
+                  "additional_type": null,
+                  "aditional_info": null
+                },
+                {
+                  "key": "material_descricao",
+                  "type": "text",
+                  "label": "Descrição do material",
+                  "description": "Informe uma descrição",
+                  "placeholder": "",
+                  "additional_type": null,
+                  "aditional_info": null
+                },
+                {
+                  "key": "material_lacre",
+                  "type": "scanner",
+                  "label": "LACRE",
+                  "description": "LACRE",
+                  "placeholder": "",
+                  "additional_type": null,
+                  "aditional_info": null
+                }
+              ]
+            },
+
+          ]
+      }
+  ]
+
+}

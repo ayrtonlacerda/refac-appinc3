@@ -1,0 +1,184 @@
+[
+  {
+    "key": "rack01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir.",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "rack",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "1,65"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "3,7"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "0,95"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "0,7"
+        },
+        {
+          "key": "Pe-direito",
+          "label": "Pé-direito - ",
+          "default_value": "2,6"
+        }
+      ]
+    }
+  },
+  {
+    "key": "rack02",
+    "type": "img_plus_input",
+    "label": "Observe a descrição das esquadrias a seguir e verifique se elas foram instaladas corretamente. Informe os valores em metros:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "tabelarack",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "inputrack1",
+          "label": "Quantidade de P04:",
+          "default_value": "1"
+        },
+        {
+          "key": "inputrack2",
+          "label": "Quantidade de EF18:",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "rack03",
+    "type": "text",
+    "label": "Quantas luminárias de sobrepor com 2 lâmpadas 32W foram instaladas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "2",
+    "additional_type": null
+  },
+  {
+    "key": "rack05",
+    "type": "radio",
+    "label": "O teto foi pintado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "rack06",
+    "type": "radio",
+    "label": "Possui rodameio de cerâmica 10 cm x 10 cm?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "rack07",
+    "type": "text",
+    "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1,7",
+    "additional_type": null
+  },
+  {
+    "key": "rack08",
+    "type": "text",
+    "label": "Qual a altura de parede que foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "0,8",
+    "additional_type": null
+  },
+  {
+    "key": "rack09",
+    "type": "img_plus_input",
+    "label": "O revestimento foi aplicado em todo o perímetro?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 0,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim"
+      },
+      {
+        "id": 2,
+        "description": "Não, em "
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "inputrack",
+          "label": "Quantidade em metros:"
+        }
+      ]
+    }
+  },
+  {
+    "key": "rack13",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]
