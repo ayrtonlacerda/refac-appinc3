@@ -84,4 +84,5 @@ jobs:
       - name: Notify
         uses: nobrayner/discord-webhook@v1
         with:        
+          github-token: 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
           discord-webhook: https://discord.com/api/webhooks/869272552755830814/Cx1tbPb0L3Ecg1WCv4XRsXr11lN-dBG78INmrIO9qMLbz6l8s8bNAUVg79UJJPcMdBnO
