@@ -10,7 +10,7 @@ import DB from '../../../../database';
 import { PickerSection } from '../NewExam/styles';
 
 import creches from '../../mocks/creches.json';
-
+import violenta from '../../mocks/violenta.json';
 /*
   tem que existir dois cenarios
   1. para o genetica
@@ -34,6 +34,9 @@ const Steps = () => {
     handleProgressStepForm,
     handleCreateArrayForm,
   } = useForm();
+
+
+  console.log({ mock })
 
   const {
     response,
@@ -67,6 +70,8 @@ const Steps = () => {
       console.log({ err });
     }
 
+    console.log(mock.area)
+    console.log(mock)
     setCurrentExam(exam);
 
     if (mock.area === 'pericia_molequa') {
@@ -82,6 +87,13 @@ const Steps = () => {
         title: `Cód. ${exam.codigoVestigio}`,
       });
     }
+    if (mock.area === "morteviolenta") {
+      console.log('entri')
+      navigation.navigate('MorteViolenta', {
+        fields: mock.form.fields,
+        title: `Cód. ${exam.codigoVestigio}`,
+      });
+    }
   };
 
   const handleSelectOfflineExam = (examOffline) => {
@@ -90,6 +102,14 @@ const Steps = () => {
     if (mock.area === 'pericia_molequa') {
       // tranferir pra outra pagina
       navigation.navigate('Molequa', {
+        fields: mock.form.fields,
+        title: `Cód. ${examOffline.exam.codigoVestigio}`,
+        offline: true,
+      });
+    }
+    if (mock.area === 'morteviolenta') {
+      // tranferir pra outra pagina
+      navigation.navigate('MorteViolenta', {
         fields: mock.form.fields,
         title: `Cód. ${examOffline.exam.codigoVestigio}`,
         offline: true,
@@ -142,8 +162,8 @@ const Steps = () => {
               Novas Solicitações de Exame:
             </Atoms.Text>
           </Atoms.Container>
-          {/*! loading && (response.data?.length > 0 || creches) ? */ creches ? (
-            /* (response.data?.length > 0 ? response.data : creches) */creches.map(
+          {/*! loading && (response.data?.length > 0 || creches) ? */ violenta ? (
+            /* (response.data?.length > 0 ? response.data : creches) */violenta.map(
             (exam) => !offlineExams?.find(
               ({ doc }) => doc.exam.codigoVestigio === exam.codigoVestigio,
             ) && (response.ok
@@ -151,7 +171,7 @@ const Steps = () => {
                 <Molecules.StepCard
                   // percentage={() => handleProgressStepForm(mock.form.fields)}
                   title={`Vestígio: ${exam.codigoVestigio}`}
-                  description={form?.[exam.codigoVestigio]?.description || exam?.nome}
+                  description={form?.[exam.codigoVestigio]?.description || exam?.nome || exam?.descricao}
                   onClickCard={
                     () => handleSelectExam(exam)
                   }

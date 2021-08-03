@@ -11,6 +11,7 @@ import Test from '../screens/Test';
 
 // flows de pericias
 import Molequa from '../../../repositories/Molequa';
+import MorteViolenta from '../../../repositories/MorteViolenta';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +29,7 @@ export default function FormRoute() {
       <Stack.Screen name="Forms" component={Forms} />
       <Stack.Screen name="FinishExam" component={FinishExam} />
       <Stack.Screen name="Molequa" component={Molequa} />
+      <Stack.Screen name="MorteViolenta" component={MorteViolenta} />
     </Stack.Navigator>
   );
 }

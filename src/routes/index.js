@@ -19,7 +19,7 @@ export default function Routes() {
       <Stack.Navigator headerMode="none">
         {// <Stack.Screen name="OCR" component={OCR} />
         }
-        {!user ? (
+        {user ? (
           <Stack.Screen name="UnAuthRoutes" component={UnAuthRoutes} />
         ) : (
           <>

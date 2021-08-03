@@ -1,65 +1,68 @@
 {
   "name": "catalogo",
-  "title": "Catalogo de componentes",
+  "title": "Morte Violenta",
   "version": "1.0",
-  "area": "4",
+  "area": "morteviolenta",
   "class": "4",
   "subclass": "4",
-  "details": "Formulário voltado para a pericia de veiculos ",
-  "steps": [
-      {
+  "details": "Formulário voltado para a pericia de Morte Violenta ",
+  "parent_steps": [
+    {
+      "title": "local de crime",
+      "description": "dados do local de crime",
+      "steps": [
+        {
           "id": 0,
           "title": "Preparo",
           "description": "Informações inciais do laudo pericial",
           "info": "",
           "fields": [
-              {
-                  "key": "text",
-                  "type": "text",
-                  "label": "Campo Text",
-                  "placeholder": "",
-                  "description": "label text",
-                  "default_value": null,
-                  "max-length": 6,
-                  "keyboardType": "number",
-                  "additonal_type": null
-              },
-              {
-                  "key": "date",
-                  "type": "date",
-                  "label": "Data do despacho",
-                  "placeholder": "",
-                  "description": "Clique abaixo para selecionar",
-                  "default_value": "1980-01-21",
-                  "additonal_type": 1
-
-              },
-              {
-                "key": "local_pericia",
-                "type": "geoloc",
-                "label": "Local da perícia",
-                "placeholder": "",
-                "description": "Local da perícia",
-                "default_value": "",
-                "additonal_type": null
-              },
-              {
-                "key": "imagem_local",
-                "type": "camera",
-                "label": "Imagem do local",
-                "placeholder": "",
-                "description": "(Opcional)",
-                "default_value": "",
-                "additonal_type": null
-              },
-              {
-                "key": "info_veiculo",
-                "type": "vehicle",
-                "label": "Informações do veículo",
-                "placeholder": "",
-                "description": "",
-                "default_value": "Fulano",
-                "additonal_type": null
+            {
+              "key": "text",
+              "type": "text",
+              "label": "Campo Text",
+              "placeholder": "",
+              "description": "label text",
+              "default_value": null,
+              "max-length": 6,
+              "keyboardType": "number",
+              "additonal_type": null
+            },
+            {
+              "key": "date",
+              "type": "date",
+              "label": "Data do despacho",
+              "placeholder": "",
+              "description": "Clique abaixo para selecionar",
+              "default_value": "1980-01-21",
+              "additonal_type": 1
+            },
+            {
+              "key": "local_pericia",
+              "type": "geoloc",
+              "label": "Local da perícia",
+              "placeholder": "",
+              "description": "Local da perícia",
+              "default_value": "",
+              "additonal_type": null
+            },
+            {
+              "key": "imagem_local",
+              "type": "camera",
+              "label": "Imagem do local",
+              "placeholder": "",
+              "description": "(Opcional)",
+              "default_value": "",
+              "additonal_type": null
+            },
+            {
+              "key": "info_veiculo",
+              "type": "vehicle",
+              "label": "Informações do veículo",
+              "placeholder": "",
+              "description": "",
+              "default_value": "Fulano",
+              "additonal_type": null
             },
             {
               "key": "referencia_lacre",
@@ -123,9 +126,9 @@
                 }
               ]
             }
-
           ]
-      }
+        }
+      ]
+    }
   ]
-
 }

@@ -17,7 +17,7 @@ import { useForm, useExpertiseStore } from '../../../../global';
 import veiculos from '../../mocks/veiculos.json';
 import genetica from '../../mocks/genetica_v2.json';
 import molequa from '../../mocks/molequa.json';
-// import generic from '../../mocks/data';
+import morteviolenta from '../../mocks/morteviolenta.json';
 
 // json base do formulario
 import components from '../../mocks/components.json';
@@ -40,6 +40,8 @@ const NewExam = () => {
       navigation.navigate('Steps');
       setMock(exam.form);
     }
+    navigation.navigate('Steps');
+    setMock(exam.form);
   }, [navigation, exam, nameForm]);
 
   return (
@@ -63,7 +65,11 @@ const NewExam = () => {
             },
             {
               form: molequa,
-              name: 'Engenharia civil – Molequa',
+              name: 'Engenharia Civil – Molequa',
+            },
+            {
+              form: morteviolenta,
+              name: 'Morte Violenta',
             },
           ]}
         />

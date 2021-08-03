@@ -1,0 +1,33 @@
+[
+  {
+    "__v": 0,
+    "_id": "5ff7b17a329658001add90ed",
+    "anotacoes": "",
+    "anotacoesTipoConteudo": "text/markdown",
+    "casosRelacionados": [],
+    "codigoCaso": 654897,
+    "codigoVestigio": "2015/2020-AppInc/07/PF/DF",
+    "descricao": "Corpo Mutilado",
+    "description": "Corpo Mutilado",
+    "tipo": "mutilado",
+    "grupos": {},
+    "nome": "Caso Exemplo 2",
+    "privado": false,
+    "referencias": [],
+    "registroModificacao": {
+      "criadoEm": "2021-01-08T01:12:26.907Z",
+      "criadoPor": "Exemplo",
+      "ultimaModificacaoEm": "2021-01-08T01:12:26.907Z",
+      "ultimaModificacaoPor": "Exemplo",
+      "versao": 0
+    },
+    "status": "Em andamento",
+    "tags": [
+      "caso",
+      "exemplo",
+      "genética"
+    ],
+    "usuarios": {},
+    "uuid": "4aa1f091-139c-4186-85e6-ecd98b46439a"
+  }
+]
