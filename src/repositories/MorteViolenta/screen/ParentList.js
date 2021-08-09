@@ -22,6 +22,7 @@ const ParentList = () => {
   }, [navigation]);
 
   const handleSelectStep = async (steps) => {
+    console.log({ steps })
     navigation.navigate('StepMv', {
       steps
     })
@@ -36,14 +37,14 @@ const ParentList = () => {
       <Molecules.Header title={mock?.title} back handlePress={handleBack} />
       <Atoms.Container justifyContent="space-between" p={3}>
         <Atoms.Scroll noPaddingX>
-          {mock.parent_steps.map(
+          {mock.form.parent_steps.map(
             (parent) => (
               <Molecules.StepCard
                 // percentage={() => handleProgressStepForm(mock.form.fields)}
                 title={parent.title}
                 description={parent.description}
                 onClickCard={
-                  () => handleSelectStep({ ...parent.steps, title: parent.title })
+                  () => handleSelectStep(parent.steps)
                 }
               />
             ))}

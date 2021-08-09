@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import useFetch from 'use-http';
-import { useCommons } from '../../../../hooks';
+import { useCommons, route } from '../../../../hooks';
 import { useForm, useExpertiseStore } from '../../../../global';
 // ui
 import * as Atoms from '../../../../components/Atom';
@@ -35,9 +35,6 @@ const Steps = () => {
     handleCreateArrayForm,
   } = useForm();
 
-
-  console.log({ mock })
-
   const {
     response,
     error,
@@ -47,8 +44,6 @@ const Steps = () => {
     {},
     [currentExpertise],
   );
-
-  console.log({ error, currentExpertise });
 
   const handleBack = useCallback(() => {
     // handleReset();
@@ -60,18 +55,17 @@ const Steps = () => {
       salvar exam offline, - vestigio tem que construir um array
       salvar form offline,
       salvar o mock
-    */try {
-      const doc = await DB.create({
-        exam,
-        mock,
-      }, exam?.codigoVestigio);
-      console.log({ doc });
-    } catch (err) {
-      console.log({ err });
-    }
-
-    console.log(mock.area)
-    console.log(mock)
+    */
+    /*
+     try {
+       const doc = await DB.create({
+         exam,
+         mock,
+       }, exam?.codigoVestigio);
+       console.log({ doc });
+     } catch (err) {
+       console.log({ err });
+     } */
     setCurrentExam(exam);
 
     if (mock.area === 'pericia_molequa') {
@@ -88,9 +82,8 @@ const Steps = () => {
       });
     }
     if (mock.area === "morteviolenta") {
-      console.log('entri')
       navigation.navigate('MorteViolenta', {
-        fields: mock.form.fields,
+        fields: mock.form.parent_steps,
         title: `Cód. ${exam.codigoVestigio}`,
       });
     }
@@ -127,7 +120,7 @@ const Steps = () => {
 
   const retriveExamOffline = useCallback(async () => {
     const exams = (await DB.all()).rows;
-    console.log('all exams offline -> ', exams);
+    //  console.log('all exams offline -> ', exams);
     setOfflineExams(exams);
   }, []);
 
@@ -199,7 +192,7 @@ const Steps = () => {
             </Atoms.Text>
           )}
 
-          <Atoms.Container
+          {/*    <Atoms.Container
             variant="viewSelection"
             flexDirection="row"
             mt="5"
@@ -225,7 +218,7 @@ const Steps = () => {
                 }
               />
             ),
-          )}
+          )} */}
 
         </Atoms.Scroll>
         <Atoms.Button
