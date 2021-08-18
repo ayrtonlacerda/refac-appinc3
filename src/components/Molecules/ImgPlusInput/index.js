@@ -47,6 +47,7 @@ const ImgPlusInput = ({
             onChangeText={
               (txt) => handleChange(input.key, txt)
             }
+            keyboardType={input.type || 'default'}
           />
         </Atoms.Container>
       ))}
