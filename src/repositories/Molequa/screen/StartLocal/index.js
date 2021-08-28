@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-expressions */
-import React, { useState } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { each, isEmpty } from 'lodash';
 import { useCommons } from '../../../../hooks';
 import { useForm } from '../../../../global';
@@ -225,17 +225,20 @@ import * as options from '../../mocks/mocksmolequa';
   },
 ];
  */
+
 const Estatica1 = ({ route }) => {
   const { navigation } = useCommons();
   const {
     mock, setKeysOfForm, keysOfForm, currentExam,
   } = useForm();
 
-  console.log({ o: options[currentExam.tipo], t: currentExam.tipo })
+  console.log({ o: options[currentExam.tipo], t: currentExam.tipo, nome: currentExam.nome })
+
+  console.log('Teste ->', options);
 
   const { title, offline } = route.params;
 
-  const handleSetForm = React.useCallback(async (form) => {
+  const handleSetForm = useCallback(async (form) => {
     let keys = {};
 
     each(options[currentExam.tipo], (local) => {
@@ -254,7 +257,7 @@ const Estatica1 = ({ route }) => {
     setKeysOfForm(keys);
   }, [currentExam, options]);
 
-  const navigationAdministration = React.useCallback((item) => {
+  const navigationAdministration = useCallback((item) => {
     navigation.navigate(item.screen, item.screen === 'Forms' ? {
       fields: [],
       title: `${item.label}`,
@@ -265,7 +268,7 @@ const Estatica1 = ({ route }) => {
     });
   });
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isEmpty(keysOfForm) && !offline) handleSetForm();
   }, []);
 
@@ -277,7 +280,7 @@ const Estatica1 = ({ route }) => {
           <Atom.Container variant="viewSelection" flexDirection="row">
             <Atom.Ball size="XXBIG" text={1} />
             <Atom.Text ml={11} fontWeight={4} width="95%">
-              Creche tipo B - 2012
+              {currentExam.nome}
             </Atom.Text>
           </Atom.Container>
           <Atom.Image src={Estatico1} />

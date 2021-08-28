@@ -45,7 +45,9 @@ const Steps = () => {
     [currentExpertise],
   );
 
-  console.log({ error, currentExpertise });
+  // console.log({ error, currentExpertise, creches });
+  // console.log({ offlineExams })
+  // console.log('Doc: ', offlineExams)
 
   const handleBack = useCallback(() => {
     // handleReset();
@@ -107,7 +109,7 @@ const Steps = () => {
 
   const retriveExamOffline = useCallback(async () => {
     const exams = (await DB.all()).rows;
-    console.log('all exams offline -> ', exams);
+    // console.log('all exams offline -> ', exams);
     setOfflineExams(exams);
   }, []);
 
@@ -125,6 +127,9 @@ const Steps = () => {
     Desassociar creche do data trazendo da api
   */
   // TODO: fazer filtro offline de acordo com o tipo tb!
+
+  console.log(form);
+
   return (
     <Atoms.Container>
       <Molecules.Header title={mock?.name} back handlePress={handleBack} />
@@ -151,7 +156,7 @@ const Steps = () => {
                 <Molecules.StepCard
                   // percentage={() => handleProgressStepForm(mock.form.fields)}
                   title={`Vestígio: ${exam.codigoVestigio}`}
-                  description={form?.[exam.codigoVestigio]?.description || exam?.nome}
+                  description={exam?.descricao || exam?.nome}
                   onClickCard={
                     () => handleSelectExam(exam)
                   }

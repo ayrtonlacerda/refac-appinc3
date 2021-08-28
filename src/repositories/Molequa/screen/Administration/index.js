@@ -16,6 +16,8 @@ const Administration = () => {
 
   const { subAreas, image } = route.params;
 
+  console.log('Entrei aqui');
+
   const handleBack = useCallback(() => {
     // handleReset();
     navigation.navigate('Estatica1');
