@@ -216,6 +216,7 @@ export const quadra_coberta =
         "Quadra/Depósito",
         "Quadra/Área Externa",
       ],
+      image: 'planta_quadra_vevestiario',
     },
     {
       label: "Quadra Coberta",
