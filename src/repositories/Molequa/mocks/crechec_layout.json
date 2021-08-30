@@ -65,7 +65,7 @@
     "label": "Verifique se a pavimentação das áreas destacadas a seguir foi realizada. Foram instaladas placas de concreto magro pré-fabricadas?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value":1,
     "additonal_type": null,
     "image": "placascimento",
     "radio": [
@@ -85,7 +85,7 @@
     "label": "Verifique se a pavimentação das áreas destacadas a seguir foi realizada. Foi plantada grama?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value":1,
     "additonal_type": null,
     "image": "grama",
     "radio": [
@@ -105,7 +105,7 @@
     "label": "Verifique se a pavimentação das áreas destacadas a seguir foi realizada. Foi feito piso de cimento desempenado?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value":1,
     "additonal_type": null,
     "image": "pisodecimento",
     "radio": [
@@ -125,7 +125,7 @@
     "label": "Verifique se a pavimentação das áreas destacadas a seguir foi realizada. Foi feito piso de pedra rolada?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value":1,
     "additonal_type": null,
     "image": "pedrarolada",
     "radio": [
@@ -145,7 +145,7 @@
     "label": "Verifique se a pavimentação das áreas destacadas a seguir foi realizada. Foram instalados blocretes intervalados?",
     "placeholder": "",
     "description": "",
-    "default_value": 1,
+    "default_value":1,
     "additonal_type": null,
     "image": "blocrete",
     "radio": [
@@ -158,5 +158,5 @@
         "description": "Sim"
       }
     ]
-  },
+  }
 ]

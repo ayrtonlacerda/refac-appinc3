@@ -210,6 +210,10 @@ import crechec_pre_pre from './img/crechec_pre_pre.png';
 import crechec_pre_pre_tabela from './img/crechec_pre_pre_tabela.png';
 import crechec_pre_solarium1 from './img/crechec_pre_solarium1.png';
 import crechec_pre_solarium2 from './img/crechec_pre_solarium2.png';
+import planta_c_adm from './img/planta_c_adm.png';
+import planta_c_crecheIeII from './img/planta_c_crecheIeII.png';
+import planta_c_crecheIII from './img/planta_c_crecheIII.png';
+import planta_c_servico from './img/planta_c_servico.png';
 
 export const Imgs = {
   LOCAL_CRIME,
@@ -218,6 +222,10 @@ export const Imgs = {
 };
 
 export const MolequaImgs = {
+  planta_c_adm,
+planta_c_crecheIeII,
+planta_c_crecheIII,
+planta_c_servico,
   coberta1,
   coberta2,
   coberta3,

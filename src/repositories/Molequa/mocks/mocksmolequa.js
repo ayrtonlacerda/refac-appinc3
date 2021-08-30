@@ -111,6 +111,7 @@ export const creche_c = [
       'Professores',
       'Área Externa - Administração',
     ],
+    image: 'planta_c_adm',
   },
   {
     label: "Área Externa ",
@@ -141,8 +142,10 @@ export const creche_c = [
       "Solarium II - Creche C",
       "Área Externa - Creche C",
     ],
+    image: 'planta_c_crecheIeII',
+
   },
-  {
+/*   {
     label: 'Vestiário',
     screen: 'Administration',
     subAreas: [
@@ -151,7 +154,7 @@ export const creche_c = [
       'Quadra/Depósito',
       'Quadra/Área Externa',
     ],
-  },
+  }, */
   {
     label: 'Serviço ',
     screen: 'Administration',
@@ -171,8 +174,9 @@ export const creche_c = [
       'Lactário - Creche C',
       'Área externa - Serviço',
     ],
+    image: 'planta_c_servico',
   },
-  {
+  /* {
     label: 'Quadra Coberta',
     screen: 'Administration',
     subAreas: ['Quadra', 'Arquibancada', 'Pilares', 'Quadra/Área Externa'],
@@ -181,9 +185,9 @@ export const creche_c = [
     label: 'Cobertura',
     screen: 'Administration',
     subAreas: ['Coberta'],
-  },
+  }, */
   {
-    label: 'Pré-escola ',
+    label: 'Creche III e Pré-Escola ',
     screen: 'Administration',
     subAreas: [
       'Sanitário Feminino - Pré escola',
@@ -194,6 +198,8 @@ export const creche_c = [
       'Sanitário Masculino - Pré escola',
       'Área externa - Pré escola',
     ],
+    image: 'planta_c_crecheIII',
+
   }
 ];
 

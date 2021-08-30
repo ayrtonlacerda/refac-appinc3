@@ -39,7 +39,7 @@ const InputComponent = ({
 }) => (auth ? (
   <Input bg="WHITE_TRANSPARENT" borderRadius={25} {...props} width="100%" />
 ) : (
-  <Input {...props} />
+  <Input  {...props} />
 ));
 
 export default InputComponent;
