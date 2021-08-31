@@ -214,8 +214,11 @@ import planta_c_adm from './img/planta_c_adm.png';
 import planta_c_crecheIeII from './img/planta_c_crecheIeII.png';
 import planta_c_crecheIII from './img/planta_c_crecheIII.png';
 import planta_c_servico from './img/planta_c_servico.png';
-
 import planta_quadra_vevestiario from './img/planta_quadra_vevestiario.png';
+import planta_quadra from './img/planta_quadra.png';
+import planta_creche_c from './img/planta_creche_c.png';
+import planta_creche_b from './img/planta_creche_b.png';
+
 export const Imgs = {
   LOCAL_CRIME,
   COMP_FORENSE,
@@ -223,6 +226,9 @@ export const Imgs = {
 };
 
 export const MolequaImgs = {
+  planta_creche_c,
+  planta_creche_b,
+  planta_quadra,
   planta_quadra_vevestiario,
   planta_c_adm,
 planta_c_crecheIeII,

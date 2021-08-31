@@ -11,6 +11,7 @@ import { FormBuilder } from '../../../../components/Templates';
 import DB from '../../../../database';
 
 import Estatico1 from '../../../../assets/estaticos1/estatico1.png';
+import { MolequaImgs } from '../../../../assets';
 
 import { subAreas as subAreasMocks } from '../../mocks';
 import * as options from '../../mocks/mocksmolequa';
@@ -231,10 +232,10 @@ const Estatica1 = ({ route }) => {
   const {
     mock, setKeysOfForm, keysOfForm, currentExam,
   } = useForm();
-
+/* 
   console.log({ o: options[currentExam.tipo], t: currentExam.tipo, nome: currentExam.nome })
 
-  console.log('Teste ->', options);
+  console.log('Teste ->', options); */
 
   const { title, offline } = route.params;
 
@@ -283,7 +284,7 @@ const Estatica1 = ({ route }) => {
               {currentExam.nome}
             </Atom.Text>
           </Atom.Container>
-          <Atom.Image src={Estatico1} />
+          <Atom.Image src={MolequaImgs[currentExam.planta]} />
           <Atom.Container variant="viewSelection" flexDirection="row">
             <Atom.Ball size="XXBIG" text={2} />
             <Atom.Text ml={11} fontWeight={4} width="95%">
