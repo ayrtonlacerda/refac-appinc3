@@ -1,0 +1,200 @@
+[
+    {
+      "key": "p1repouso101",
+      "type": "img_plus_input",
+      "label": "Qual a área da sala de repouso? Complete com as medidas em metros nos itens a seguir",
+      "placeholder": "",
+      "description": "",
+      "default_value": "",
+      "additonal_type": null,
+      "image": "p1repouso1",
+      "radio": null,
+      "input": {
+        "dependency": null,
+        "fields": [
+          {
+            "key": "A",
+            "label": "A - ",
+            "default_value": "3",
+          },
+          {
+            "key": "B",
+            "label": "B - ",
+            "default_value": "4,05",
+          },
+          {
+            "key": "Pe-direito",
+            "label": "Pe-direito - ",
+            "default_value": "2,6",
+          }
+        ]
+      }
+    },
+    {
+      "key":  "p1repouso102",
+      "type": "img_plus_input",
+      "label": "Observe a descrição das esquadrias a seguir. Elas foram instaladas corretamente?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": "p1repouso12",
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 0
+        },
+        "fields": [
+          {
+            "key": "p05",
+            "label": "Qual a quantidade instalada de P05?",
+            "default_value": "1",
+
+          },
+          {
+            "key": "ef11",
+            "label": "Qual a quantidade instalada de EF 11?",
+            "default_value": "1",
+
+          },
+        ]
+      }
+    },
+    {
+        "key": "p1repouso103",
+        "type": "radio",
+        "label": "Foi instalada a divisória entre a sala de repouso e a creche II?",
+        "placeholder": "",
+        "description": "",
+        "default_value": 0,
+        "additonal_type": null,
+        "image": null,
+        "options": [
+          {
+            "id": 0,
+            "description": "Sim"
+          },
+          {
+            "id": 1,
+            "description": "Não"
+          },
+        ]
+    },
+    {
+      "key": "p1repouso104",
+      "type": "radio",
+      "label": "O teto foi pintado?",
+      "placeholder": "",
+      "description": "",
+      "default_value":1,
+      "additonal_type": null,
+      "image": null,
+      "options": [
+        {
+          "id": 1,
+          "description": "Sim",
+        },
+        {
+          "id": 0,
+          "description": "Não",
+        },
+      ],
+    },
+    {
+      "key":  "p1repouso105",
+      "type": "radio",
+      "label": "Possui rodameio?",
+      "placeholder": "",
+      "description": "",
+      "default_value": 0,
+      "additonal_type": null,
+      "image": null,
+      "options": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 1,
+          "description": "Não",
+        },
+
+      ],
+    },
+    {
+      "key": "p1repouso106",
+      "type": "text",
+      "label": "Qual a altura que a cerâmica 20 cm x 20 cm foi instalada?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "1,1",
+      "additional_type": null,
+    },
+    {
+      "key":  "p1repouso107",
+      "type": "text",
+      "label": "Qual a altura de parede que foi pintada?",
+      "placeholder": "",
+      "description": "",
+      "default_value": "1,5",
+      "additional_type": null,
+    },
+    {
+      "key":  "p1repouso108",
+      "type": "img_plus_input",
+      "label": "O revestimento foi aplicado em todo o perímetro?",
+      "placeholder": "",
+      "description": "",
+      "default_value":0 ,
+      "additonal_type": null,
+      "image": null,
+      "radio": [
+        {
+          "id": 0,
+          "description": "Sim",
+        },
+        {
+          "id": 2,
+          "description": "Não",
+        }
+      ],
+      "input": {
+        "dependency": {
+          "key": "radio",
+          "value": 2
+        },
+        "fields": [
+          {
+            "key": "revestimento",
+            "label": "Perímetro não aplicado (em metros):",
+          },
+        ]
+      }
+    },
+    {
+      "key":  "p1repouso109",
+      "type": "picker",
+      "label": "Qual tipo de piso foi instalado?",
+      "description": "Selecionar alguma opção",
+      "placeholder": "exemplo",
+      "default_value": "Granitina",
+      "aditional_type": null,
+      "options": [
+        "Bloco de concreto intertravado",
+        "Cerâmica",
+        "Cimento desempenado",
+        "Granitina",
+        "Outros"
+      ]
+    }
+  ]

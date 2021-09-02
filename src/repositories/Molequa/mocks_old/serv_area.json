@@ -1,0 +1,217 @@
+[
+  {
+    "key": "servarea01",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servarea1",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "5,6"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "5,4"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "9,45"
+        },
+        {
+          "key": "D",
+          "label": "D - ",
+          "default_value": "2,975"
+        },
+        {
+          "key": "E",
+          "label": "E - ",
+          "default_value": "0,4"
+        },
+        {
+          "key": "F",
+          "label": "F - ",
+          "default_value": "0,4"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servarea3",
+    "type": "img_plus_input",
+    "label": "De acordo as descrições apresentadas, verifique se as esquadrias foram instaladas corretamente:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servarea2",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "portao1",
+          "label": "Quantidade de portão (100 x 210)",
+          "default_value": "2"
+        },
+        {
+          "key": "portao2",
+          "label": "Quantidade de portão (100 x 150)",
+          "default_value": "1"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servarea04",
+    "type": "img_plus_input",
+    "label": "As paredes de cobogó foram executadas?",
+    "placeholder": "",
+    "description": "Selecionar alguma opção",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim, com as seguintes dimensões em  metros:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "Altura",
+          "label": "Altura: ",
+          "default_value": "2,1"
+        },
+        {
+          "key": "Comprimento",
+          "label": "Comprimento: ",
+          "default_value": "3,7"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servarea05",
+    "type": "img_plus_input",
+    "label": "A bancada de granito foi instalada?",
+    "placeholder": "",
+    "description": "Selecionar alguma opção",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim, com as seguintes dimensões em  metros:"
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 2
+      },
+      "fields": [
+        {
+          "key": "Comprimento",
+          "label": "Comprimento da bancada: ",
+          "default_value": "6,15"
+        },
+        {
+          "key": "Largura",
+          "label": "Largura da bancada: ",
+          "default_value": "0,9"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servarea0123",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir:",
+    "placeholder": "",
+    "description": "",
+    "default_value": "Saliva de pirulito",
+    "additonal_type": null,
+    "image": "servarea3",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "1,15"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "0,87"
+        },
+        {
+          "key": "C",
+          "label": "C - ",
+          "default_value": "1,47"
+        }
+      ]
+    }
+  },
+  {
+    "key": "servarea07",
+    "type": "radio",
+    "label": "Foi instalado o gás na casa de gás?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 1,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 1,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "servarea08",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

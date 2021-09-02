@@ -1,0 +1,179 @@
+[
+  {
+    "key": "solarium1C101",
+    "type": "img_plus_input",
+    "label": "Complete com as medidas em metros nos itens a seguir",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "crechec_solarium1",
+    "radio": null,
+    "input": {
+      "dependency": null,
+      "fields": [
+        {
+          "key": "A",
+          "label": "A - ",
+          "default_value": "4,1"
+        },
+        {
+          "key": "B",
+          "label": "B - ",
+          "default_value": "3,425"
+        },
+      ]
+    }
+  },
+  {
+    "key":  "solarium1C102",
+    "type": "img_plus_input",
+    "label": "As paredes de cobogó foram executadas?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 0,
+    "additonal_type": null,
+    "image": null,
+    "radio": [
+      {
+        "id": 0,
+        "description": "Sim, com as seguintes dimensões:",
+      },
+      {
+        "id": 1,
+        "description": "Não",
+      }
+    ],
+    "input": {
+      "dependency": {
+        "key": "radio",
+        "value": 0
+      },
+      "fields": [
+        {
+          "key": "altura1",
+          "label": "Altura 1:",
+          "default_value": "0,9"
+        },
+        {
+          "key": "comp1",
+          "label": "Comprimento 1:",
+          "default_value": "3,95"
+        },
+        {
+          "key": "altura2",
+          "label": "Altura 2:",
+          "default_value": "0,9"
+        },
+        {
+          "key": "comp2",
+          "label": "Comprimento 2:",
+          "default_value": "3,25"
+        },
+      ]
+    }
+  },
+  {
+    "key": "solarium1C104",
+    "type": "picker",
+    "label": "Foram instaladas vigas e pilaresde madeira no hall de entrada da creche?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Sim, vigas e pilares",
+    "aditional_type": null,
+    "options": [
+      "Sim, vigas e pilares",
+      "Sim, apenas vigas",
+      "Sim, apenas pilares",
+      "Não, nem viga e nem pilar",
+    ]
+  },
+  {
+    "key": "solarium1C105",
+    "type": "text",
+    "label": "Comprimento das vigas 1 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "4,25",
+    "additional_type": null
+  },
+  {
+    "key": "solarium1C106",
+    "type": "text",
+    "label": "Quantidade de vigas 1?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "2",
+    "additional_type": null
+  },
+  {
+    "key": "solarium1C107",
+    "type": "text",
+    "label": "Comprimento das vigas 2 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "6,75",
+    "additional_type": null
+  },
+  {
+    "key": "solarium1C108",
+    "type": "text",
+    "label": "Quantidade de vigas 2?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "1",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento0110",
+    "type": "text",
+    "label": "Comprimento dos pilares 1 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "3",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento111",
+    "type": "text",
+    "label": "Quantidade dos pilares 1?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "2",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento112",
+    "type": "text",
+    "label": "Comprimento das vigas 2 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null
+  },
+  {
+    "key": "revestimento113",
+    "type": "text",
+    "label": "Quantidade de vigas 2 (m)?",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null
+  },
+  {
+    "key":  "solarium1C114",
+    "type": "picker",
+    "label": "Qual tipo de piso foi instalado?",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "Granitina",
+    "aditional_type": null,
+    "options": [
+      "Bloco de concreto intertravado",
+      "Cerâmico",
+      "Cimento desempenado",
+      "Granitina",
+      "Outros"
+    ]
+  }
+]

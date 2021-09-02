@@ -1,0 +1,102 @@
+[
+  {
+    "key": "obs1",
+    "type": "picker_plus_input",
+    "label": "Local da observação",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Adminstração",
+      "Área externa",
+      "Implantação",
+      "Multiuso",
+      "Passarela",
+      "Pátio coberto",
+      "Pedagogia 1",
+      "Pedagogia 2",
+      "Serviço"
+    ]
+  },
+  {
+    "key": "obs2",
+    "type": "picker_plus_input",
+    "label": "Local da observação",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Adminstração",
+      "Área externa",
+      "Implantação",
+      "Multiuso",
+      "Passarela",
+      "Pátio coberto",
+      "Pedagogia 1",
+      "Pedagogia 2",
+      "Serviço"
+    ]
+  },
+  {
+    "key": "obs3",
+    "type": "picker_plus_input",
+    "label": "Local da observação",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Adminstração",
+      "Área externa",
+      "Implantação",
+      "Multiuso",
+      "Passarela",
+      "Pátio coberto",
+      "Pedagogia 1",
+      "Pedagogia 2",
+      "Serviço"
+    ]
+  },
+  {
+    "key": "obs4",
+    "type": "picker_plus_input",
+    "label": "Local da observação",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Adminstração",
+      "Área externa",
+      "Implantação",
+      "Multiuso",
+      "Passarela",
+      "Pátio coberto",
+      "Pedagogia 1",
+      "Pedagogia 2",
+      "Serviço"
+    ]
+  },
+  {
+    "key": "obs5",
+    "type": "picker_plus_input",
+    "label": "Local da observação",
+    "description": "Selecionar alguma opção",
+    "placeholder": "exemplo",
+    "default_value": "",
+    "aditional_type": null,
+    "options": [
+      "Adminstração",
+      "Área externa",
+      "Implantação",
+      "Multiuso",
+      "Passarela",
+      "Pátio coberto",
+      "Pedagogia 1",
+      "Pedagogia 2",
+      "Serviço"
+    ]
+  }
+]

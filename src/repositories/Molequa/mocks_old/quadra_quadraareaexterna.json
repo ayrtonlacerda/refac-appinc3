@@ -1,0 +1,183 @@
+[
+  {
+    "key": "quadraareaexterna01",
+    "type": "img_plus_input",
+    "label": "Observe a imagem a seguir e complete com o que se pede",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additonal_type": null,
+    "image": "plantaquadra2",
+    "radio": null,
+    "input": null
+  },
+  {
+    "key": "quadraareaexterna02",
+    "type": "radio",
+    "label": "A parede externa do vestíario (seta vermelha) foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "quadraareaexterna03",
+    "type": "radio",
+    "label": "A parede externa do vestíario (seta azul) foi pintada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "quadraareaexterna04",
+    "type": "radio",
+    "label": "O passeio em concreto simples desempolado foi executado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "quadraareaexterna05",
+    "type": "radio",
+    "label": "As canaletas de concreto foram instaladas na lateral da quadra?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "quadraareaexterna06",
+    "type": "radio",
+    "label": "As estruturas de concreto estão compatíveis com a dimensão da construção?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key":  "quadraareaexterna6.1",
+    "type": "text",
+    "label": "Se necessário anote as medidas da questão anterior: ",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null
+  },
+  {
+    "key": "quadraareaexterna07",
+    "type": "radio",
+    "label": "A drenagem pluvial foi executada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "quadraareaexterna08",
+    "type": "radio",
+    "label": "O sumidouro foi instalado?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  },
+  {
+    "key": "quadraareaexterna09",
+    "type": "radio",
+    "label": "A fossa séptica foi instalada?",
+    "placeholder": "",
+    "description": "",
+    "default_value": 2,
+    "additonal_type": null,
+    "image": null,
+    "options": [
+      {
+        "id": 0,
+        "description": "Não"
+      },
+      {
+        "id": 2,
+        "description": "Sim"
+      }
+    ]
+  }
+]
