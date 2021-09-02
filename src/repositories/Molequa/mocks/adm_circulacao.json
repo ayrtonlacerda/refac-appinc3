@@ -65,7 +65,7 @@
     "additional_type": null
   },
   {
-    "key": "adm_circ4",
+    "key": "adm_circ3",
     "type": "radio",
     "label": "O teto foi pintado?",
     "placeholder": "",
@@ -155,7 +155,7 @@
     }
   },
   {
-    "key": "adm_circ3",
+    "key": "adm_circ8",
     "type": "picker",
     "label": "Qual tipo de piso foi instalado?",
     "description": "Selecionar alguma opção",

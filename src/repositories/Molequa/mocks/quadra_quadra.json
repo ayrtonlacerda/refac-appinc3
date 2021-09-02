@@ -174,12 +174,12 @@
     "image": "quadrapadrao",
     "radio": [
       {
-        "id": 0,
-        "description": "Não"
-      },
-      {
         "id": 1,
         "description": "Sim"
+      },
+      {
+        "id": 0,
+        "description": "Não"
       }
     ]
   },

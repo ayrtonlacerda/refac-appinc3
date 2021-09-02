@@ -2,7 +2,7 @@
   {
     "key": "quadraareaexterna01",
     "type": "img_plus_input",
-    "label": "Observe a imagem a seguir e complete com o que se epde",
+    "label": "Observe a imagem a seguir e complete com o que se pede",
     "placeholder": "",
     "description": "",
     "default_value": "",
@@ -93,14 +93,14 @@
   },
   {
     "key": "quadraareaexterna06",
-    "type": "img_plus_input",
+    "type": "radio",
     "label": "As estruturas de concreto estão compatíveis com a dimensão da construção?",
     "placeholder": "",
     "description": "",
-    "default_value": null,
-    "additonal_type": 2,
+    "default_value": 2,
+    "additonal_type": null,
     "image": null,
-    "radio": [
+    "options": [
       {
         "id": 0,
         "description": "Não"
@@ -109,17 +109,16 @@
         "id": 2,
         "description": "Sim"
       }
-    ],
-    "input": {
-      "dependency": null,
-      "fields": [
-        {
-          "key": "medidascanaletas",
-          "label": "Se necessário anote as medidas: ",
-          "default_value": ""
-        }
-      ]
-    }
+    ]
+  },
+  {
+    "key":  "quadraareaexterna6.1",
+    "type": "text",
+    "label": "Se necessário anote as medidas da questão anterior: ",
+    "placeholder": "",
+    "description": "",
+    "default_value": "",
+    "additional_type": null
   },
   {
     "key": "quadraareaexterna07",
