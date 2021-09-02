@@ -48,6 +48,7 @@ const FormBuilder = ({
               (text) => handleChangeValueForm(field.key, text)
             }
             placeholder={field.placeholder}
+            {...field}
           />
         </Organisms.FormField>
       );

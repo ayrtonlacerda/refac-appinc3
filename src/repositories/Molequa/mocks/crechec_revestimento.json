@@ -45,7 +45,6 @@
       ]
     }
   },
-
   {
     "key": "revestimento02",
     "type": "radio",
@@ -140,6 +139,7 @@
     "placeholder": "",
     "description": "",
     "default_value": "6,85",
+    "keyboardType": "numeric",
     "additional_type": null
   },
   {
@@ -221,7 +221,6 @@
           "key": "comprimento1",
           "label": "comprimento: ",
           "default_value": "3",
-
         },
       ]
     }

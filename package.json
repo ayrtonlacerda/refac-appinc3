@@ -10,6 +10,8 @@
     "lint": "eslint .",
     "release": "cd ./android && ./gradlew clean && ./gradlew assembleRelease && cd ..",
     "bundle:ios": "npx react-native bundle --entry-file index.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios"
+    "bundle:ios": "npx react-native bundle --entry-file index.ios.js --platform ios --dev false --bundle-output ios/main.jsbundle --assets-dest ios",
+    "distribute": "yarn release && cd ./android/app/build/outputs/apk/release && firebase appdistribution:distribute app-release.apk --app 1:116130927429:android:a9d92fb38d6066d0b5242c --token 1//0hVw5X9q2ceVVCgYIARAAGBESNwF-L9IrS092eIcwQaF_UevYNZFA_vM8S3IKFEOPGK1D4VLAK8hpu9_wWdVT-SVVR6l13GGCueE --groups devs"
   },
   "dependencies": {
     "@react-native-community/async-storage": "^1.11.0",

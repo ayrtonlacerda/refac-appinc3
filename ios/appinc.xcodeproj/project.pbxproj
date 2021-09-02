@@ -19,6 +19,10 @@
 		8B9B547CD531FDA97F29076B /* libPods-appinc-appincTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 522770C6491721A4A7C69158 /* libPods-appinc-appincTests.a */; };
 		9668EC9AB13B16D41F0F072B /* libPods-appinc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A30B1719B0D0B52239CD633 /* libPods-appinc.a */; };
 		9BD0327B15534E3DB6AA2484 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBAB17510264409B4BA59D2 /* libz.tbd */; };
+<<<<<<< HEAD
+=======
+		B125FD4B26978882004F3ECD /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125FD4A26978882004F3ECD /* File.swift */; };
+>>>>>>> devolop
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* appincTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appincTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* appincTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = appincTests.m; sourceTree = "<group>"; };
@@ -67,9 +70,15 @@
 		59C6C90A3B14D2329C5FF3E5 /* Pods-appinc-appincTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appinc-appincTests.release.xcconfig"; path = "Target Support Files/Pods-appinc-appincTests/Pods-appinc-appincTests.release.xcconfig"; sourceTree = "<group>"; };
 		63462307EA5F42558E157717 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		644FF3BF8C114638AC117ED5 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		754360A5E958A7AC6E5B183C /* Pods-appinc-appincTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appinc-appincTests.debug.xcconfig"; path = "Target Support Files/Pods-appinc-appincTests/Pods-appinc-appincTests.debug.xcconfig"; sourceTree = "<group>"; };
 		87A7FE3C10214CB58D6A507B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		967C135ABB9B4F3485A28A4E /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+=======
+		87A7FE3C10214CB58D6A507B /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		967C135ABB9B4F3485A28A4E /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		B125FD4A26978882004F3ECD /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+>>>>>>> devolop
 		BFF89B9095894B8A947AED4F /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		CDC4364C9EC8486D87E49B47 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		D3B24016C8FF14AD1DA98B25 /* Pods-appinc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-appinc.debug.xcconfig"; path = "Target Support Files/Pods-appinc/Pods-appinc.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,13 +143,20 @@
 		13B07FAE1A68108700A75B9A /* appinc */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+=======
+>>>>>>> devolop
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+<<<<<<< HEAD
+=======
+				B125FD4A26978882004F3ECD /* File.swift */,
+>>>>>>> devolop
 			);
 			name = appinc;
 			sourceTree = "<group>";
@@ -157,6 +173,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		5F7330CA4AE2014C244680DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5763990EFC9393F1584BC1D /* Pods-appinc.debug.xcconfig */,
+				0E12C310C94BF58660A5313C /* Pods-appinc.release.xcconfig */,
+				4FC838ECFE4EEA0BA8172D16 /* Pods-appinc-appincTests.debug.xcconfig */,
+				FA8A179DD7F76A56233994CD /* Pods-appinc-appincTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+>>>>>>> devolop
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,7 +436,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport NODE_BINARY=node\n../node_modules/@sentry/cli/bin/sentry-cli react-native xcode ../node_modules/react-native/scripts/react-native-xcode.sh\n";
+=======
+>>>>>>> devolop
 		};
 		2BE8F9DD6BEB7A4FC0777893 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -526,6 +559,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-appinc-appincTests/Pods-appinc-appincTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+<<<<<<< HEAD
 		5668A303191649E193F5E74A /* Upload Debug Symbols to Sentry */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -540,6 +574,8 @@
 			shellPath = /bin/sh;
 			shellScript = "export SENTRY_PROPERTIES=sentry.properties\n../node_modules/@sentry/cli/bin/sentry-cli upload-dsym";
 		};
+=======
+>>>>>>> devolop
 		969FA762D45F0C0460178969 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -638,6 +674,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+<<<<<<< HEAD
+=======
+				B125FD4B26978882004F3ECD /* File.swift in Sources */,
+>>>>>>> devolop
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -738,7 +778,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				CURRENT_PROJECT_VERSION = 13;
+=======
+				CURRENT_PROJECT_VERSION = 10;
+>>>>>>> devolop
 				DEVELOPMENT_TEAM = WG8546JSSS;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -756,6 +800,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.unb.appinc;
 				PRODUCT_NAME = appinc;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+<<<<<<< HEAD
+=======
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+>>>>>>> devolop
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -770,7 +819,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+<<<<<<< HEAD
 				CURRENT_PROJECT_VERSION = 13;
+=======
+				CURRENT_PROJECT_VERSION = 10;
+>>>>>>> devolop
 				DEVELOPMENT_TEAM = WG8546JSSS;
 				INFOPLIST_FILE = appinc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -783,6 +836,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.unb.appinc;
 				PRODUCT_NAME = appinc;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+<<<<<<< HEAD
+=======
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+>>>>>>> devolop
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
