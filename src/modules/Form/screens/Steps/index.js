@@ -86,7 +86,7 @@ const Steps = () => {
 
   const handleSelectOfflineExam = (examOffline) => {
     retriveStore(examOffline);
-    handleSetExam(examOffline.exam);
+    setCurrentExam(examOffline.exam);
     if (mock.area === 'pericia_molequa') {
       // tranferir pra outra pagina
       navigation.navigate('Molequa', {
