@@ -6,6 +6,7 @@ import { useForm } from '../../../../global';
 // ui
 import * as Atom from '../../../../components/Atom';
 import * as Molecules from '../../../../components/Molecules';
+import Toast from 'react-native-toast-message';
 import { FormBuilder } from '../../../../components/Templates';
 import DB from '../../../../database';
 
@@ -20,6 +21,7 @@ const Form = () => {
     handleChangeValueForm, form, currentExam, handleChangeValueKeysOfForm, keysOfForm,
   } = useForm();
   const [showModal, setShowModal] = useState(false);
+  const [defaultValues, setDefaultValues] = useState(false);
 
   const { title, fields } = route.params;
   // 1. amostra consumida totalmente
@@ -81,6 +83,16 @@ const Form = () => {
 
       handleChangeValueKeysOfForm(field.key, field.default_value, true);
     });
+    Toast.show({
+      type: 'success',
+      position: 'bottom',
+      text1: 'Valores padrões preenchidos com successo',
+      // text2: 'Exemplo de sucesso para quando o codigo do lacre for igual ao do siscrim',
+      visibilityTime: 4000,
+      autoHide: true,
+      topOffset: 100,
+      bottomOffset: 40,
+    });
     await DB.insert(
       currentExam,
       { keysOfForm: { ...keysOfForm, ...saveFieldsValues } },
@@ -93,7 +105,7 @@ const Form = () => {
       <Atom.Scroll noPaddingX>
         <Atom.Container>
           <Atom.Button
-            onPress={handleFillDefaultValues}
+            onPress={() => setDefaultValues(true)}
             width="90%"
             m={2}
             type={2}
@@ -126,6 +138,22 @@ const Form = () => {
           }
         }
         visible={showModal}
+        onClose={() => setShowModal(false)}
+      />
+      <Molecules.BoxModal
+        textInfo="Tem certeza que deseja preencher com valores padrões? Isso irá sobreescrever o que já foi preenchido manualmente."
+        textPrimaryButton="SIM"
+        textSecondaryButton="NÃO"
+        onClickPrimaryButton={() => {
+          setDefaultValues(false);
+          handleFillDefaultValues()
+        }}
+        onClickSecondaryButton={
+          () => {
+            setDefaultValues(false);
+          }
+        }
+        visible={defaultValues}
         onClose={() => setShowModal(false)}
       />
     </Atom.Container>

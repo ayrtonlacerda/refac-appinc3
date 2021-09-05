@@ -204,6 +204,7 @@ export const quadra_coberta =
     {
       label: "Vestiário",
       screen: "Administration",
+      image: 'PLANTA_DO_BLOCO_ADM',
       subAreas: [
         "Vestiário 1",
         "Vestiário 2",
