@@ -12,11 +12,8 @@ import { subAreas as subAreasMocks } from '../../mocks';
 
 const Administration = () => {
   const { navigation, route } = useCommons();
-  console.log('Screen -> Administration');
 
   const { subAreas, image } = route.params;
-
-  console.log('Entrei aqui');
 
   const handleBack = useCallback(() => {
     // handleReset();

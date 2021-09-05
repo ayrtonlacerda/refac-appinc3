@@ -49,15 +49,12 @@ const Form = () => {
     }
   }, []);
 
-  console.log('Title -> ', title);
-  console.log('Fields -> ', fields);
-
   const handleFillDefaultValues = async () => {
     let saveFieldsValues = {};
     each(formFields, (field) => {
       // "Saliva de pirulito"
 
-      if (!isEmpty(field?.input?.fields)) {
+      if (!isEmpty(field?.input?.fields) || !isEmpty(field?.radio)) {
         let defaultValue = {};
         if (!isEmpty(field?.radio)) {
           defaultValue = { ...defaultValue, radio: field?.default_value };

@@ -25,12 +25,6 @@ const FormBuilder = ({
   return fields?.map((field, i) => {
     /* no genetica utilizamos form[currentExam][field.key] */
     const value = keysOfForm[field.key];
-
-    console.log({ field });
-    console.log('Teste ->', field.input);
-    console.log('Teste2 ->', field.radio);
-    console.log('Teste3 ->', value);
-
     if (conditional('text', field)) {
       return (
         <Organisms.FormField

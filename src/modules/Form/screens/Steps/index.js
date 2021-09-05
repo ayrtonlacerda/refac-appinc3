@@ -128,8 +128,6 @@ const Steps = () => {
   */
   // TODO: fazer filtro offline de acordo com o tipo tb!
 
-  console.log(form);
-
   return (
     <Atoms.Container>
       <Molecules.Header title={mock?.name} back handlePress={handleBack} />

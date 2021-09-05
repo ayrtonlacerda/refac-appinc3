@@ -38,21 +38,21 @@ const ImgPlusInput = ({
         />
       )}
       {renderInput && props.input?.fields?.map((input) => (
-     
+
         <Atoms.Container variant="justRow">
           <Atoms.Text text={input.label} pr={2} />
           <Atoms.Input
             value={value?.[input.key] || ''}
             keyField={input.key}
             flexGrow={1}
-            keyboardType={input.keyboardType  || 'default'}
+            keyboardType={input.keyboardType || 'default'}
             onChangeText={
               (txt) => handleChange(input.key, txt)
             }
           />
         </Atoms.Container>
       ))
-      
+
       }
     </>
   );
