@@ -15,25 +15,20 @@ const Dynamic = () => {
   const [valueB, setValueB] = useState("");
   const [valueC, setValueC] = useState("");
   const [valueD, setValueD] = useState("");
-  const [formula, setFormula] = useState("");
+  
   const [result, setResult] = useState("...");
   const [exam, setExam] = useState();
 
   const onPressCalcule = useCallback(()=>{
-      setResult(calculeByFormula(formula,valueA,valueB,valueC,valueD));
-  },[formula,valueA,valueB,valueC,valueD])
+      setResult(calculeByFormula(exam.name,valueA,valueB,valueC,valueD));
+  },[exam,valueA,valueB,valueC,valueD])
 
   const onPressClean = useCallback(() => {
     setValueA("");
     setValueB("");
     setValueC("");
     setValueD("");
-    setFormula("");
-  },[formula,valueA,valueB,valueC,valueD])
-
-  useEffect(()=>{
-      
-  },[]);
+  },[valueA,valueB,valueC,valueD])
 
   return (
     <>
@@ -92,7 +87,7 @@ const Dynamic = () => {
         <Picker
           value={exam}
           placeholder="Escolha uma fórmula"
-          onChangeOption={()=>{}}
+          onChangeOption={setExam}
           options={[
             {
               form: undefined,
