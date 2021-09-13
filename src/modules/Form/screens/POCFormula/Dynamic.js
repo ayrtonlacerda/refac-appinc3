@@ -27,6 +27,7 @@ const Dynamic = () => {
     setValueC("");
     setValueD("");
     setFormula("");
+    setResult("...");
   },[formula,valueA,valueB,valueC,valueD])
 
   return (

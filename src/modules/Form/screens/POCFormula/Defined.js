@@ -20,7 +20,8 @@ const Dynamic = () => {
   const [exam, setExam] = useState();
 
   const onPressCalcule = useCallback(()=>{
-      setResult(calculeByFormula(exam.name,valueA,valueB,valueC,valueD));
+      const formula = exam? exam.name: undefined;
+      setResult(calculeByFormula(formula,valueA,valueB,valueC,valueD));
   },[exam,valueA,valueB,valueC,valueD])
 
   const onPressClean = useCallback(() => {
@@ -28,6 +29,8 @@ const Dynamic = () => {
     setValueB("");
     setValueC("");
     setValueD("");
+    setExam();
+    setResult('...')
   },[valueA,valueB,valueC,valueD])
 
   return (
