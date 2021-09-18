@@ -1,5 +1,5 @@
-import React, { useCallback } from 'react';
-import { useCommons } from '../../../../hooks';
+import React, { useCallback, useEffect } from 'react';
+import { useCommons, useCalculator } from '../../../../hooks';
 import { useForm, useUser } from '../../../../global';
 import { removeLocalStorage } from '../../../../service/storage';
 import { ViewToken } from './styles';
@@ -15,6 +15,8 @@ const Home = () => {
     handleReset,
   } = useForm();
 
+  const {calcule} = useCalculator();
+
   const handleNew = useCallback(() => {
     handleReset();
     navigation.navigate('FormsRoutes');
@@ -25,6 +27,31 @@ const Home = () => {
     removeLocalStorage('@appinc_user');
     setUser(null);
   };
+
+  useEffect(()=>{
+    const fields = [
+      {
+          key:"A",
+          label :"A - ",
+          "default_value":"14,6",
+          value: 1,
+       },
+       {
+          key:"B",
+          label :"B - ",
+          "default_value":"3,65",
+          value: 2,
+       },
+       {
+        key:"C",
+        label :"C - ",
+        "default_value":"3,65",
+        value: 3,
+     },
+  ]
+    calcule(fields);
+
+  },[]);
 
   const handleMy = useCallback(() => navigation.navigate('MyExpertise'), [navigation]);
 

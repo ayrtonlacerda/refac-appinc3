@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 
 import { MolequaImgs } from '../../../assets';
 
@@ -19,6 +19,7 @@ const ImgPlusInput = ({
   }, [toggle, value]);
 
   const handleChange = (key, valueMiniForm) => {
+    debugger;
     onChange(keyField, { ...value, [key]: valueMiniForm });
   };
 
