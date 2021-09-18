@@ -15,7 +15,7 @@ const Home = () => {
     handleReset,
   } = useForm();
 
-  const {calcule} = useCalculator();
+  const {calcule} = useCalculator({formula: '(A+B+C)/C'});
 
   const handleNew = useCallback(() => {
     handleReset();
