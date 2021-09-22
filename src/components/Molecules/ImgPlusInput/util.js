@@ -1,9 +1,10 @@
-const calculeByFormula = (strFormula='', fields=[]) => {
+const calculeByFormula = (strFormula='', value) => {
     try {
         if(strFormula){
-            const formulaToExec=  fields.reduce((formulaToExec, fieldToAdd)=> {
-                const rg = new RegExp(`(${fieldToAdd.key})`,'gi');
-                return  formulaToExec.replace(rg, fieldToAdd.value)
+            const keys = Object.keys(value);
+            const formulaToExec=  keys.reduce((formulaToExec, key)=> {
+                const rg = new RegExp(`(${key})`,'gi');
+                return  formulaToExec.replace(rg, value[key]);
             }, strFormula);
             formulaToExec.replace(/(x)/gi, "*");
             return  String(eval(formulaToExec));

@@ -1,9 +1,11 @@
 import React, { useState, useMemo, useEffect } from 'react';
 
 import { MolequaImgs } from '../../../assets';
-
 import * as Atoms from '../../Atom';
+import {Picker} from '../../Organisms';
 import RadioButton from '../RadioButton';
+import calculeByFormula from './util';
+
 
 const ImgPlusInput = ({
   onChange, keyField, value, ...props
@@ -11,6 +13,9 @@ const ImgPlusInput = ({
   const [toggle, setToggle] = useState(
     value?.radio === 0 ? value?.radio : value?.radio || null,
   );
+  const [selectedFormula, selectFormula] = useState();
+  const [result, setResult] = useState("");
+  const [formulasOptions, setFormulasOptios] = useState([]);
 
   const renderInput = useMemo(() => {
     if (!props?.input?.dependency) return true;
@@ -21,6 +26,23 @@ const ImgPlusInput = ({
   const handleChange = (key, valueMiniForm) => {
     debugger;
     onChange(keyField, { ...value, [key]: valueMiniForm });
+  };
+
+  useEffect(()=>{
+    if(props.input?.formulas){
+      setFormulasOptios(props.input?.formulas.map(item => {
+        return {form: item.formula, name: item.label}
+      }))
+    }
+  },[])
+
+  const onHandleFormule = (formuleSelected) => {
+    try {
+       setResult(calculeByFormula(formuleSelected.form, value));
+       selectFormula(formuleSelected);
+    } catch (error) {
+      setResult("");
+    }
   };
 
   if (!props.image && !props.radio && !renderInput) return null;
@@ -51,6 +73,18 @@ const ImgPlusInput = ({
           />
         </Atoms.Container>
       ))}
+      {renderInput && props.input?.formulas &&
+       ( <Atoms.Container mt={5} >
+          <Atoms.Text mb={3} text="Fórmulas"/>
+          <Picker
+          value={selectedFormula}
+          placeholder="Escolha uma fórmula"
+          onChangeOption={onHandleFormule}
+          options={formulasOptions}
+        />
+          <Atoms.Text text={`Resultado: ${result}`}/>
+        </Atoms.Container>)
+      }
     </>
   );
 };

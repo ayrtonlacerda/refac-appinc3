@@ -9,4 +9,3 @@ hooks gerais da aplicação
 5. ?trabalhar com offline
 */
 export * from './commons';
-export { default as useCalculator } from './useCalculator';
