@@ -20,7 +20,7 @@
         {
           "key": 2,
           "label": "Multiplicar A,B,C e D",
-          "formula" : "A+B+C+D"
+          "formula" : "A*B*C*D"
         },
         {
           "key": 3,
