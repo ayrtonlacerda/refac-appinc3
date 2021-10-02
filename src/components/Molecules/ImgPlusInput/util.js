@@ -4,10 +4,10 @@ const calculeByFormula = (strFormula='', value) => {
             const keys = Object.keys(value);
             const formulaToExec=  keys.reduce((formulaToExec, key)=> {
                 const rg = new RegExp(`(${key})`,'gi');
-                return  formulaToExec.replace(rg, value[key]);
+                return  formulaToExec.replace(rg, value[key]).replace(',','.');
             }, strFormula);
             formulaToExec.replace(/(x)/gi, "*");
-            return  String(eval(formulaToExec));
+            return  String(eval(formulaToExec)).replace('.', ',');
         }
         return "Informe uma fórmula."
     } catch (error) {
