@@ -14,6 +14,9 @@ import { BASE_URL, STATUS } from '@env';
 import { startMirage } from '../server';
 import theme from './styles';
 import Routes from './routes';
+import log from 'rnlog'
+
+log.config()
 
 if (STATUS === 'local') {
   startMirage();

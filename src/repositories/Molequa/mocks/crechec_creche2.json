@@ -11,6 +11,23 @@
     "radio": null,
     "input": {
       "dependency": null,
+      "formulas":[
+        {
+          "key": 1,
+          "label": "Somar A,B,C e D",
+          "formula" : "A+B+C+D"
+        },
+        {
+          "key": 2,
+          "label": "Multiplicar A,B,C e D",
+          "formula" : "A*B*C*D"
+        },
+        {
+          "key": 3,
+          "label": "Multiplicar A com B",
+          "formula" : "A*B"
+        }
+      ],
       "fields": [
         {
           "key": "A",

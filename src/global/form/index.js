@@ -20,6 +20,8 @@ export const useForm = () => {
     ...propsFormStore
   } = useStore();
 
+  console.json(keysOfForm)
+
   // cria objeto com todas as chaves
   // TODO: Porem deve ser levado em consideração o tipo de repositorio
   const handleCreateForm = async (data, name) => {
