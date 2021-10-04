@@ -9849,6 +9849,11 @@ rn-host-detect@1.2.0:
   resolved "https://registry.yarnpkg.com/rn-host-detect/-/rn-host-detect-1.2.0.tgz#8b0396fc05631ec60c1cb8789e5070cdb04d0da0"
   integrity sha512-btNg5kzHcjZZ7t7mvvV/4wNJ9e3MPgrWivkRgWURzXL0JJ0pwWlU4zrbmdlz3HHzHOxhBhHB4D+/dbMFfu4/4A==
 
+rnlog@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/rnlog/-/rnlog-1.0.5.tgz#b150cb5447be967939f3d44b474283037a568350"
+  integrity sha512-yNsv3VNYNhJPRTPPY3kkvcQry5+4vDXWjsvZfIWRlR5bYuLkCupkyQck4mYBf37kNxH9Vqie/t0bX1kT+4bUiw==
+
 route-recognizer@^0.3.3:
   version "0.3.4"
   resolved "https://registry.yarnpkg.com/route-recognizer/-/route-recognizer-0.3.4.tgz#39ab1ffbce1c59e6d2bdca416f0932611e4f3ca3"

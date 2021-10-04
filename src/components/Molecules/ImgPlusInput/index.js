@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 
 import { MolequaImgs } from '../../../assets';
 import * as Atoms from '../../Atom';
-import {Picker} from '../../Organisms';
+import { Picker } from '../../Organisms';
 import RadioButton from '../RadioButton';
 import calculeByFormula from './util';
 
@@ -28,18 +28,18 @@ const ImgPlusInput = ({
     onChange(keyField, { ...value, [key]: valueMiniForm });
   };
 
-  useEffect(()=>{
-    if(props.input?.formulas){
-      setFormulasOptios(props.input?.formulas.map(item => {
-        return {form: item.formula, name: item.label}
-      }))
-    }
-  },[])
+  /*  useEffect(()=>{
+     if(props.input?.formulas){
+       setFormulasOptios(props.input?.formulas.map(item => {
+         return {form: item.formula, name: item.label}
+       }))
+     }
+   },[]) */
 
   const onHandleFormule = (formuleSelected) => {
     try {
-       setResult(calculeByFormula(formuleSelected.form, value));
-       selectFormula(formuleSelected);
+      setResult(calculeByFormula(formuleSelected.form, value));
+      selectFormula(formuleSelected);
     } catch (error) {
       setResult("");
     }
@@ -74,15 +74,17 @@ const ImgPlusInput = ({
         </Atoms.Container>
       ))}
       {renderInput && props.input?.formulas &&
-       ( <Atoms.Container mt={5} >
-          <Atoms.Text mb={3} text="Fórmulas"/>
+        (<Atoms.Container mt={5} >
+          <Atoms.Text mb={3} text="Fórmulas" />
           <Picker
-          value={selectedFormula}
-          placeholder="Escolha uma fórmula"
-          onChangeOption={onHandleFormule}
-          options={formulasOptions}
-        />
-          <Atoms.Text text={`Resultado: ${result}`}/>
+            value={selectedFormula}
+            placeholder="Escolha uma fórmula"
+            onChangeOption={onHandleFormule}
+            options={props.input?.formulas.map(item => {
+              return { form: item.formula, name: item.label }
+            })}
+          />
+          <Atoms.Text text={`Resultado: ${result}`} />
         </Atoms.Container>)
       }
     </>
